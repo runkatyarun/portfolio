@@ -18,6 +18,7 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script><noscript>
+    <script type="text/javascript" src="iosLabelFix.js"></script>
     <link href="css/skel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-wide.css" rel="stylesheet"></noscript>
@@ -46,19 +47,24 @@
     
     window.onload = function() {
  
-       $("#showExtension").click(extensionOnClick);
+       $("#showExtension3").click(extensionOnClick3);
+       $("#showExtension4").click(extensionOnClick4);
  	   $("#slide1").change(hideAllExtension);
  	   $("#slide2").change(hideAllExtension);
  	   $("#slide3").change(hideAllExtension);
  	   $("#slide4").change(hideAllExtension);
     };
     
-    function extensionOnClick() {
-    	$(".extension").toggle();
+    function extensionOnClick3() {
+    	$(".extensiontoslide3").toggle();
+    }
+    function extensionOnClick4() {
+        $(".extensiontoslide4").toggle();
     }
     
     function hideAllExtension() {
-        $(".extension").hide();
+        $(".extensiontoslide3").hide();
+        $(".extensiontoslide4").hide();
         //$('body').scrollTo('#portfolio'); 
         
         $('html, body').animate({
@@ -82,8 +88,6 @@
                 "images/avatar.jpg"></span>
 
                 <h1 id="title">Kate Koroleva</h1>
-
-                <p>//TODO:</p>
             </div><!-- Nav -->
 
             <nav id="nav">
@@ -196,31 +200,20 @@
                     <h2>Portfolio</h2>
                 </header>
 
-                <section class="pagetop">
-                    <div class="wrapper content_header clearfix">
-                        <div class="work_nav">
-                            <ul class="btn clearfix">
-                                <li>
-                                    <a class="previous" data-title="Previous"
-                                    href="crs.html"></a>
-                                </li>
-
-                                <li>
-                                    <a class="next" data-title="Next" href=
-                                    "mat.html"></a>
-                                </li>
-                            </ul>
-                        </div><!-- end work_nav -->
-                    </div>
-                </section><!-- end top -->
-
+               
                 <article id="slider">
                     <!-- Slider Setup -->
                     <input checked id="slide1" name="slider" type="radio">
                     <input id="slide2" name="slider" type="radio"> <input id=
                     "slide3" name="slider" type="radio"> <input id="slide4"
                     name="slider" type="radio">
-
+                    <div id="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        
+                    </div> 
                     <div id="slides">
                         <div id="overflow">
                             <div class="inner">
@@ -230,7 +223,7 @@
 
                                         <p>INRIX IS Android and iOS
                                         applications that provide traffic,
-                                        routes, travel times info. INRIX crowd
+                      x                  routes, travel times info. INRIX crowd
                                         sources data and allow users to report
                                         inaccurate traffic color and incidents
                                         along their itinerary.</p>
@@ -501,8 +494,8 @@
 
                                     <p></p>
 
-                                    <h5><a href="#portfolioR" id="showExtension">RESULTS:</a></h5>
- 									<div class="extension"> <!-- extension part-->
+                                    <h5><a href="#portfolioR" id="showExtension3">RESULTS:</a></h5>
+ 									<div class="extensiontoslide3"> <!-- extension part-->
                                     <p>Based on the recommendations I made
                                     after paper prototyping test session
                                     redesigned UI to address three motivation
@@ -773,10 +766,8 @@
                                         <li class="orderedli">Designed Website
                                         digital prototype (made responsive
                                         design with HTML/CSS)</li>
+                                    </ul>
 
-                                        <li style=
-                                        "list-style: none; display: inline">
-                                            <div style="margin-left: 2em">
                                                 <h5>MAIN RESULTS:</h5>
 
                                                 <ul>
@@ -802,12 +793,36 @@
                                                     research</li>
                                                 </ul>
 
-                                                <h5>SOME EXAMPLES:</h5>
+                                                <h5><a href="#portfolioR" id="showExtension4">RESULTS:</a></h5>
+                                                <div class="extensiontoslide4"> 
+                                                <div class="row">
+                                                    <div class="4u">
+                                                        <article class="item">
+                                                            <img alt="" src=
+                                                            "images/CRSbefore.png">
 
+                                                            <header>
+                                                                <h3>Before</h3>
+                                                            </header>
+                                                        </article>
+                                                    </div>
+
+                                                    <div class="2u"></div>
+
+                                                    <div class="4u">
+                                                        <article class="item">
+                                                            <img alt="" src=
+                                                            "images/CRSafter.png">
+
+                                                            <header>
+                                                                <h3>After</h3>
+                                                            </header>
+                                                        </article>
+                                                    </div><!-- </div image> -->
                                                
-                                            </div>
-                                        </li>
-                                    </ul>
+                                           
+                                        
+                                   </div> <!--extension-->
                                 </article> <!--article: CRS-->
                                 
                                
@@ -815,14 +830,15 @@
                         </div><!-- #overflow -->
                     </div><!-- #slides -->
                     
-                     <!-- Controls and Active Slide Display -->
-
+                     <!-- Controls and Active Slide Display-->
+                            
                                 <div id="active">
                                     <label for="slide1"></label> 
                                     <label for="slide2"></label> 
-                                    <label for="slide3"></label> 
+                                    <label for="slide3"></label>
                                     <label for="slide4"></label>
                                 </div><!-- #active -->
+                                
                 </article><!-- .slider -->
             </div><!--#container-->
 
@@ -871,7 +887,7 @@
                         <div class="row 50%">
                             <div class="12u">
                                 <textarea name="message" placeholder="Message">
-</textarea>
+                                </textarea>
                             </div>
                         </div>
 
