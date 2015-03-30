@@ -151,7 +151,7 @@
 	
 	p, ul, ol, dl, table
 	{
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 	p + ol{
 		display: inline;
@@ -218,6 +218,7 @@
 		{
 			display: inline-block;
 			border: 0;
+			margin-bottom: 1em;
 		}
 		
 			.image img
@@ -226,6 +227,12 @@
 				width: 100%;
 			}
 			
+			.image header {
+				background: #fff;
+				margin: 0;
+				padding: 1em 0 1em 0;
+				font-size: 0.8em;
+			}
 			.image.avatar48
 			{
 				width: 48px;
@@ -255,8 +262,9 @@
 			.image.left
 			{
 				float: left;
-				margin: 0 2em 2em 0;
+				margin: 0 2em 2em 1em;
 			}
+			
 			
 			.image.centered
 			{
@@ -371,7 +379,7 @@ article img {
 #slide4:checked ~ #controls label:nth-child(1) {
 	background: url('../images/next.png') no-repeat;
 	float: right;
-	margin: 0 -70px 0 0;
+	margin: 0 -50px 0 0;
 	display: block;
 }
 
@@ -382,7 +390,7 @@ article img {
 #slide4:checked ~ #controls label:nth-child(3) {
 	background: url('../images/prev.png') no-repeat;
 	float: left;
-	margin: 0 0 0 -70px;
+	margin: 0 0 0 -50px;
 	display: block;
 }
 
@@ -688,7 +696,9 @@ article img {
 		.item
 		{
 			box-shadow: 0 0.05em 0.15em 0 rgba(0,0,0,0.05);
-			margin-bottom: 40px;
+			margin-bottom: 0px;
+			margin-left: 5em;
+			
 		}
 		
 			.item header
@@ -703,6 +713,8 @@ article img {
 				{
 					font-size: 1em;
 				}
+
+
 /*********************************************************************************/
 /* Inner Page                                                                      */
 /*********************************************************************************/
@@ -756,10 +768,10 @@ p {
 	.orderedli{
 	text-decoration: none;
 	text-align: left;
-	font-size: 0.8em;
 	margin-left: 5em;
 	list-style-type: decimal;
 	line-height: 1.2em;
+	font-size: 0.8em;
 }
 
 .nonorderedli{
@@ -770,6 +782,15 @@ p {
 	list-style-type: disc;
 	line-height: 1.2em;
 	}
+.educationli{
+	text-decoration: none;
+	text-align: left;
+	font-size: 0.8em;
+	margin-left: 5em;
+	list-style-type: none;
+	line-height: 1.5em;
+
+}
 
 /*********************************************************************************/
 /* Icons                                                                         */
