@@ -151,7 +151,7 @@
 	
 	p, ul, ol, dl, table
 	{
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 	p + ol{
 		display: inline;
@@ -756,10 +756,10 @@ p {
 	.orderedli{
 	text-decoration: none;
 	text-align: left;
-	font-size: 0.8em;
 	margin-left: 5em;
 	list-style-type: decimal;
 	line-height: 1.2em;
+	font-size: 0.8em;
 }
 
 .nonorderedli{
@@ -770,6 +770,15 @@ p {
 	list-style-type: disc;
 	line-height: 1.2em;
 	}
+.educationli{
+	text-decoration: none;
+	text-align: left;
+	font-size: 0.8em;
+	margin-left: 5em;
+	list-style-type: none;
+	line-height: 1.5em;
+
+}
 
 /*********************************************************************************/
 /* Icons                                                                         */
