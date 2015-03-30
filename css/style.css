@@ -94,7 +94,7 @@
 
 	strong, b
 	{
-		font-weight: 300;
+		font-weight: 500;
 		color: #666;
 	}
 	
@@ -107,7 +107,7 @@
 	{
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128,128,128,0.5);
+		border-bottom: dotted 2px rgba(128,128,128,0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -769,9 +769,11 @@ p {
 	text-decoration: none;
 	text-align: left;
 	margin-left: 5em;
+	margin-right: 8em;
 	list-style-type: decimal;
 	line-height: 1.2em;
 	font-size: 0.8em;
+	
 }
 
 .nonorderedli{
@@ -779,8 +781,10 @@ p {
 	text-align: left;
 	font-size: 0.8em;
 	margin-left: 5em;
+	margin-right: 5em;
 	list-style-type: disc;
 	line-height: 1.2em;
+	padding-right: 4em;
 	}
 .educationli{
 	text-decoration: none;
