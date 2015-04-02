@@ -43,6 +43,8 @@
     
     window.onload = function() {
  
+       $("#showExtension1").click(extensionOnClick1);
+       $("#showExtension2").click(extensionOnClick2);
        $("#showExtension3").click(extensionOnClick3);
        $("#showExtension4").click(extensionOnClick4);
  	   $("#slide1").change(hideAllExtension);
@@ -51,6 +53,12 @@
  	   $("#slide4").change(hideAllExtension);
     };
     
+    function extensionOnClick1() {
+        $(".extensiontoslide1").toggle();
+    }
+    function extensionOnClick2() {
+        $(".extensiontoslide2").toggle();
+    }
     function extensionOnClick3() {
     	$(".extensiontoslide3").toggle();
     }
@@ -59,6 +67,8 @@
     }
     
     function hideAllExtension() {
+        $(".extensiontoslide1").hide();
+        $(".extensiontoslide2").hide();
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
         //$('body').scrollTo('#portfolio'); 
@@ -80,7 +90,7 @@
             <!-- Logo -->
 
             <div id="logo">
-                <span class="image avatar48"><a href="#top"><img alt="" src=
+                <span class="image avatar48"><a href="index.html"><img alt="" src=
                 "images/avatar.jpg"></a></span>
 
                 <h1 id="title">Kate Koroleva</h1>
@@ -139,29 +149,18 @@
 
                
                 <article id="slider">
-                    <!-- Slider Setup -->
-                    <input checked id="slide1" name="slider" type="radio">
-                    <input id="slide2" name="slider" type="radio"> <input id=
-                    "slide3" name="slider" type="radio"> <input id="slide4"
-                    name="slider" type="radio">
-                    <div id="controls">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                            <label for="slide4"></label>
-                        
-                    </div> 
+                   
                     <div id="slides">
                         <div id="overflow">
-                            <div class="inner">
                                 <article>
                                     <div class="info">
                                         <h3>INRIX (2014-current)</h3>
+                                        <h5>Description:</h5>
 
                                         <p>INRIX IS Android and iOS applications that provide traffic, routes and travel time info.  
                                         </br>INRIX crowd sources data, and allows users to report inaccurate traffic colors and incidents along their itinerary.</p>
 
-                                        <h5>Activities performed:</h5>
+                                        <h5>My role:</h5>
 
                                         <ol>
                                             <li class="orderedli">moderated
@@ -185,7 +184,16 @@
                                             for Android application</li>
                                         </ol>
 
-                                        <p></p>
+                                        <h5>Tools Used:</h5>
+
+                                        <p>Adobe Illustrator, UserTesting.com,
+                                        InVision prototyping tool, OpenDS
+                                        driving simulator
+                                        (http://www.opends.de/), Car wheel,
+                                        pedal and phone cradle set.</p>
+
+                                         <h5> <a href="#portfolioR" id="showExtension1">Read more about this project</a></h5>
+                                        <div class="extensiontoslide1"> <!-- extension part-->
 
                                         <p>My most recent exercise involved the Error Handling Experience feature. 
                                             <p><strong>Let me tell you about it:</strong>  
@@ -225,16 +233,16 @@
                                         different ways in the car and have
                                         different distractors.</p>
 
-                                        <h5>Tools Used:</h5>
-
-                                        <p>Adobe Illustrator, UserTesting.com,
-                                        InVision prototyping tool, OpenDS
-                                        driving simulator
-                                        (http://www.opends.de/), Car wheel,
-                                        pedal and phone cradle set.</p>
+                                        </div> <!--inrix extension-->
                                     </div><!-- info-->
+                               
                                 </article><!--article: INRIX-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+                            
 
+                <div id="slides">
+                        <div id="overflow">
                                 <article>
                                     <h3>Microsoft Multilingual App
                                     Toolkit (MAT) (2013)</h3>
@@ -256,42 +264,14 @@
                                     additional language versions of their
                                     apps.</p>
 
-                                    <h5>MAT Study Question:</h5>
-
-                                    <p>Is the initial MAT user experience easy
-                                    enough that developers can accomplish a
-                                    series of tasks required for a complete
-                                    end-to-end localization scenario?</p>
-
-                                    <h5>Main Activities Completed:</h5>
+                                   <h5>My Role:</h5>
 
                                     <ol>
                                         <li class="orderedli">Together with two other team members, we designed a test strategy to verify scenario flow.</li>
 
                                         <li class="orderedli">Designed part of the user testing test plan focused on collecting quantitative data.</li>
 
-                                        <li class="orderedli">And with the team, participated in user testing of the actual application :
-
-                                            <ul>
-                                                <li class="nonorderedli">
-                                                prepared a set of questions
-                                                that will drive scenario
-                                                testing</li>
-
-                                                <li class="nonorderedli">
-                                                invited 10 Microsoft MVPs (Most
-                                                Valued Professionals) as
-                                                users</li>
-
-                                                <li class="nonorderedli">
-                                                prepared questions for the
-                                                interview and post-test
-                                                survey</li>
-
-                                                <li class="nonorderedli">played
-                                                an Observer role using Morae
-                                                manager app during testing</li>
-                                            </ul>
+                                        <li class="orderedli">And with the team, participated in user testing of the actual application 
                                         </li>
 
                                         <li class="orderedli">Processed testing
@@ -300,6 +280,44 @@
 
                                         <li class="orderedli">Presented results
                                         to MAT team members.</li>
+                                    </ol>
+                                        
+                                    <h5>Tools Used:</h5>
+
+                                    <p>Morae Manager</p><!--article: MAT-->
+
+                                     <h5>
+                                        <a href="#portfolioR" id="showExtension2">Read more about this project</a>
+                                    </h5>
+                                        <div class="extensiontoslide2"> <!-- extension part-->
+
+                                    <h5>MAT Study Question:</h5>
+
+                                    <p>Is the initial MAT user experience easy
+                                    enough that developers can accomplish a
+                                    series of tasks required for a complete
+                                    end-to-end localization scenario?</p>
+
+                                    <h5>User testing main steps:</h5>
+                                    <ol>
+                                         <li class="orderedli">
+                                                prepared a set of questions
+                                                that will drive scenario
+                                                testing</li>
+
+                                                <li class="orderedli">
+                                                invited 10 Microsoft MVPs (Most
+                                                Valued Professionals) as
+                                                users</li>
+
+                                                <li class="orderedli">
+                                                prepared questions for the
+                                                interview and post-test
+                                                survey</li>
+
+                                                <li class="orderedli">played
+                                                an Observer role using Morae
+                                                manager app during testing</li>
                                     </ol>
 
                                     <h5>Main Findings:</h5>
@@ -326,11 +344,15 @@
                                     <p>New version of MAT was released and
                                     included feedback of this study</p>
 
-                                    <h5>Tools Used:</h5>
+                                    
 
-                                    <p>Morae Manager</p><!--article: MAT-->
+                                </div> <!--extension-->
                                 </article>
+                  </div> <!--overflow -->
+                 </div> <!--slides -->
 
+                <div id="slides">
+                    <div id="overflow">
                                 <article>
                                     <h3>“Charity Miles” mobile
                                     application Redesign (2014)</h3>
@@ -347,11 +369,7 @@
                                     earn money for charities while they walk,
                                     run, or bike.</p>
 
-                                    <h5>Charity Miles Study Question:</h5>
-
-                                    <p>How to help increase usage among the current user base?</p>
-
-                                    <h5>Activities Performed:</h5>
+                                    <h5>My Role:</h5>
 
                                     <ol>
                                         <li class="orderedli">Together with a team of four, created main personas based on market research (alexa.com) and designed a survey to identify user’s needs.</li>
@@ -366,6 +384,17 @@
                                         team, presented final prototype
                                         version.</li>
                                     </ol>
+
+                                    <h5>Tool used: </h5>
+                                    <p> Axure</p>
+
+                                    <h5> <a href="#portfolioR" id="showExtension3">Read more about this project</a></h5>
+                                    <div class="extensiontoslide3"> <!-- extension part-->
+
+                                    <h5>Charity Miles Study Question:</h5>
+
+                                    <p>How to help increase usage among the current user base?</p>
+
                                     
                                     <h5>Main Findings:</h5>
 
@@ -388,14 +417,6 @@
                                     testing increased ease-of-use metric for
                                     major tasks and improved findability for
                                     main functionality.</strong></p>
-
-                                    <p></p>
-                                    <h5>Tool used: </h5>
-                                    <p> Axure</p>
-                                    
-                                    <h5> <a href="#portfolioR" id="showExtension3"><strong>MORE RESULTS</strong></a></h5>
-                                    <div class="extensiontoslide3"> <!-- extension part-->
-
 
                                     <p>Based on the recommendations I made
                                     after paper prototyping test session
@@ -488,6 +509,12 @@
                                   
                                     </div><!-- extension part-->
                                 </article><!--article: Charity Miles-->
+
+                        </div> <!--overflow -->
+                 </div> <!--slides -->
+
+                 <div id="slides">
+                        <div id="overflow">
                                  <article>
                                     <h3>“Comprehensive Revenue
                                     Solutions” web site redesign
@@ -505,22 +532,7 @@
                                     Services may include: medical billing or
                                     electronic medical records.</p>
 
-                                    <h5>CRS Study Questions:</h5>
-
-                                    <ul>
-                                        <li class="orderedli">Build and design
-                                        a “High Impact” – “Low Touch”
-                                        Solution.</li>
-
-                                        <li class="orderedli">Create a clear &
-                                        understandable value prop of
-                                        services.</li>
-
-                                        <li class="orderedli">Increase
-                                        prospective customer engagement.</li>
-                                    </ul>
-
-                                    <h5>Actions Performed:</h5>
+                                    <h5>My Role:</h5>
 
                                     <ul>
                                         <li class="orderedli">Together with a team of four, made a competitive analysis of similar websites.</li>
@@ -543,6 +555,27 @@
                                         digital prototype (made responsive
                                         design with HTML/CSS).</li>
                                     </ul>
+        
+                                     <h5><a href="#portfolioR" id="showExtension4">Read more about this project</a></h5><div class="extensiontoslide4"> 
+
+
+
+                                    <h5>CRS Study Questions:</h5>
+
+                                    <ul>
+                                        <li class="orderedli">Build and design
+                                        a “High Impact” – “Low Touch”
+                                        Solution.</li>
+
+                                        <li class="orderedli">Create a clear &
+                                        understandable value prop of
+                                        services.</li>
+
+                                        <li class="orderedli">Increase
+                                        prospective customer engagement.</li>
+                                    </ul>
+
+                                    
 
                                                 <h5>Main Results:</h5>
 
@@ -569,9 +602,7 @@
                                                     research.</li>
                                                 </ul>
 
-                                                <h5><a href="#portfolioR" id="showExtension4"><strong>MORE RESULTS:</strong></a></h5>
-                                                <div class="extensiontoslide4"> 
-
+                                               
                                                     <span class="image left"><img alt="" src=
                                             "images/CRSBefore.png"><header>Before</header></span>
                                             <span class="image left"><img alt="" src=
@@ -586,14 +617,7 @@
                         </div><!-- #overflow -->
                     </div><!-- #slides -->
                     
-                     <!-- Controls and Active Slide Display-->
-                            
-                                <div id="active">
-                                    <label for="slide1"></label> 
-                                    <label for="slide2"></label> 
-                                    <label for="slide3"></label>
-                                    <label for="slide4"></label>
-                                </div><!-- #active -->
+                   
                                 
                 </article><!-- .slider -->
             </div><!--#container-->
