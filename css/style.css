@@ -217,13 +217,14 @@
     width: 92.72727272727273%;
     margin: 0 auto;
 }
-	/* Image */
+	/* Images */
 
 		.image
 		{
 			display: inline-block;
 			border: 0;
 			margin-bottom: 1em;
+
 		}
 		
 			.image img
@@ -270,18 +271,49 @@
 				margin: 0 2em 2em 1em;
 			}
 			
+			.image.left img
+			{
+				margin: 0 auto;
+				height: 450px;
+				width: auto;
+			}
+			.image.right
+			{
+				float: right;
+				margin: 0 1em 2em 2em;
+			}
 			
+			.image.right img
+			{
+				margin: 0 auto;
+				height: 450px;
+				width: auto;
+			}
 			.image.centered
 			{
 				display: block;
 				margin: 0 0 2em 0;
+
 			}
 
 				.image.centered img
 				{
 					margin: 0 auto;
+					height: 450px;
 					width: auto;
 				}
+
+#images {
+	text-align: center;
+}
+
+.singleimage {
+	 display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: auto; 
+}
 /* Slider Setup */
 
 input {
@@ -367,26 +399,7 @@ article img {
 	transition: all 0.5s ease-out;
 }
 
-#controls label{
-	-webkit-transform: translateZ(0);
-	-webkit-transition: opacity 0.2s ease-out;
-	-moz-transition: opacity 0.2s ease-out;
-	-o-transition: opacity 0.2s ease-out;
-	transition: opacity 0.2s ease-out;
-}
 
-#slide1:checked ~ #slides article:nth-child(1) .info,
-#slide2:checked ~ #slides article:nth-child(2) .info,
-#slide3:checked ~ #slides article:nth-child(3) .info{
-}
-,
-#slide4:checked ~ #slides article:nth-child(4) .info{
-	opacity: 1;
-	-webkit-transition: all 1s ease-out 0.6s;
-	-moz-transition: all 1s ease-out 0.6s;
-	-o-transition: all 1s ease-out 0.6s;
-	transition: all 1s ease-out 0.6s;
-}
 
 .info, #controls, #slides, #active, #active label, .info h3, .desktop, .tablet, .mobile {
 	-webkit-transform: translateZ(0);
@@ -829,7 +842,7 @@ p {
 		{
 			position: relative;
 			color: #fff;
-			font-weight: 600;
+			font-weight: 300;
 			font-size: 1em;
 			line-height: 1em;
 		}
@@ -1083,7 +1096,7 @@ p {
 .pagetop .title{
     display: block;
     width: 100%;color: #4b4848;
-    font-family: "raleway-bold", arial;
+    font-family: "raleway", arial;
     font-size: 26px;
     font-weight: bold;
     background: rgba(255, 255, 255, .7);
