@@ -58,16 +58,21 @@
     };
     
     function extensionOnClick1() {
+
         $(".extensiontoslide1").toggle();
+        $(".linktoslide1").toggle();
     }
     function extensionOnClick2() {
         $(".extensiontoslide2").toggle();
+        $(".linktoslide2").toggle();
     }
     function extensionOnClick3() {
     	$(".extensiontoslide3").toggle();
+        $(".linktoslide3").toggle();
     }
     function extensionOnClick4() {
         $(".extensiontoslide4").toggle();
+        $(".linktoslide4").toggle();
     }
 
 
@@ -159,7 +164,6 @@
                     <div id="slides">
                         <div id="overflow">
                                 <article>
-                                    <div class="slide1">
                                         <h3>INRIX (2014-current)</h3>
                                         <h5>Description:</h5>
 
@@ -201,8 +205,11 @@
                                         driving simulator
                                         (http://www.opends.de/), Car wheel,
                                         pedal and phone cradle set.</p>
-
-                                         <h5> <a href="#portfolioR" id="showExtension1">Read more about this project</a></h5>
+                                        
+                                        <div class="linktoslide1">
+                                            <h5>
+                                                <a href="#portfolioslide1" id="showExtension1">Read more about this project</a></h5> 
+                                        </div>
                                         <div class="extensiontoslide1"> <!-- extension part-->
 
                                         <p>My most recent exercise involved the Error Handling Experience feature. 
@@ -244,7 +251,6 @@
                                         different distractors.</p>
 
                                         </div> <!--inrix extension-->
-                                    </div><!-- slide 1-->
                                
                                 </article><!--article: INRIX-->
                      </div> <!--overflow -->
@@ -299,10 +305,13 @@
 
                                     <p>Morae Manager</p><!--article: MAT-->
 
-                                     <h5>
-                                        <a href="#portfolioR" id="showExtension2">Read more about this project</a>
-                                    </h5>
-                                        <div class="extensiontoslide2"> <!-- extension part-->
+                                    <div class="linktoslide2">
+                                            <h5>
+                                                <a href="#portfolioslide2" id="showExtension2">Read more about this project</a>
+                                            </h5>
+                                    </div>
+                                     
+                                    <div class="extensiontoslide2"> <!-- extension part-->
                                     
                                     <i>Unfortunately, this project is under NDA. I can only
                                                                         describe main steps made in a summary
@@ -413,7 +422,12 @@
                                     <h5>Tool used: </h5>
                                     <p> Axure</p>
 
-                                    <h5> <a href="#portfolioR" id="showExtension3">Read more about this project</a></h5>
+                                     <div class="linktoslide3">
+                                            <h5>
+                                                <a href="#portfolioslide3" id="showExtension3">Read more about this project</a>
+                                            </h5>
+                                    </div>
+                                    
                                     <div class="extensiontoslide3"> <!-- extension part-->
 
                                     <h5>Charity Miles Study Question:</h5>
@@ -588,10 +602,14 @@
                                     </ul>
 
         
-                                     <h5><a href="#portfolioR" id="showExtension4">Read more about this project</a></h5><div class="extensiontoslide4"> 
-
-
-
+                                    
+                                    <div class="linktoslide4">
+                                            <h5>
+                                                <a href="#portfolioslide4" id="showExtension4">Read more about this project</a>
+                                            </h5>
+                                    </div>
+                                    
+                                    <div class="extensiontoslide4"> <!-- extension part-->
                                     <h5>CRS Study Questions:</h5>
 
                                     <ul>
@@ -654,6 +672,9 @@
                 </article><!-- .slider -->
             </div><!--#container-->
 
+            <div id="main">
+            <a href="#" class="back">↑</a>
+            </div>
  </section>
 
   
