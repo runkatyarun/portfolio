@@ -185,21 +185,6 @@
 
 	/* Sections/Article/ */
 
-	main .back {
-		position: fixed;
-	    font-family: 'Lato', 'Helvetica Neue', serif;
-	    font-size: 4px;
-	    z-index: 0;
-	    top: 6.5em;
-	    right: 0px;
-	    text-decoration: none;
-	    color: #000000;
-	    font-size: 14px;
-	    opacity: 1.0;
-	    padding-right: 3.5em;
-	    display: none;  
-	    border-bottom: none !important;
-	
 }
 	
 		section,
@@ -984,6 +969,23 @@ p {
 	#main
 	{
 		margin-left: 375px;
+	}
+
+	#main .back {
+		position: fixed;
+	    font-family: 'Lato', 'Helvetica Neue', serif;
+	    font-size: 4px;
+	    z-index: 0;
+	    top: 6.5em;
+	    right: 0px;
+	    text-decoration: none;
+	    color: #000000;
+	    font-size: 14px;
+	    opacity: 1.0;
+	    padding-right: 3.5em;
+	    display: inline;  
+	    border-bottom: none !important;
+
 	}
 	
 		#main > section
