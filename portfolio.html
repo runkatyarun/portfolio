@@ -21,7 +21,7 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
     
-    <script>
+     <script>
     $.fn.scrollTo = function( target, options, callback ){
   if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
   var settings = $.extend({
@@ -42,15 +42,19 @@
     
     
     window.onload = function() {
- 
+        $(".extensiontoslide1").hide();
+        $(".extensiontoslide2").hide();
+        $(".extensiontoslide3").hide();
+        $(".extensiontoslide4").hide();
+
        $("#showExtension1").click(extensionOnClick1);
        $("#showExtension2").click(extensionOnClick2);
        $("#showExtension3").click(extensionOnClick3);
        $("#showExtension4").click(extensionOnClick4);
- 	   $("#slide1").change(hideAllExtension);
- 	   $("#slide2").change(hideAllExtension);
- 	   $("#slide3").change(hideAllExtension);
- 	   $("#slide4").change(hideAllExtension);
+ 	   // $("#slides").change(hideAllExtension);
+ 	   // $("#slide2").change(hideAllExtension);
+ 	   // $("#slide3").change(hideAllExtension);
+ 	   // $("#slide4").change(hideAllExtension);
     };
     
     function extensionOnClick1() {
@@ -65,16 +69,19 @@
     function extensionOnClick4() {
         $(".extensiontoslide4").toggle();
     }
+
+
     
     function hideAllExtension() {
+        alert("hideAllExtension");
         $(".extensiontoslide1").hide();
         $(".extensiontoslide2").hide();
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
         
-        $('html, body').animate({
-                        scrollTop: $("#portfolio").offset().top
-                    }, 1000);
+        // $('html, body').animate({
+        //                 scrollTop: $("#portfolio").offset().top
+        //             }, 1000);
         
     }
     
@@ -152,7 +159,7 @@
                     <div id="slides">
                         <div id="overflow">
                                 <article>
-                                    <div class="info">
+                                    <div class="slide1">
                                         <h3>INRIX (2014-current)</h3>
                                         <h5>Description:</h5>
 
@@ -237,7 +244,7 @@
                                         different distractors.</p>
 
                                         </div> <!--inrix extension-->
-                                    </div><!-- info-->
+                                    </div><!-- slide 1-->
                                
                                 </article><!--article: INRIX-->
                      </div> <!--overflow -->
@@ -247,6 +254,7 @@
                 <div id="slides">
                         <div id="overflow">
                                 <article>
+                                    <div id="slide2">
                                     <h3>Microsoft Multilingual App
                                     Toolkit (MAT) (2013)</h3>
 

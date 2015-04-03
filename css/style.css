@@ -320,10 +320,12 @@ input {
 	display: none;
 }
 
+
+/*
 #slide1:checked ~ #slides .inner { margin-bottom:0; }
 #slide2:checked ~ #slides .inner { margin-bottom:100%; }
 #slide3:checked ~ #slides .inner { margin-bottom:200%; }
-#slide4:checked ~ #slides .inner { margin-bottom:300%; }
+#slide4:checked ~ #slides .inner { margin-bottom:300%; }*/
 
  
 
