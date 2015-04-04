@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Kate Koroleva</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollzer.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script><noscript>
+    <script type="text/javascript" src="iosLabelFix.js"></script>
+    <link href="css/skel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-wide.css" rel="stylesheet"></noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    
+     <script>
+    $.fn.scrollTo = function( target, options, callback ){
+  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+  var settings = $.extend({
+    scrollTarget  : target,
+    offsetTop     : 50,
+    duration      : 500,
+    easing        : 'swing'
+  }, options);
+  return this.each(function(){
+    var scrollPane = $(this);
+    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+      if (typeof callback == 'function') { callback.call(this); }
+    });
+  });
+}
+    
+    
+    window.onload = function() {
+        $(".extensiontoslide1").hide();
+        $(".extensiontoslide2").hide();
+        $(".extensiontoslide3").hide();
+        $(".extensiontoslide4").hide();
+
+       $("#showExtension1").click(extensionOnClick1);
+       $("#showExtension2").click(extensionOnClick2);
+       $("#showExtension3").click(extensionOnClick3);
+       $("#showExtension4").click(extensionOnClick4);
+ 	   // $("#slides").change(hideAllExtension);
+ 	   // $("#slide2").change(hideAllExtension);
+ 	   // $("#slide3").change(hideAllExtension);
+ 	   // $("#slide4").change(hideAllExtension);
+    };
+    
+    function extensionOnClick1() {
+
+        $(".extensiontoslide1").toggle();
+        $(".linktoslide1").toggle();
+    }
+    function extensionOnClick2() {
+        $(".extensiontoslide2").toggle();
+        $(".linktoslide2").toggle();
+    }
+    function extensionOnClick3() {
+    	$(".extensiontoslide3").toggle();
+        $(".linktoslide3").toggle();
+    }
+    function extensionOnClick4() {
+        $(".extensiontoslide4").toggle();
+        $(".linktoslide4").toggle();
+    }
+
+
+    
+    function hideAllExtension() {
+        alert("hideAllExtension");
+        $(".extensiontoslide1").hide();
+        $(".extensiontoslide2").hide();
+        $(".extensiontoslide3").hide();
+        $(".extensiontoslide4").hide();
+        
+        // $('html, body').animate({
+        //                 scrollTop: $("#portfolio").offset().top
+        //             }, 1000);
+        
+    }
+    
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <div class="skel-layers-fixed" id="header">
+        <div class="top">
+            <!-- Logo -->
+
+            <div id="logo">
+                <span class="image avatar48"><a href="index.html"><img alt="" src=
+                "images/avatar.jpg"></a></span>
+
+                <h1 id="title">Kate Koroleva</h1>
+            </div><!-- Nav -->
+
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a class="skel-layers-ignoreHref" href="index.html" id=
+                        "top-link"><span class="navlink">My Story</span></a>
+                    </li>
+
+                    <li>
+                        <a class="skel-layers-ignoreHref" href="#portfolio" id=
+                        "portfolio-link"><span class=
+                        "navlink">Portfolio</span></a>
+                    </li>
+
+                    <li>
+                        <a class="skel-layers-ignoreHref" href="resume.html" id=
+                        "resume-link"><span class="navlink">Resume</span></a>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bottom">
+            <!-- Social Icons -->
+
+            <ul class="icons">
+                <li>
+                    <a class="icon fa-envelope" href="mailto:kativv@gmail.com"><span class=
+                    "label">Email</span></a>
+                </li>
+
+                <li>
+                    <a class="icon fa-linkedin" href="https://www.linkedin.com/in/katekoroleva" rel="external"><span class=
+                    "label">LinkedIn</span></a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- Main -->
+
+    <div id="main">
+        <!-- Intro -->
+
+            
+
+        <section class="two" id="portfolio">
+            <div class="container">
+                <header>
+                    <h2>Portfolio</h2>
+                </header>
+
+               
+                <article id="slider">
+                   
+                    <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                        <h3>INRIX (2014-current)</h3>
+                                        <h5>Description:</h5>
+
+                                        <p>INRIX IS Android and iOS applications that provide traffic, routes and travel time info.  
+                                        </br>INRIX crowd sources data, and allows users to report inaccurate traffic colors and incidents along their itinerary.</p>
+
+                                        <div id="images">
+                                        <img class="singleimage" src="images/inrixtesting.png">
+                                        </div>
+
+                                        <h5>My role:</h5>
+
+                                        <ol>
+                                            <li class="orderedli">moderated
+                                            user research sessions to test
+                                            prototypes created by the design
+                                            team (including in-person and
+                                            online interviews)</li>
+
+                                            <li class="orderedli">ran card
+                                            sorting and pre-qualification
+                                            survey to identify user
+                                            persona</li>
+
+                                            <li class="orderedli">created
+                                            recommendation reports for
+                                            different features designed by UI
+                                            designers</li>
+
+                                            <li class="orderedli">designed and
+                                            tested error handling experience
+                                            for Android application</li>
+                                        </ol>
+
+                                        <h5>Tools Used:</h5>
+
+                                        <p>Adobe Illustrator, UserTesting.com,
+                                        InVision prototyping tool, OpenDS
+                                        driving simulator
+                                        (http://www.opends.de/), Car wheel,
+                                        pedal and phone cradle set.</p>
+                                        
+                                        <div class="linktoslide1">
+                                            <h5>
+                                                <a href="#portfolioslide1" id="showExtension1">Read more about this project</a></h5> 
+                                        </div>
+                                        <div class="extensiontoslide1"> <!-- extension part-->
+
+                                        <p>My most recent exercise involved the Error Handling Experience feature. 
+                                            <p><strong>Let me tell you about it:</strong>  
+                                        </br>
+                                        <i><strong>Unfortunately, this project is under a Non Disclosure Agreement (NDA), so I can only describe the main steps in summary format.</strong></i></p>
+
+                                        <h5>What errors to handle?</h5>
+
+                                        <p>Here is an example: The user cannot use app if the Location Services are turned off in the phone settings. Sometimes a user experiences network connection issues, or rarely, errors returned by the server</p>
+
+                                        <h5>Error Handling Study Goal:</h5>
+
+                                        <p>To design error handling in such a way that errors are noticed only when they are important, or may block further user interaction with the app.<br>
+                                        For some of the screens, errors should
+                                        be drive-safe.</p>
+
+                                        <h5>Activities performed:</h5>
+
+                                        <ol>
+                                            <li class="orderedli">I ran two series of tests on UserTesting.com to determine if users understood the reasons for errors, and if error placements work.</li>
+
+                                            <li class="orderedli">Designed different versions of error bars for the drive experience cases, and tested it with users on drive simulator</li>
+                                        </ol>
+
+                                        <h5>Challenge:</h5>
+
+                                        <p>One of the most challenging parts
+                                        was to decide how to mock real drive
+                                        experience and achieve a similar-to-real, driving mental load</p>
+
+                                        <h5>Main Finding:</h5>
+
+                                        <p>Persona driving habits need
+                                        improvement: Users from the same user
+                                        group, with the same goals and
+                                        motivators may use the phone in
+                                        different ways in the car and have
+                                        different distractors.</p>
+
+                                        </div> <!--inrix extension-->
+                               
+                                </article><!--article: INRIX-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+                            
+
+                <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <div id="slide2">
+                                    <h3>Microsoft Multilingual App
+                                    Toolkit (MAT) (2013)</h3>
+
+                                    <p>I participated in this project in terms
+                                    of "HCDE 517: Usability Studies" course. It
+                                    was part of the HCDE certificate
+                                    program<br>
+                                    </p>
+
+                                    <h5>What is MAT?</h5>
+
+                                    <p>MAT is a software extension to the
+                                    Microsoft® Visual Studio® 2012 IDE that
+                                    enables developers of Windows 8 Phone Apps
+                                    and Windows 8 Store Apps to create
+                                    additional language versions of their
+                                    apps.</p>
+                                    
+                                    <div id="images">
+                                    <img class="singleimage" src="images/matplugin.png">
+                                    </div>
+                                    
+                                   <h5>My Role:</h5>
+
+                                    <ol>
+                                        <li class="orderedli">Together with two other team members, we designed a test strategy to verify scenario flow.</li>
+
+                                        <li class="orderedli">Designed part of the user testing test plan focused on collecting quantitative data.</li>
+
+                                        <li class="orderedli">And with the team, participated in user testing of the actual application 
+                                        </li>
+
+                                        <li class="orderedli">Processed testing
+                                        results and compiled the plan for
+                                        improvements.</li>
+
+                                        <li class="orderedli">Presented results
+                                        to MAT team members.</li>
+                                    </ol>
+                                        
+                                    <h5>Tools Used:</h5>
+
+                                    <p>Morae Manager</p><!--article: MAT-->
+
+                                    <div class="linktoslide2">
+                                            <h5>
+                                                <a href="#portfolioslide2" id="showExtension2">Read more about this project</a>
+                                            </h5>
+                                    </div>
+                                     
+                                    <div class="extensiontoslide2"> <!-- extension part-->
+                                    
+                                    <i>Unfortunately, this project is under NDA. I can only
+                                                                        describe main steps made in a summary
+                                                                        form.</i>
+
+                                    <h5>MAT Study Question:</h5>
+
+                                    <p>Is the initial MAT user experience easy
+                                    enough that developers can accomplish a
+                                    series of tasks required for a complete
+                                    end-to-end localization scenario?</p>
+
+                                    <h5>User testing main steps:</h5>
+                                    <ol>
+                                         <li class="orderedli">
+                                                prepared a set of questions
+                                                that will drive scenario
+                                                testing</li>
+
+                                                <li class="orderedli">
+                                                invited 10 Microsoft MVPs (Most
+                                                Valued Professionals) as
+                                                users</li>
+
+                                                <li class="orderedli">
+                                                prepared questions for the
+                                                interview and post-test
+                                                survey</li>
+
+                                                <li class="orderedli">played
+                                                an Observer role using Morae
+                                                manager app during testing</li>
+                                    </ol>
+
+                                    <h5>Main Findings:</h5>
+
+                                    <ol>
+                                        <li class="orderedli">The initial step of “enabling the tool” blocked further scenario steps because 7 out of 10 users could not find a way to enable it.</li>
+
+                                        <li class="orderedli">Developers used
+                                        online help to resolve issues while
+                                        working with tool, but MSDN.com - main
+                                        help resourse, was obsolete.</li>
+
+                                        <li class="orderedli">Users did not
+                                        understand that the tool was embedded
+                                        into the Visual Studio.</li>
+                                    </ol>
+
+                                    <h5>Challenges:</h5>
+
+                                    <p>Developers did not feel comfortable consulting help while being observed.  Although the usage of online help is an integral part of their work day, I had to find a way to make them feel at ease. </p>
+
+                                    <h5>Result:</h5>
+
+                                    <p>New version of MAT was released and
+                                    included feedback of this study</p>
+
+                                    
+
+                                </div> <!--extension-->
+                                </article>
+                  </div> <!--overflow -->
+                 </div> <!--slides -->
+
+                <div id="slides">
+                    <div id="overflow">
+                                <article>
+                                    <h3>“Charity Miles” mobile
+                                    application Redesign (2014)</h3>
+
+                                    <p>I participated in this project in terms
+                                    of "HCDE 518: User-Centered Design "
+                                    course. It was part of the HCDE certificate
+                                    program.</p>
+
+                                    <h5>What is Charity Miles?</h5>
+
+                                    <p>CHARITY MILES is a fitness/donation
+                                    Android and iOS app that allows users to
+                                    earn money for charities while they walk,
+                                    run, or bike.</p>
+
+                                   <div id="images">
+                                    
+                                    <img class="singleimage" src="images/charityhomeafter.png">
+                                    <img class="singleimage" src="images/charitytrackingafter.png">
+
+                                    </div>
+                                    
+                                   
+                                    <h5>My Role:</h5>
+                                    
+                                    <ol>
+                                        <li class="orderedli">Together with a team of four, created main personas based on market research (alexa.com) and designed a survey to identify user’s needs.</li>
+
+                                        <li class="orderedli">I created my version of paper prototype and developed a user test plan for testing against different prototypes</li>
+
+                                        <li class="orderedli">Processed the test
+                                        results and made design change calls.
+                                        calls</li>
+
+                                        <li class="orderedli">Together with the
+                                        team, presented final prototype
+                                        version.</li>
+                                    </ol>
+
+                                    <h5>Tool used: </h5>
+                                    <p> Axure</p>
+
+                                     <div class="linktoslide3">
+                                            <h5>
+                                                <a href="#portfolioslide3" id="showExtension3">Read more about this project</a>
+                                            </h5>
+                                    </div>
+                                    
+                                    <div class="extensiontoslide3"> <!-- extension part-->
+
+                                    <h5>Charity Miles Study Question:</h5>
+
+                                    <p>How to help increase usage among the current user base?</p>
+
+                                    
+                                    <h5>Main Findings:</h5>
+
+                                    <p>There are three main motivators that
+                                    strikes users to use the app:</p>
+
+                                    <ul>
+                                        <li class="nonorderedli">personal story
+                                        that drives donation</li>
+
+                                        <li class="nonorderedli">
+                                        competitiveness with other users</li>
+
+                                        <li class="nonorderedli">motivation to
+                                        support personal physical activity</li>
+                                    </ul>
+
+                                     <p>
+                                     </br><strong>Final iteration of paper prototype
+                                    testing increased ease-of-use metric for
+                                    major tasks and improved findability for
+                                    main functionality.</strong></p>
+
+                                    <p>Based on the recommendations I made
+                                    after paper prototyping test session
+                                    redesigned UI to address three motivation
+                                    models.</p>
+                                    <ul>
+                                        <li class="orderedli">
+                                            <h6>Select Charity screen</h6>
+                                        </li>
+
+
+                                        <div id="images">
+                                    
+                                            <img class="singleimage" src="images/charityhomebefore.png"><header>Before</header>
+                                            <img class="singleimage" src="images/charityhomeafter.png">
+                                            <img class="singleimage" src="images/charityhomeafter2.png"><header>After</header>
+
+                                        </div>
+                                    
+                                   
+
+                                            <ol>
+                                                <li class="nonorderedli">Now the Charity can be saved as a favorite to start with.</li>
+
+                                                <li class="nonorderedli">Added
+                                                search by charity feature.</li>
+                                            </ol>
+                                        </li>
+
+                                        <li class="orderedli">
+                                            <h6>Charity details screen</h6>
+                                        </li>
+
+                                        <div id="images">
+                                    
+                                            <img class="singleimage" src="images/charitydetailsbefore.png">
+                                            <img class="singleimage" src="images/charitydetailsafter.png">
+
+                                        </div>
+                                                                                    
+                                       
+                                            <ol>
+                                                <li class="nonorderedli">
+                                                Added a Charity description and
+                                                video.</li>
+
+                                                <li class="nonorderedli">Added
+                                                "Top 5" to resolve lack of
+                                                competitiveness
+                                                motivation.</li>
+                                            </ol>
+                                        </li>
+
+                                        <li class="orderedli">
+                                            <h6>Tracking Screen</h6>
+                                        </li>
+
+                                        <div id="images">
+                                    
+                                            <img class="singleimage" src="images/charitytrackingbefore.png">
+                                            <header>Before</header>
+                                            <img class="singleimage" src="images/charitytrackingafter.png"><header>After</header>
+
+                                        </div>
+                                        
+                                            <ol>
+                                                <li class="nonorderedli">This resolved one of the top issues: the ability to see different tracking types</li>
+                                            </ol>
+                                        </li>
+
+                                        <li class="orderedli">
+                                            <h6>Profile Screen</h6>
+                                        </li>
+
+                                        <div id="images">
+                                    
+                                            <img class="singleimage" src="images/charityprofilebefore.png"><header>Before</header>
+                                            <img class="singleimage" src="images/charityprofileafter0.png">
+                                            <img class="singleimage" src="images/charityprofileafter1.png"><header>After</header>
+
+                                        </div>
+                                        
+                                      
+                                            <ol>
+                                                <li class="nonorderedli">
+                                                Resolved the issue of viewing money raised individually for the charity.</li>
+
+                                                <li class="nonorderedli">By adding graphs to the Profile screen, we addressed motivation for personal activity and donation. </li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                   </div><!-- extension part-->
+                                </article><!--article: Charity Miles-->
+
+                        </div> <!--overflow -->
+                 </div> <!--slides -->
+
+                 <div id="slides">
+                        <div id="overflow">
+                                 <article>
+                                    <h3>“Comprehensive Revenue
+                                    Solutions” web site redesign
+                                    (2014)</h3>
+
+                                    <p>I participated in this project as part of the HCDE certificate program and the "HCDE 537: User-Centered Web Design" course.</p>
+
+                                    <h5>What is CRS?</h5>
+
+                                    <p>CRS is a web interface that helps target
+                                    small business health care providers to
+                                    find a reliable, accurate, secure,
+                                    inexpensive solution for optimizing
+                                    businesses processing.<br>
+                                    Services may include: medical billing or
+                                    electronic medical records.</p>
+
+                                     <div id="images">
+                                    <img class="singleimage" src="images/CRSAfter.png">
+                                    
+                                    </div>
+                                    
+
+                                    <h5>My Role:</h5>
+
+                                    <ul>
+                                        <li class="orderedli">Together with a team of four, made a competitive analysis of similar websites.</li>
+
+                                        <li class="orderedli">One team
+                                        member interviewed current
+                                        representative users.</li>
+
+                                        <li class="orderedli">Together with
+                                        team, ran card sorting exercise.</li>
+
+                                        <li class="orderedli">Together with
+                                        team, performed usability testing</li>
+
+                                        <li class="orderedli">I designed my
+                                        version of prototype and compiled the
+                                        final prototype with the team</li>
+
+                                        <li class="orderedli">Designed Website
+                                        digital prototype (made responsive
+                                        design with HTML/CSS).</li>
+                                    </ul>
+
+        
+                                    
+                                    <div class="linktoslide4">
+                                            <h5>
+                                                <a href="#portfolioslide4" id="showExtension4">Read more about this project</a>
+                                            </h5>
+                                    </div>
+                                    
+                                    <div class="extensiontoslide4"> <!-- extension part-->
+                                    <h5>CRS Study Questions:</h5>
+
+                                    <ul>
+                                        <li class="orderedli">Build and design
+                                        a “High Impact” – “Low Touch”
+                                        Solution.</li>
+
+                                        <li class="orderedli">Create a clear &
+                                        understandable value prop of
+                                        services.</li>
+
+                                        <li class="orderedli">Increase
+                                        prospective customer engagement.</li>
+                                    </ul>
+
+                                    
+
+                                                <h5>Main Results:</h5>
+
+                                                <ul>
+                                                    <li class="orderedli">Icons
+                                                    for navigating were used
+                                                    the most, made them a focal
+                                                    point of the web side.</li>
+
+                                                    <li class="orderedli">
+                                                    Unhide services description
+                                                    to front.</li>
+                                                </ul>
+
+                                                <h5>Challenges:</h5>
+
+                                                <ul>
+                                                    <li class="orderedli">Card
+                                                    Sorting results were not as
+                                                    hoped.</li>
+
+                                                    <li class="orderedli">
+                                                    Subject matter needed more
+                                                    research.</li>
+                                                </ul>
+
+                                               <div id="images">
+                                                 <img class="singleimage" src="images/CRSBefore.png">
+                                                 <header>Before</header>
+                                    
+                                             </div>
+                                                   
+                                        
+                                   </div> <!--extension-->
+                                </article> <!--article: CRS-->
+                                
+                               
+                           </div><!--#info--> 
+                        </div><!-- #overflow -->
+                    </div><!-- #slides -->
+                    
+                   
+                                
+                </article><!-- .slider -->
+            </div><!--#container-->
+
+            <div id="main">
+            <a href="#" class="back">↑</a>
+            </div>
+ </section>
+
+  
+</body>
+</html>
