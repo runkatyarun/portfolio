@@ -51,6 +51,12 @@
        $("#showExtension2").click(extensionOnClick2);
        $("#showExtension3").click(extensionOnClick3);
        $("#showExtension4").click(extensionOnClick4);
+
+       $("#closeExtension1").click(extensionOnClick1);
+       $("#closeExtension2").click(extensionOnClick2);
+       $("#closeExtension3").click(extensionOnClick3);
+       $("#closeExtension4").click(extensionOnClick4);
+
  	   // $("#slides").change(hideAllExtension);
  	   // $("#slide2").change(hideAllExtension);
  	   // $("#slide3").change(hideAllExtension);
@@ -75,7 +81,21 @@
         $(".linktoslide4").toggle();
     }
 
+    function extensionCloseOnClick1() {
+        $("#closeExtension1");
+    }
 
+    function extensionCloseOnClick2() {
+        $("#closeExtension2");
+    }
+
+    function extensionCloseOnClick3() {
+        $("#closeExtension3");
+    }
+
+    function extensionCloseOnClick4() {
+        $("#closeExtension4");
+    }
     
     function hideAllExtension() {
         alert("hideAllExtension");
@@ -164,6 +184,7 @@
                     <div id="slides">
                         <div id="overflow">
                                 <article>
+                                    <a name="Inrix"> </a>
                                         <h3>INRIX (2014-current)</h3>
                                         <h5>Description:</h5>
 
@@ -249,6 +270,12 @@
                                         motivators may use the phone in
                                         different ways in the car and have
                                         different distractors.</p>
+                                        
+                                        <div class="linktoslidetoclose">
+                                            <h5>
+                                                <a href="#Inrix" id="closeExtension1">Read less about this project</a>
+                                            </h5>
+                                        </div>
 
                                         </div> <!--inrix extension-->
                                
@@ -261,9 +288,10 @@
                         <div id="overflow">
                                 <article>
                                     <div id="slide2">
+                                    <a name="MAT"></a>
                                     <h3>Microsoft Multilingual App
                                     Toolkit (MAT) (2013)</h3>
-
+                                   
                                     <p>I participated in this project in terms
                                     of "HCDE 517: Usability Studies" course. It
                                     was part of the HCDE certificate
@@ -307,7 +335,7 @@
 
                                     <div class="linktoslide2">
                                             <h5>
-                                                <a href="#portfolioslide2" id="showExtension2">Read more about this project</a>
+                                                <a href="#portfolioslide2" id="showExtension2" >Read more about this project</a>
                                             </h5>
                                     </div>
                                      
@@ -370,7 +398,11 @@
                                     <p>New version of MAT was released and
                                     included feedback of this study</p>
 
-                                    
+                                    <div class="linktoslidetoclose">
+                                            <h5>
+                                                <a href="#MAT" id="closeExtension2" >Read less about this project</a>
+                                            </h5>
+                                    </div>
 
                                 </div> <!--extension-->
                                 </article>
@@ -380,6 +412,7 @@
                 <div id="slides">
                     <div id="overflow">
                                 <article>
+                                    <a name="CharityMiles"></a>
                                     <h3>“Charity Miles” mobile
                                     application Redesign (2014)</h3>
 
@@ -474,9 +507,6 @@
                                             <img class="singleimage" src="images/charityhomeafter2.png"><header>After</header>
 
                                         </div>
-                                    
-                                   
-
                                             <ol>
                                                 <li class="nonorderedli">Now the Charity can be saved as a favorite to start with.</li>
 
@@ -547,6 +577,11 @@
                                             </ol>
                                         </li>
                                     </ul>
+                                    <div class="linktoslidetoclose">
+                                            <h5>
+                                                <a href="#CharityMiles" id="closeExtension3">Read less about this project</a>
+                                            </h5>
+                                    </div>
                                    </div><!-- extension part-->
                                 </article><!--article: Charity Miles-->
 
@@ -556,6 +591,7 @@
                  <div id="slides">
                         <div id="overflow">
                                  <article>
+                                    <a name="CRS"></a>
                                     <h3>“Comprehensive Revenue
                                     Solutions” web site redesign
                                     (2014)</h3>
@@ -658,7 +694,11 @@
                                                  <header>Before</header>
                                     
                                              </div>
-                                                   
+                                        <div class="linktoslidetoclose">
+                                            <h5>
+                                                <a href="#CRS" id="closeExtension4">Read less about this project</a>
+                                            </h5>
+                                    </div>           
                                         
                                    </div> <!--extension-->
                                 </article> <!--article: CRS-->
@@ -673,9 +713,6 @@
                 </article><!-- .slider -->
             </div><!--#container-->
 
-            <div id="main">
-            <a href="#" class="back">↑</a>
-            </div>
  </section>
 
   

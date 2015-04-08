@@ -374,7 +374,75 @@ article img {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 ); /* IE6-9 */
 }
 
+/* Control Setup */
 
+#controls {
+	margin: 0 0 0 0;
+	width: 100%;
+}
+
+#controls label { 
+	display: none;
+	width: 50px;
+	height: 50px;
+	opacity: 0.5;
+}
+
+#active {
+/* 	margin: 23% 0 0; */
+	text-align: center;
+}
+
+#active label {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #bbb;
+}
+
+#active label:hover {
+	background: #ccc;
+	border-color: #777 !important;
+}
+
+#controls label:hover {
+	opacity: 0.8;
+}
+
+#slide1:checked ~ #controls label:nth-child(2), 
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4), 
+#slide4:checked ~ #controls label:nth-child(1) {
+	background: url('../images/next.png') no-repeat;
+	float: right;
+	margin: 0 -50px 0 0;
+	display: block;
+}
+
+
+#slide1:checked ~ #controls label:nth-child(4),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3) {
+	background: url('../images/prev.png') no-repeat;
+	float: left;
+	margin: 0 0 0 -50px;
+	display: block;
+}
+
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4) {
+	background: #333;
+	border-color: #333 !important;
+}
+=======
+>>>>>>> master
+>>>>>>> Stashed changes
 
 /* Animation */
 
@@ -971,23 +1039,6 @@ p {
 		margin-left: 375px;
 	}
 
-	#main .back {
-		position: fixed;
-	    font-family: 'Lato', 'Helvetica Neue', serif;
-	    font-size: 4px;
-	    z-index: 0;
-	    top: 6.5em;
-	    right: 0px;
-	    text-decoration: none;
-	    color: #000000;
-	    font-size: 14px;
-	    opacity: 1.0;
-	    padding-right: 3.5em;
-	    display: inline;  
-	    border-bottom: none !important;
-
-	}
-	
 		#main > section
 		{
 			margin: 0;
