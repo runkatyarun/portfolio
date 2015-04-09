@@ -54,6 +54,21 @@
 	}
 	h2 {
 		font-size: 30px;
+		padding-top: 1em;
+	}
+	h3 {
+		font-size: 30px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	h4 {
+		font-size: 24px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: left;
+		padding-left: 4em;
+		font-weight: 500;
 	}
 	/*h1,h2,h3,h4,h5,h6
 	{
@@ -111,6 +126,8 @@
 		
 
 	}*/
+	.
+
 	header
 	{
 		margin: 0 0 1em 0;
@@ -379,9 +396,9 @@ article img {
 	box-decoration-break: 5px;
 	box-shadow: 1px 2px 2px #999999;
 	padding: 1%;
-	background: #fff;
 	margin-bottom: 8px;
-	background: rgb(252,255,244); /* Old browsers */
+	background: #ffffff;
+	 /* Old browsers */
 	/*background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); /* Chrome,Safari4+ */
 	/*background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -482,6 +499,7 @@ article img {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+	margin-top: 2em;
 }
 
 
@@ -836,6 +854,7 @@ article img {
 		text-decoration: none;
 	}
 
+	
 		.navlink:before {
 			display: inline-block;
 			font-family: FontAwesome;
@@ -848,9 +867,12 @@ article img {
 			-moz-osx-font-smoothing:grayscale;
 		}
 		
+		
 		.navlink > .label {
 			display: none;
+
 		}
+
 
 
 /*********************************************************************************/
@@ -974,8 +996,9 @@ article img {
 					{
 						position: relative;
 						display: block;
-						/*font-size: 0.8em;*/
 					}
+					#nav ul li a:hover 
+					{color: #ff9966;}
 					
 						#nav ul li a span:before
 						{
@@ -1002,6 +1025,8 @@ article img {
 							{
 								color: #e27689;
 							}
+
+					
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -1078,6 +1103,7 @@ article img {
 				{
 					color: #000000s;
 					border-color: inherit;
+					
 				}
 
 					#main > section.dark a:hover
@@ -1100,18 +1126,17 @@ article img {
 
 			#main > section.two
 			{
-				/*background-color: #f5fafa;*/
+				padding: 6em 0;
+				background-color: #e9eaed;
 			}
 		
 			#main > section.three
 			{
-				/*background-color: #ecf1f1;*/
+				padding: 6em 0;
+				background-color: #e9eaed;
 			}
 		
-			#main > section.four
-			{
-				background-color: #e8edec;
-			}
+
 
 
 /*  Inner Page  */
