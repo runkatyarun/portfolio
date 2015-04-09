@@ -51,24 +51,42 @@
 
 	h1 {
 		font-size: 34px;
+		padding-bottom: 1em;
 	}
 	h2 {
 		font-size: 30px;
+		padding-bottom: 0.5em;
 		padding-top: 1em;
 	}
 	h3 {
-		font-size: 30px;
+		font-size: 26px;
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
 
 	h4 {
-		font-size: 24px;
+		font-size: 22px;
 		padding-top: 1em;
 		padding-bottom: 1em;
 		text-align: left;
-		padding-left: 4em;
+		padding-left: 3em;
 		font-weight: 500;
+	}
+
+	h5 {
+		font-size: 20px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+		text-align: left;
+		padding-left: 5em;
+		font-weight: 500;
+	}
+
+	a i {
+
+			border-bottom:hidden !important; 
+			 text-decoration: none;
 	}
 	/*h1,h2,h3,h4,h5,h6
 	{
@@ -367,6 +385,8 @@ input {
 	overflow: hidden;
 }
 
+
+
 article img {
 	width: 100%;
 }
@@ -386,6 +406,12 @@ article img {
 #slides article {
 	width: 100%;
 	float: left;
+}
+
+#slides p {
+	font-size: 18px;
+	margin-left: 1.5em;
+	margin-right: 3.5em;
 }
  
 /* Slider Styling */
@@ -499,7 +525,7 @@ article img {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 
@@ -792,14 +818,22 @@ article img {
 /* Lists                                                                         */
 /*********************************************************************************/
 	.orderedli{
-	text-decoration: none;
-	text-align: left;
-	margin-left: 5em;
-	margin-right: 8em;
-	list-style-type: decimal;
-	line-height: 1.2em;
-	font-size: 0.8em;
-	
+		text-indent: -1em;
+		list-style-type: decimal;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 18px;
+		padding-left: 3.5em;
+		margin-left: 3em;
+		margin-right: 3em;
+		margin-bottom: 1em;
+		padding-right: 4em;
+		font-weight: 400;
+		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
 }
 
 .nonorderedli{
@@ -845,6 +879,7 @@ article img {
 		.icon > .label {
 			display: none;
 		}
+
 
 /*********************************************************************************/
 /* Navigation Links                                                                         */
@@ -1126,13 +1161,13 @@ article img {
 
 			#main > section.two
 			{
-				padding: 6em 0;
+				padding: 3em 0;
 				background-color: #e9eaed;
 			}
 		
 			#main > section.three
 			{
-				padding: 6em 0;
+				padding: 3em 0;
 				background-color: #e9eaed;
 			}
 		
