@@ -49,6 +49,15 @@
 		letter-spacing: .01rem;
 	}
 
+	@media screen and (max-width:520px) {
+   p  {
+   	padding-left:0em;
+   	padding-right: 0em;
+   }
+
+   h4 {padding-left: 0em;}
+}
+
 	h1 {
 		font-size: 34px;
 		padding-bottom: 1em;
@@ -77,9 +86,17 @@
 		font-size: 20px;
 		padding-top: 1em;
 		padding-bottom: 1em;
-
 		text-align: left;
 		padding-left: 5em;
+		font-weight: 500;
+	}
+
+	h6 {
+		font-size: 20px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: left;
+		padding-left: 3em;
 		font-weight: 500;
 	}
 
@@ -359,12 +376,32 @@
 	text-align: center;
 }
 
+
 .singleimage {
-	 display: inline-block;
+	display: inline-block;
     margin-left: auto;
     margin-right: auto;
     height: 450px;
     width: auto; 
+}
+
+.beforeafteroneimage {
+	display: inline-block;
+    height: 450px;
+    width: auto; 
+    margin-left: -18em;
+    margin-top: -1.5em;
+    overflow: hidden;
+    text-align: left;
+}
+
+.beforeaftertwoimages {
+	display: inline-block;
+    height: 450px;
+    width: auto; 
+    margin-top: -1em;
+    overflow: hidden;
+    text-align: left;
 }
 /* Slider Setup */
 input {
@@ -824,11 +861,11 @@ article img {
 		text-decoration: none;
 		text-align: left;
 		font-size: 18px;
-		padding-left: 3.5em;
-		margin-left: 3em;
+		margin-left: 3.5em;
 		margin-right: 3em;
 		margin-bottom: 1em;
 		padding-right: 4em;
+		padding-left: 5em;
 		font-weight: 400;
 		line-height: 1.2em;
 		font-style: normal;
@@ -836,16 +873,63 @@ article img {
 		letter-spacing: .01rem;
 }
 
+.orderedliforimages{
+		text-indent: -1em;
+		list-style-type: decimal;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 18px;
+		margin-left: 1.5em;
+		margin-right: 3em;
+		margin-bottom: 1.5em;
+		padding-right: 4em;
+		padding-left: 5em;
+		font-weight: 400;
+		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
+}
+
+.nonorderedliforimages{
+		text-indent: -1em;
+		list-style-type: disc;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 18px;
+		margin: 0em 3em 1.5em 1.5em;
+		padding-right: 4em;
+		padding-left: 5em;
+		font-weight: 400;
+		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
+}
+
+
 .nonorderedli{
-	text-decoration: none;
-	text-align: left;
-	font-size: 0.8em;
-	margin-left: 5em;
-	margin-right: 5em;
-	list-style-type: disc;
-	line-height: 1.2em;
-	padding-right: 4em;
-	}
+		text-indent: -1em;
+		list-style-type: disc;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 18px;
+		margin-left: 3.5em;
+		margin-right: 3em;
+		margin-bottom: 0.8em;
+		padding-right: 4em;
+		padding-left: 5em;
+		font-weight: 400;
+		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
+}
+
+
 .educationli{
 	text-decoration: none;
 	text-align: left;
@@ -854,6 +938,13 @@ article img {
 	list-style-type: none;
 	line-height: 1.5em;
 
+}
+
+@media screen and (max-width:520px) {
+   .orderedli  {
+   	padding-left:0em;
+   	padding-right: 0em;
+   }
 }
 
 /*********************************************************************************/
