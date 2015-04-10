@@ -112,6 +112,30 @@
 		font-weight: 500;
 	}
 
+	h7 {
+		font-size: 20px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: left;
+		font-weight: 500;
+		padding-bottom: 0.5em;
+    	display: block;
+	}
+
+	h8 {
+		font-size: 16px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: left;
+		font-weight: 400;
+		padding-bottom: 0.3em;
+	}
+
+	h7 + h8 
+	{
+		
+	}
+
 	a i {
 
 			border-bottom:hidden !important; 
@@ -190,11 +214,11 @@
 		margin: 2em 0 0 0;
 	}
 
-	/*strong, b
+	strong, b
 	{
-		font-weight: 500;
-		color: #666;
-	}*/
+		font-weight: 600;
+		/*color: #666;*/
+	}
 
 
 	a
@@ -457,8 +481,20 @@ article img {
 	font-size: 18px;
 	margin-left: 1.5em;
 	margin-right: 3.5em;
+	margin-bottom: 0.5em;
+}
+
+#resume p {
+	font-size: 16px;
+	margin-left: 1.5em;
+	margin-right: 3.5em;
 }
  
+#resume ul p {
+margin-left: 5.5em;
+margin-bottom: 0.5em;
+}
+
 /* Slider Styling */
 #slides {
 	-webkit-border-radius: 2px;
@@ -888,11 +924,9 @@ article img {
 		text-decoration: none;
 		text-align: left;
 		font-size: 18px;
-		/*margin-left: 3.5em;
-		margin-right: 3em;
-		margin-bottom: 1em;
-		padding-right: 4em;*/
-		padding-left: 4.5em;
+		padding-left: 5.5em;
+		padding-right: 3em;
+		padding-bottom: 1em;
 		font-weight: 400;
 		line-height: 1.2em;
 		font-style: normal;
@@ -968,7 +1002,7 @@ article img {
 
 @media screen and (max-width:520px) {
    .orderedli,   .orderedliforimages, .nonorderedli, .nonorderedliforimages, .resumeorderedli{
-   	padding-left:0em;
+   	padding-left:1em;
    	padding-right: 0em;
    }
 }
