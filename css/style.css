@@ -389,7 +389,7 @@
 	display: inline-block;
     height: 450px;
     width: auto; 
-    margin-left: -18em;
+    /*margin-left: -18em;*/
     margin-top: -1.5em;
     overflow: hidden;
     text-align: left;
@@ -899,7 +899,7 @@ article img {
 		text-decoration: none;
 		text-align: left;
 		font-size: 18px;
-		margin: 0em 3em 1.5em 1.5em;
+		margin: 0em 3em 0.5em 1.5em;
 		padding-right: 4em;
 		padding-left: 5em;
 		font-weight: 400;
@@ -941,7 +941,7 @@ article img {
 }
 
 @media screen and (max-width:520px) {
-   .orderedli  {
+   .orderedli,   .orderedliforimages, .nonorderedli, .nonorderedliforimages{
    	padding-left:0em;
    	padding-right: 0em;
    }
