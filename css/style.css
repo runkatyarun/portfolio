@@ -101,7 +101,6 @@
 		text-align: center;
 		font-weight: 500;
 	}
-	}
 
 	h6 {
 		font-size: 20px;
@@ -136,10 +135,9 @@
 		
 	}
 
-	a i {
-
-			border-bottom:hidden !important; 
-			 text-decoration: none;
+	a.arrows {
+		text-decoration: none !important;
+		border-bottom: hidden !important;
 	}
 	/*h1,h2,h3,h4,h5,h6
 	{
@@ -620,12 +618,6 @@ margin-bottom: 0.5em;
 	background: #333;
 	border-color: #333 !important;
 }
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-
 /* Animation */
 
 #slides .inner {
@@ -661,9 +653,6 @@ margin-bottom: 0.5em;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-
-
-
 	/* List */
 
 		ul
@@ -1065,7 +1054,8 @@ margin-bottom: 0.5em;
 			text-decoration: none;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 1;
+			line-height: 1;/*
+			border-bottom: hidden;*/
 			-webkit-font-smoothing:antialiased;
 			-moz-osx-font-smoothing:grayscale;
 		}
@@ -1074,7 +1064,10 @@ margin-bottom: 0.5em;
 			display: none;
 		}
 
+a i.icon {
 
+		border-bottom: hidden !important
+}
 /*********************************************************************************/
 /* Navigation Links                                                                         */
 /*********************************************************************************/
@@ -1330,7 +1323,7 @@ margin-bottom: 0.5em;
 				/*#main > section.dark strong,*/
 				#main > section.dark a
 				{
-					color: #000000s;
+					/*color: #000000s;*/
 					border-color: inherit;
 					
 				}
@@ -1492,3 +1485,33 @@ margin-bottom: 0.5em;
     margin-bottom: 30px;
 
 }*/
+
+/* Link to expand slide */
+.linktoslide1 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide1 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide1 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide1 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide2 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide2 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide2 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide2 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide3 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide3 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide3 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide3 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide4 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide4 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide4 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide4 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+
+.linktoslidetoclose a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslidetoclose a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslidetoclose a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslidetoclose a:before {content: "\f102"; font-family: FontAwesome; padding-right: 0.5em;}
+
+
+
