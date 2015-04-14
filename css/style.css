@@ -548,8 +548,7 @@ margin-bottom: 0.5em;
 	border-color: #777 !important;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /* Control Setup */
 
 #controls {
@@ -644,13 +643,6 @@ margin-bottom: 0.5em;
 
 
 
-.info, #controls, #slides, #active, #active label, .info h3, .desktop, .tablet, .mobile {
-	-webkit-transform: translateZ(0);
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-}
 	/* List */
 
 		ul
