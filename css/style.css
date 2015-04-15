@@ -316,6 +316,32 @@
     width: 92.72727272727273%;
     margin: 0 auto;
 }
+
+
+/* Table
+*/
+
+table, td {
+    margin-left: 4em;
+    margin-right: 4em;
+    height: 100%;
+    text-align: left;
+    font-size: 18px ;
+    padding-bottom: 1em;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+#resumeskills table, td{
+	font-size: 16px !important;
+	margin-left: 5em;
+    margin-right: 5em;
+}
+#resumeskills li {
+	font-size: 16px !important;
+	padding-left: 3em;
+}
+
 	/* Images */
 
 		.image
@@ -786,51 +812,6 @@ margin-bottom: 0.5em;
 					border: 0;
 				}
 			
-	/* Table */
-	
-		table
-		{
-			width: 100%;
-		}
-		
-			table.default
-			{
-				width: 100%;
-				text-align: left;
-			}
-			
-				table.default tbody tr:nth-child(2n+2)
-				{
-					background: #f4f4f4;
-				}
-				
-				table.default td
-				{
-					padding: 0.5em 1em 0.5em 1em;
-				}
-				
-				table.default th
-				{
-					text-align: left;
-					padding: 0.5em 1em 0.5em 1em;
-					color: #000000;
-					/*background: #222729 url('images/overlay.png');*/
-				}
-			
-				table.default thead
-				{
-					background: #444;
-					color: #fff;
-				}
-				
-				table.default tfoot
-				{
-					background: #eee;
-				}
-				
-				table.default tbody
-				{
-				}
 
 	/* Button */
 		
