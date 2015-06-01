@@ -15,11 +15,10 @@
 #u0 {
   position:absolute;
   left:90px;
-  top:90px;
+  top:31px;
   width:730px;
-  height:120px;
-  font-family:'Roboto-Regular', 'Roboto';
-  font-weight:400;
+  height:210px;
+  font-family:'Roboto-Bold', 'Roboto Bold', 'Roboto';
   font-style:normal;
   font-size:16px;
   text-align:left;
@@ -29,7 +28,7 @@
   left:0px;
   top:0px;
   width:730px;
-  height:120px;
+  height:210px;
 }
 #u1 {
   position:absolute;
@@ -41,7 +40,7 @@
 #u2 {
   position:absolute;
   left:90px;
-  top:235px;
+  top:266px;
   width:730px;
   height:345px;
   font-family:'Roboto-Bold', 'Roboto Bold', 'Roboto';
@@ -66,7 +65,7 @@
 #u4 {
   position:absolute;
   left:720px;
-  top:620px;
+  top:651px;
   width:100px;
   height:30px;
   font-family:'Roboto-Bold', 'Roboto Bold', 'Roboto';
