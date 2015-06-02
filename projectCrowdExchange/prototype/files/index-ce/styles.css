@@ -17,10 +17,10 @@
   left:90px;
   top:31px;
   width:730px;
-  height:210px;
+  height:189px;
   font-family:'Roboto-Bold', 'Roboto Bold', 'Roboto';
   font-style:normal;
-  font-size:16px;
+  font-size:14px;
   text-align:left;
 }
 #u0_img {
@@ -28,7 +28,7 @@
   left:0px;
   top:0px;
   width:730px;
-  height:210px;
+  height:189px;
 }
 #u1 {
   position:absolute;
@@ -42,10 +42,10 @@
   left:90px;
   top:266px;
   width:730px;
-  height:345px;
+  height:294px;
   font-family:'Roboto-Bold', 'Roboto Bold', 'Roboto';
   font-style:normal;
-  font-size:16px;
+  font-size:14px;
   text-align:left;
 }
 #u2_img {
@@ -53,12 +53,12 @@
   left:0px;
   top:0px;
   width:730px;
-  height:345px;
+  height:294px;
 }
 #u3 {
   position:absolute;
   left:2px;
-  top:26px;
+  top:24px;
   width:726px;
   word-wrap:break-word;
 }
