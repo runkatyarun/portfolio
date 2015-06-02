@@ -2310,12 +2310,21 @@
   position:absolute;
   left:280px;
   top:2px;
+  width:290px;
+  height:64px;
+  overflow:hidden;
   visibility:hidden;
 }
 #u165_state0 {
-  position:relative;
+  position:absolute;
   left:0px;
   top:0px;
+  width:290px;
+  height:64px;
+  -ms-overflow-x:hidden;
+  overflow-x:hidden;
+  -ms-overflow-y:hidden;
+  overflow-y:hidden;
   background-image:none;
 }
 #u165_state0_content {
@@ -2329,8 +2338,8 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:200px;
-  height:90px;
+  width:290px;
+  height:60px;
   font-family:'Roboto-Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
@@ -2342,14 +2351,14 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:200px;
-  height:90px;
+  width:290px;
+  height:60px;
 }
 #u167 {
   position:absolute;
   left:2px;
-  top:16px;
-  width:196px;
+  top:11px;
+  width:286px;
   word-wrap:break-word;
 }
 #u168 {
@@ -2357,7 +2366,7 @@
   left:0px;
   top:0px;
   width:1030px;
-  height:170px;
+  height:41px;
   overflow:hidden;
 }
 #u168_state0 {
@@ -2365,7 +2374,7 @@
   left:0px;
   top:0px;
   width:1030px;
-  height:170px;
+  height:41px;
   -ms-overflow-x:hidden;
   overflow-x:hidden;
   -ms-overflow-y:hidden;
@@ -2502,47 +2511,47 @@
 }
 #u178 {
   position:absolute;
-  left:798px;
-  top:34px;
-  width:200px;
-  height:121px;
+  left:433px;
+  top:4px;
+  width:418px;
+  height:30px;
   font-family:'Roboto-Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
-  font-size:16px;
+  font-size:14px;
 }
 #u178_img {
   position:absolute;
   left:0px;
   top:0px;
-  width:200px;
-  height:121px;
+  width:418px;
+  height:30px;
 }
 #u179 {
   position:absolute;
   left:2px;
-  top:8px;
-  width:196px;
+  top:-4px;
+  width:414px;
   word-wrap:break-word;
 }
 #u180 {
   position:absolute;
   left:364px;
-  top:11px;
-  width:200px;
-  height:100px;
+  top:8px;
+  width:196px;
+  height:29px;
 }
 #u180_img {
   position:absolute;
   left:0px;
   top:0px;
-  width:200px;
-  height:100px;
+  width:196px;
+  height:29px;
 }
 #u181 {
   position:absolute;
   left:2px;
-  top:35px;
-  width:196px;
+  top:0px;
+  width:192px;
   word-wrap:break-word;
 }
