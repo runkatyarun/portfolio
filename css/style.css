@@ -1020,6 +1020,18 @@ margin-bottom: 0.5em;
 	line-height: 1.5em;
 
 }
+.crowdexchli{
+	list-style-type: disc;
+	text-align: left;
+	font-weight: 400;
+	line-height: 1.2em;
+	font-style: normal;
+	margin-left: 5em;
+	list-style-type: none;
+	line-height: 1.5em;
+	font-size: 18px;
+
+}
 #uxskillsmain li{
 	font-size: 20px !important;
 	padding-left: 4.5em;
@@ -1503,6 +1515,11 @@ a i.icon {
 .linktoslide4 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
 .linktoslide4 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
 .linktoslide4 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide5 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide5 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide5 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide5 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
 
 
 .linktoslidetoclose a {text-decoration: none; border-bottom: hidden !important;}

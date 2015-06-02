@@ -46,21 +46,20 @@
         $(".extensiontoslide2").hide();
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
+        $(".extensiontoslide5").hide();
 
        $("#showExtension1").click(extensionOnClick1);
        $("#showExtension2").click(extensionOnClick2);
        $("#showExtension3").click(extensionOnClick3);
        $("#showExtension4").click(extensionOnClick4);
+       $("#showExtension5").click(extensionOnClick5);
 
        $("#closeExtension1").click(extensionOnClick1);
        $("#closeExtension2").click(extensionOnClick2);
        $("#closeExtension3").click(extensionOnClick3);
        $("#closeExtension4").click(extensionOnClick4);
+       $("#closeExtension5").click(extensionOnClick5);
 
- 	   // $("#slides").change(hideAllExtension);
- 	   // $("#slide2").change(hideAllExtension);
- 	   // $("#slide3").change(hideAllExtension);
- 	   // $("#slide4").change(hideAllExtension);
     };
     
     function extensionOnClick1() {
@@ -81,6 +80,11 @@
         $(".linktoslide4").toggle();
     }
 
+    function extensionOnClick5() {
+        $(".extensiontoslide5").toggle();
+        $(".linktoslide5").toggle();
+    }
+
     function extensionCloseOnClick1() {
         $("#closeExtension1");
     }
@@ -96,6 +100,10 @@
     function extensionCloseOnClick4() {
         $("#closeExtension4");
     }
+
+    function extensionCloseOnClick5() {
+        $("#closeExtension5");
+    }
     
     function hideAllExtension() {
         alert("hideAllExtension");
@@ -103,6 +111,7 @@
         $(".extensiontoslide2").hide();
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
+        $(".extensiontoslide5").hide();
         
  
     }
@@ -286,6 +295,78 @@
                                 </article><!--article: INRIX-->
                      </div> <!--overflow -->
                  </div> <!--slides -->
+                
+                <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="CrowdExchange"> </a>
+                                        <h3>CrowdExchange, wireframe challenge (2015)</h3>
+                                            <p>I participated in this project in terms of a wireframe challenge on the <a href="http://www.topcoder.com">topcoder website</a>.
+                                            </p>
+
+                                        <h4>Description:</h4>
+                                        <p>
+                                            CrowdExchange in an internal developer community portal. The challenge is to design a wireframe solution to help plan out "CrowdExchange" developer community. The goal is to create an crowdsource model that allows employees to tackle the type of development activities they are interested in.
+                                        </p>
+
+                                        <div id="images">
+                                        <img class="singleimage" src="images/crowdexchange.png">
+                                        </div>
+
+                                        <h4> My role:</h4>
+                                        <p><ol>
+                                            <li class="orderedli">design workflow for a "Project Manager" role with the help of given user stories 
+                                            </li>
+                                            <li class="orderedli">create <a target="_blank" href="http://katekoroleva.me/projectCrowdExchange/prototype/index-ce.html">interactive prototype</a> </li>
+                                        </ol>
+                                        </p>
+
+                                        <h4>Tools used:</h4>
+                                        <p>Axure
+                                        </p>
+
+
+                                         <div class="linktoslide5">
+                                            <h7>
+                                                <a href="#portfolioslide5" id="showExtension5"><span>More about this project</span></a></h7> 
+                                        </div>
+                                        <div class="extensiontoslide5"> <!-- extension part-->
+
+                                        <h4>Main results:</h4>
+                                        <p><a target="_blank" href="http://katekoroleva.me/projectCrowdExchange/prototype/index-ce.html">Interactive prototype</a></p>
+
+                                        <h4>User Stories for employee: Project Manager</h4>
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli"> - John is a Project Manager and has development work/activities that he is looking to get done ASAP.</li>
+                                            <li class="crowdexchli"> - John decides to use the CrowdExchange community to see if any developers are available to tackle the work. </li>
+                                            <li class="crowdexchli"> - John logs in using his employee credentials and then goes through a very simple wizard process of creating a project and activities (work) that he would like to get done.</li> 
+                                            <li class="crowdexchli"> - While creating the activities John is able to select the "process" he would like to use to get the work done. John is able to select "Assigned, Competition or Team" </li>
+                                            <li class="crowdexchli"> - John is able to select the type of code that needs to be developed, write up details about the activity and also assign a suggested timeline/delivery date.</li>
+                                            <li class="crowdexchli"> - John submits the activities (work) he would like to get done and it goes out to the community</li>
+                                            <li class="crowdexchli"> - John would like to be able to track and review any interest in his activities.</li>
+                                            <li class="crowdexchli"> - John would also like to search and find developers (profiles) who might match up with the type of work he needs to get done. </li>
+                                            <li class="crowdexchli"> - Workers register for John's activities and show they are interested in tackling his activity</li>
+                                            <li class="crowdexchli"> - John is able to review who has registered and is able to assign the activity to one of the workers. </li>
+                                            <li class="crowdexchli"> - John and the workers should have the ability to communicate and see progress on the activity.</li> 
+                                            <li class="crowdexchli"> - John should be able to see a listing of his project or activities and the different stages of completion</li>
+                                            <li class="crowdexchli"> - After an activity is complete John is able to close the activity and mark it as resolved. </li>
+                                            <li class="crowdexchli"> - John is also able to provide feedback on the activity and the developers profile.</li>
+                                        </ol>
+                                            </p>
+
+                                         <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#CrowdExchange" id="closeExtension5"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                        </div> <!--crowdExchange extension-->
+
+                                </article><!--article: CrowdExchange-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+
+
+
                             
 
                 <div id="slides">
