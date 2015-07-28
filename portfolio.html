@@ -47,18 +47,21 @@
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
         $(".extensiontoslide5").hide();
+        $(".extensiontoslide6").hide();
 
        $("#showExtension1").click(extensionOnClick1);
        $("#showExtension2").click(extensionOnClick2);
        $("#showExtension3").click(extensionOnClick3);
        $("#showExtension4").click(extensionOnClick4);
        $("#showExtension5").click(extensionOnClick5);
+       $("#showExtension6").click(extensionOnClick6);
 
        $("#closeExtension1").click(extensionOnClick1);
        $("#closeExtension2").click(extensionOnClick2);
        $("#closeExtension3").click(extensionOnClick3);
        $("#closeExtension4").click(extensionOnClick4);
        $("#closeExtension5").click(extensionOnClick5);
+       $("#closeExtension6").click(extensionOnClick6);
 
     };
     
@@ -85,6 +88,11 @@
         $(".linktoslide5").toggle();
     }
 
+    function extensionOnClick6() {
+        $(".extensiontoslide6").toggle();
+        $(".linktoslide6").toggle();
+    }
+
     function extensionCloseOnClick1() {
         $("#closeExtension1");
     }
@@ -104,6 +112,10 @@
     function extensionCloseOnClick5() {
         $("#closeExtension5");
     }
+
+    function extensionCloseOnClick6() {
+        $("#closeExtension6");
+    }
     
     function hideAllExtension() {
         alert("hideAllExtension");
@@ -112,6 +124,7 @@
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
         $(".extensiontoslide5").hide();
+        $(".extensiontoslide6").hide();
         
  
     }
@@ -370,7 +383,140 @@
                  </div> <!--slides -->
 
 
+                <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="WatermarkingApp"> </a>
+                                        <h3>WatermarkingApp, wireframe challenge (2015)</h3>
+                                            <p>I participated in this project in terms of a wireframe challenge on the <a href="http://www.topcoder.com">topcoder website</a>.
+                                            </p>
 
+                                        <h4>Description:</h4>
+                                        <p>
+                                            The primary use case for this application is to provide the capability for the watermark authors to designate regions within a source image which upon scanning will link to online content.  "Scanning" part of the technology is not included. The focus is solely on watermarking and trigger definition.
+
+                                        </p>
+
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/landingpage.png">
+                                        </div>
+
+                                        <h4> My role:</h4>
+                                        <p><ol>
+                                            <li class="orderedli">design workflow based on the requirements given in the task 
+                                            </li>
+                                            <li class="orderedli">create interactive prototype in OmniGraffle</li>
+                                        </ol>
+                                        </p>
+
+                                        <h4>Tools used:</h4>
+                                        <p>OmniGraffle
+                                        </p>
+
+
+                                          <div class="linktoslide6">
+                                            <h7>
+                                                <a href="#portfolioslide6" id="showExtension6"><span>More about this project</span></a></h7> 
+                                            </div>
+
+                                        <div class="extensiontoslide6"> <!-- extension part-->
+
+                                        <h4>Main result:</h4>
+                                        <p>Interactive prototype</p>
+
+                                        <h4>Some screens with requirements from authors:</h4>
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- Landing page should showcase what the application can do.</li>
+                                            <li class="crowdexchli">- There should be a way for the Users to authenticate with the Link Creation Studio service before they will be allowed to create a project.</li>
+                                        </ol>
+                                        </p>
+
+                                            <h9>Landing Page:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/landingpageddlopened.png">
+                                            </div>
+                                             
+
+                                            <h9>Sign up and Authentication available from the landing page:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/landingpageauthenticate.png">
+                                            </div>
+
+                                            <h9>Upload images:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/preuploadselectednotregistered.png">
+                                            </div>
+                                            
+                                            <p>In case user have decided to skip authentication, he can still upload images and register/authenticate later.
+                                            </p>
+
+                                            <h9>Recent Uploads:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/recentuploads2notregistered2.png">
+                                            </div>
+
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- Authors or users will need to create a project.</li>
+                                            <li class="crowdexchli">- Authors are allowed to "brand" a project with some kind of image or logo.</li>
+                                            <li class="crowdexchli">- Authors should have the capability of uploading a source image into a project.</li>
+                                            <li class="crowdexchli">- The application should list all the projects that the user has created.</li>
+                                            <li class="crowdexchli">- The user should be able to open an existing project and update it.</li>
+
+                                        </ol>
+                                        </p>   
+
+                                        <h9>Project List:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/projectslist.png">
+                                            </div>
+
+                                        
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- User can name a project, add description to it, upload photos and support a library of payoffs used in this project.</li>
+
+                                        </ol>
+                                        </p>  
+                                    
+                                        <h9>Project Page, Project Setting:</h9>
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/projectpageimageseditopenddl.png">
+                                        </div> 
+                                        
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- Authors should have the capability of uploading a source image into a project.</li>
+                                            <li class="crowdexchli">- Authors should have the ability to designate rectangular regions of the image to watermark. A single project can have multiple source images.  And each source image can have multiple watermarked regions.</li>
+                                            <li class="crowdexchli">- Authors should be able to enter a destination (URL of the site to hyperlink to for each watermarked region - known in the Link Technology API as a Payoff).</li>
+                                            <li class="crowdexchli">- After the user designates the regions to be highlighted and the destinations, the system will create the watermarked image which will include one or more watermarked regions.  This processing will happen before the validation step.</li>
+                                            <li class="crowdexchli">- After users have designated the regions to be watermarked and the associated destinations, the application should provide access to view the watermarked image on the screen so that users can validate that the watermarked regions scan properly.</li>
+                                            <li class="crowdexchli">- Users will need the ability to print each watermarked image.</li>
+                                            <li class="crowdexchli">- Users should be able to download each watermarked image.
+                                            </li>
+
+                                        </ol>
+                                        </p>  
+
+                                        <h9>Image Details Screen:</h9>
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/imagedetailresizableelement.png">
+                                        </div> 
+
+                                        <h9>Image Details Screen, Selecting Payoff:</h9>
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/imagedetailaddpayoff.png">
+                                        </div> 
+
+                                        <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#WatermarkingApp" id="closeExtension6"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                        </div> <!--WatermarkingApp extension-->
+                                </article><!--article: WatermarkingApp-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
                             
 
                 <div id="slides">

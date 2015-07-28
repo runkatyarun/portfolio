@@ -142,6 +142,15 @@
 		padding-bottom: 0.3em;
 	}
 
+	h9 {
+		font-size: 14px;
+		padding-top: 1em;
+		padding-bottom: 2em;
+		text-align: left;
+		font-weight: 500;
+		padding-bottom: 2em;
+	}
+
 	h7 + h8 
 	{
 		
@@ -1467,6 +1476,11 @@ a i.icon {
 .linktoslide5 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
 .linktoslide5 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
 .linktoslide5 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide6 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide6 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide6 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide6 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
 
 
 .linktoslidetoclose a {text-decoration: none; border-bottom: hidden !important;}
