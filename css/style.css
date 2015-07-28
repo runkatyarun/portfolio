@@ -151,63 +151,12 @@
 		text-decoration: none !important;
 		border-bottom: hidden !important;
 	}
-	/*h1,h2,h3,h4,h5,h6
-	{
-		font-weight: 300;
-		color: #666;
-		line-height: 1.5em;
-	}*/
-	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
 			color: inherit;
 			text-decoration: none;
 		}
 
-/*		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
-		{
-			color: #333;
-		}*/
-		
-		/*h2
-		{
-			font-size: 2em;
-			letter-spacing: -1px;
-		}*/
-		
-			/*h2.alt
-			{
-				color: #888;
-			}*/
-			/*
-			h2.alt strong
-			{
-				color: #666;
-			}
-*/
-		/*h3
-		{
-			font-size: 1.5em;
-		}*/
-
-	/*h3 {
-	text-decoration: none;
-	text-align: left;
-	font-size: 1.4em;
-	font-weight: 200;
-	margin-left: 4em;
-	list-style-type: decimal;
-
-	}
-	h5 {
-		text-decoration: none;
-		text-align: left;
-		font-weight: 200;
-		margin-left: 4em;
-		
-
-	}*/
-	.
 
 	header
 	{
@@ -536,6 +485,21 @@ article img {
 margin-left: 5.5em;
 margin-bottom: 0.5em;
 }
+
+#example p, ol {
+	    
+		font-size: 16px;
+		letter-spacing: .01rem;
+		margin-bottom: 0.5em!important;
+}
+
+#example h5 {
+	    
+		padding-top: 0.5em;
+		font-size:18px;
+}
+
+
 
 /* Slider Styling */
 #slides {
@@ -1033,6 +997,25 @@ margin-bottom: 0.5em;
 	font-size: 18px;
 
 }
+
+.portfolioexampleli {
+	text-indent: -1em;
+		list-style-type: decimal;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 16px;
+		margin-left: 1.5em;
+		margin-right: 3em;
+		margin-bottom: 1em;
+		padding-right: 4em;
+		padding-left: 5em;
+		font-weight: 400;
+		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
+}
 #uxskillsmain li{
 	font-size: 20px !important;
 	padding-left: 4.5em;
@@ -1457,44 +1440,7 @@ a i.icon {
     margin-left: -46.36363636363637%;
 }
 
-/*.content{
-    color: #4b4848;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    line-height: 22px;
-    padding: 60px 30px;
-    background: #fff;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.content p{
-    color: #4b4848;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-
-    line-height: 24px;
-    margin-bottom: 60px;
-}*/
-
-/*.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6{
-    color: #4b4848;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-
-    line-height: 28px;
-    margin-bottom: 30px;
-
-}*/
 
 /* Link to expand slide */
 .linktoslide1 a {text-decoration: none; border-bottom: hidden !important;}
