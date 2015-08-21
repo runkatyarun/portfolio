@@ -57,6 +57,7 @@
        $("#closeExtension4").click(extensionOnClick4);
 
        $(".hiddenInrixExtension").hide();
+       $(".hiddenMATExtension").hide();
        checkCookie();
 
     };
@@ -67,6 +68,7 @@
       if ('undefined' == typeof cookie) {
           Cookies.set('name', 'value', { expires: 1, path: '' }); 
           $(".hiddenInrixExtension").show();
+          $(".hiddenMATExtension").show();
       } 
 
       
@@ -264,8 +266,6 @@
                                             
                                         </div>
                                        
-
-
                                         </div>
 
 
@@ -418,6 +418,18 @@
                                         understand that the tool was embedded
                                         into the Visual Studio.</li>
                                     </ol>
+                                    
+                                    <div class="hiddenMATExtension">
+                                    <p><i>Since I gave you a special link, I can show you some screenshots for a limited amount of time. So that you better understand the context.</i>
+                                    </p>
+                                    <div id="images">
+                                    <img class="singleimage" src="images/MAT0.png">
+                                    <img class="singleimage" src="images/MAT3.png">
+                                    <img class="singleimage" src="images/MAT1.png">
+                                    <img class="singleimage" src="images/MAT2.png">
+                                    </div>
+                                    </div>
+
 
                                     <h4>Challenges:</h4>
 
