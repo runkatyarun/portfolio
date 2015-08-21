@@ -13,6 +13,7 @@
     <script src="js/jquery.scrollzer.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
+    <script src="js/js.cookie.js"></script>
     <script src="js/init.js"></script><noscript>
     <script type="text/javascript" src="iosLabelFix.js"></script>
     <link href="css/skel.css" rel="stylesheet">
@@ -23,24 +24,22 @@
     
      <script>
     $.fn.scrollTo = function( target, options, callback ){
-  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
-  var settings = $.extend({
-    scrollTarget  : target,
-    offsetTop     : 50,
-    duration      : 500,
-    easing        : 'swing'
-  }, options);
-  return this.each(function(){
-    var scrollPane = $(this);
-    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
-    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
-    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
-      if (typeof callback == 'function') { callback.call(this); }
-    });
-  });
-}
-    
-    
+          if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+          var settings = $.extend({
+            scrollTarget  : target,
+            offsetTop     : 50,
+            duration      : 500,
+            easing        : 'swing'
+          }, options);
+          return this.each(function(){
+            var scrollPane = $(this);
+            var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+            var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+            scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+              if (typeof callback == 'function') { callback.call(this); }
+            });
+          });
+    }
     window.onload = function() {
         $(".extensiontoslide1").hide();
         $(".extensiontoslide2").hide();
@@ -57,12 +56,22 @@
        $("#closeExtension3").click(extensionOnClick3);
        $("#closeExtension4").click(extensionOnClick4);
 
- 	   // $("#slides").change(hideAllExtension);
- 	   // $("#slide2").change(hideAllExtension);
- 	   // $("#slide3").change(hideAllExtension);
- 	   // $("#slide4").change(hideAllExtension);
+       $(".hiddenInrixExtension").hide();
+       checkCookie();
+
     };
     
+    function checkCookie() {
+        
+      var cookie = Cookies.get('name'); 
+      if ('undefined' == typeof cookie) {
+          Cookies.set('name', 'value', { expires: 1, path: '' }); 
+          $(".hiddenInrixExtension").show();
+      } 
+
+      
+    }
+
     function extensionOnClick1() {
 
         $(".extensiontoslide1").toggle();
@@ -104,13 +113,13 @@
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
         
-        // $('html, body').animate({
-        //                 scrollTop: $("#portfolio").offset().top
-        //             }, 1000);
-        
-    }
+    }  
+ 
+   
     
     </script>
+
+   
 </head>
 
 <body>
@@ -191,7 +200,9 @@
 
                                         <div id="images">
                                         <img class="singleimage" src="images/inrixtesting.png">
+
                                         </div>
+
 
                                         <h4>My role:</h4>
                                         
@@ -229,11 +240,34 @@
                                             <h7>
                                                 <a href="#portfolioslide1" id="showExtension1"><span>More about this project</span></a></h7> 
                                         </div>
+                                        
                                         <div class="extensiontoslide1"> <!-- extension part-->
+
+                                        
 
                                         <h4>One of the examples:</h4>
                                         <p>My most recent exercise involved the Error Handling Experience feature. 
+                                        </p>
+                                        <p>
                                         <i>Unfortunately, this project is under a Non Disclosure Agreement (NDA), so I can only describe the main steps in summary format.</i></p>
+
+                                        <div class="hiddenInrixExtension">
+                                            <p><i> But I gave you a special link and you can see some examples of my wireframes for a limited amount of time.</i></p>
+
+                                        <div id="images">
+                                            <img class="beforeaftertwoimages" src="images/INRIX_incident_reported.png">
+                                            
+                                        </div>
+                                        <div id="images">
+                                            <img class="singleimage" src="images/route_error_30s_network.png">
+                                            <img class="beforeaftertwoimages" src="images/map_locationError_white.png">
+                                            
+                                        </div>
+                                       
+
+
+                                        </div>
+
 
                                         <h5>What errors to handle?</h5>
 
