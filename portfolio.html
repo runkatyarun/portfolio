@@ -41,23 +41,33 @@
           });
     }
     window.onload = function() {
+        $(".extensiontoslide0").hide();
         $(".extensiontoslide1").hide();
         $(".extensiontoslide2").hide();
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
+        $(".extensiontoslide5").hide();
+        $(".extensiontoslide6").hide();
 
+       $("#showExtension0").click(extensionOnClick0);
        $("#showExtension1").click(extensionOnClick1);
        $("#showExtension2").click(extensionOnClick2);
        $("#showExtension3").click(extensionOnClick3);
        $("#showExtension4").click(extensionOnClick4);
+       $("#showExtension5").click(extensionOnClick5);
+       $("#showExtension6").click(extensionOnClick6);
 
+       $("#closeExtension0").click(extensionOnClick0);
        $("#closeExtension1").click(extensionOnClick1);
        $("#closeExtension2").click(extensionOnClick2);
        $("#closeExtension3").click(extensionOnClick3);
        $("#closeExtension4").click(extensionOnClick4);
+       $("#closeExtension5").click(extensionOnClick5);
+       $("#closeExtension6").click(extensionOnClick6);
 
        $(".hiddenInrixExtension").hide();
        $(".hiddenMATExtension").hide();
+       $(".hiddenInviteBig").hide();
        checkCookie();
 
     };
@@ -69,11 +79,17 @@
           Cookies.set('name', 'value', { expires: 1, path: '' }); 
           $(".hiddenInrixExtension").show();
           $(".hiddenMATExtension").show();
+          $(".hiddenInviteBig").show();
       } 
 
       
     }
 
+    function extensionOnClick0() {
+
+        $(".extensiontoslide0").toggle();
+        $(".linktoslide0").toggle();
+    }
     function extensionOnClick1() {
 
         $(".extensiontoslide1").toggle();
@@ -92,6 +108,16 @@
         $(".linktoslide4").toggle();
     }
 
+    function extensionOnClick5() {
+        $(".extensiontoslide5").toggle();
+        $(".linktoslide5").toggle();
+    }
+
+    function extensionOnClick6() {
+        $(".extensiontoslide6").toggle();
+        $(".linktoslide6").toggle();
+    }
+
     function extensionCloseOnClick1() {
         $("#closeExtension1");
     }
@@ -107,21 +133,41 @@
     function extensionCloseOnClick4() {
         $("#closeExtension4");
     }
+
+    function extensionCloseOnClick5() {
+        $("#closeExtension5");
+    }
+
+    function extensionCloseOnClick6() {
+        $("#closeExtension6");
+    }
     
     function hideAllExtension() {
-        alert("hideAllExtension");
+        $(".extensiontoslide0").hide();
         $(".extensiontoslide1").hide();
         $(".extensiontoslide2").hide();
         $(".extensiontoslide3").hide();
         $(".extensiontoslide4").hide();
+        $(".extensiontoslide5").hide();
+        $(".extensiontoslide6").hide();
         
+
     }  
  
    
     
     </script>
 
-   
+    <!--GA analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62516632-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -189,12 +235,118 @@
 
                
                 <article id="slider">
-                   
+
+                   <div class="hiddenInviteBig">
+                   <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="InviteBig"> </a>
+                                        <h3>InviteBig (2015-current)</h3>
+                                        <h4>Description:</h4>
+
+                                        <p>InviteBig is a web application designed to help venues and event organizers to collaborate and book events in real-time. InviteBig is a startup. </p>
+                                        
+                                        </br>
+
+                                        
+                                        <div id="images">
+
+                                        <img class="singlebigimage" src="images/iblandingpage.png">
+
+                                        </div>
+                                        <h8>Image above: Landing page redesign</h8>
+
+                                       <div id="images">
+                                       <p>
+                                        <img class="singlebigpicture" src="images/iblandingpagebefore.png">
+                                        </p>
+                                        <h8>Image above: Landing page before</h8>
+                                        
+                                        </div>
+                                        
+
+                                        <h4>My role:</h4>
+                                        
+                                        <ol>
+                                            <li class="orderedli">Redesigned the website to improve conversion rates</li>
+
+                                            <li class="orderedli">To better understand users who request or about to request a demo, created a survey and embedded it to the redesigned Request a demo page</li>
+
+                                            <li class="orderedli">Created a survey targeted to the venue members staff (event managers) to identify their needs and motivations</li>
+
+                                            <li class="orderedli">Interviewed venue managers and venue owners to help the team to identify the feature set based on the audience needs</li>
+
+                                            <li class="orderedli">Participated in various prototyping sessions</li>
+                                        </ol>
+
+                                        <h4>Tools Used:</h4>
+
+                                        <p>Sketch, Balsamiq, TypeForm</p>
+                                        
+                                        <div class="linktoslide0">
+                                            <h7>
+                                                <a href="#portfolioslide0" id="showExtension0"><span>More about this project</span></a></h7> 
+                                        </div>
+                                        
+                                        <div class="extensiontoslide0"> <!-- extension part-->
+
+                                        <h4>Other examples: </h4>
+                                        
+
+                                        <div id="images">
+                                            
+                                            <img class="beforeaftertwobigimages" src="images/ibvenues.png">
+                                            
+                                            <img class="beforeaftertwobigimages" src="images/ibvenuesbefore.png">
+                                              <h8>Features for venues page redesigned (on left) and version before (on right)</h8>
+                                        </div>    
+
+                                        <div id="images">
+                                            
+                                            <img class="beforeaftertwobigimages" src="images/ibrequest.png">
+                                            
+                                            <img class="beforeaftertwobigimages" src="images/ibrequestbefore.png">
+                                              
+                                              <h8>Request a demo page redesigned (on left) and version before (on right)</h8>
+                                        </div>    
+
+
+                                        <div id="images">
+                                            <img class="singlemiddleimage" src="images/ibpricing.png">
+                                         </div>
+                                            <h8>New page: pricing</h8>
+
+                                        
+                                       
+
+
+                                        <h5>Results:</h5>
+
+                                        <p>
+                                            <ol>
+                                                <li class="orderedli">Number of users requesting a demo has increased and addresses business goal</p>
+                                                </li>
+                                                 <li class="orderedli">More info about those who are interested in the product are collected and helped in designing product functionality</p>
+                                                </li>
+                                            </ol>
+
+                                        
+                                        <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#Inrix" id="closeExtension0"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                        </div> <!--inrix extension-->
+                               
+                                </article><!--article: INRIX-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+             </div> <!--hiddenInviteBig-->
+
                     <div id="slides">
                         <div id="overflow">
                                 <article>
                                     <a name="Inrix"> </a>
-                                        <h3>INRIX (2014-current)</h3>
+                                        <h3>INRIX (2014-2015)</h3>
                                         <h4>Description:</h4>
 
                                         <p>INRIX IS Android and iOS applications that provide traffic, routes and travel time info.  
@@ -204,12 +356,13 @@
                                         <img class="singleimage" src="images/inrixtesting.png">
 
                                         </div>
+                                        <h8>This image shows user in the test environment</h8>
 
 
                                         <h4>My role:</h4>
                                         
                                         <ol>
-                                            <li class="orderedli">Moderated
+                                            <li class="orderedli">Designed and moderated
                                             user research sessions to test
                                             prototypes created by the design
                                             team (including in-person and
@@ -228,6 +381,8 @@
                                             <li class="orderedli">Designed and
                                             tested error handling experience
                                             for Android application</li>
+
+                                            <li class="orderedli">Paper and digital prototyping</li>
                                         </ol>
 
                                         <h4>Tools Used:</h4>
@@ -245,9 +400,10 @@
                                         
                                         <div class="extensiontoslide1"> <!-- extension part-->
 
-                                        
 
-                                        <h4>One of the examples:</h4>
+                                        <h4>Here is an example:</h4>
+                                        <div id="example">
+
                                         <p>My most recent exercise involved the Error Handling Experience feature. 
                                         </p>
                                         <p>
@@ -282,9 +438,9 @@
                                         <h5>Activities performed:</h5>
 
                                         <ol>
-                                            <li class="orderedli">I ran two series of tests on UserTesting.com to determine if users understood the reasons for errors, and if error placements work.</li>
+                                            <li class="portfolioexampleli">I ran two series of tests on UserTesting.com to determine if users understood the reasons for errors, and if error placements work.</li>
 
-                                            <li class="orderedli">Designed different versions of error bars for the drive experience cases, and tested it with users on drive simulator</li>
+                                            <li class="portfolioexampleli">Designed different versions of error bars for the drive experience cases, and tested it with users on drive simulator</li>
                                         </ol>
 
                                         <h5>Challenge:</h5>
@@ -301,7 +457,7 @@
                                         motivators may use the phone in
                                         different ways in the car and have
                                         different distractors.</p>
-                                        
+                                        </div> <!--id="example"-->
 
                                         <div class="linktoslidetoclose">
                                             <h7>
@@ -310,6 +466,211 @@
                                         </div> <!--inrix extension-->
                                
                                 </article><!--article: INRIX-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+                
+                <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="CrowdExchange"> </a>
+                                        <h3>CrowdExchange, wireframe challenge (2015)</h3>
+                                            <p>I participated in this project in terms of a wireframe challenge on the <a href="http://www.topcoder.com">topcoder website</a>.
+                                            </p>
+
+                                        <h4>Description:</h4>
+                                        <p>
+                                            CrowdExchange in an internal developer community portal. The challenge is to design a wireframe solution to help plan out "CrowdExchange" developer community. The goal is to create crowdsource model that allows employees to tackle the type of development activities they are interested in.
+                                        </p>
+
+                                        <div id="images">
+                                        <img class="singleimage" src="images/crowdexchange.png">
+                                        </div>
+
+                                        <h4> My role:</h4>
+                                        <p><ol>
+                                            <li class="orderedli">design workflow for a "Project Manager" role with the help of given user stories 
+                                            </li>
+                                            <li class="orderedli">create <a target="_blank" href="http://katekoroleva.me/projectCrowdExchange/prototype/index-ce.html">interactive prototype</a> </li>
+                                        </ol>
+                                        </p>
+
+                                        <h4>Tools used:</h4>
+                                        <p>Axure
+                                        </p>
+
+
+                                         <div class="linktoslide5">
+                                            <h7>
+                                                <a href="#portfolioslide5" id="showExtension5"><span>More about this project</span></a></h7> 
+                                        </div>
+                                        <div class="extensiontoslide5"> <!-- extension part-->
+
+                                        <h4>Main results:</h4>
+                                        <p><a target="_blank" href="http://katekoroleva.me/projectCrowdExchange/prototype/index-ce.html">Interactive prototype</a></p>
+
+                                        <h4>User Stories for employee: Project Manager</h4>
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli"> - John is a Project Manager and has development work/activities that he is looking to get done ASAP.</li>
+                                            <li class="crowdexchli"> - John decides to use the CrowdExchange community to see if any developers are available to tackle the work. </li>
+                                            <li class="crowdexchli"> - John logs in using his employee credentials and then goes through a very simple wizard process of creating a project and activities (work) that he would like to get done.</li> 
+                                            <li class="crowdexchli"> - While creating the activities John is able to select the "process" he would like to use to get the work done. John is able to select "Assigned, Competition or Team" </li>
+                                            <li class="crowdexchli"> - John is able to select the type of code that needs to be developed, write up details about the activity and also assign a suggested timeline/delivery date.</li>
+                                            <li class="crowdexchli"> - John submits the activities (work) he would like to get done and it goes out to the community</li>
+                                            <li class="crowdexchli"> - John would like to be able to track and review any interest in his activities.</li>
+                                            <li class="crowdexchli"> - John would also like to search and find developers (profiles) who might match up with the type of work he needs to get done. </li>
+                                            <li class="crowdexchli"> - Workers register for John's activities and show they are interested in tackling his activity</li>
+                                            <li class="crowdexchli"> - John is able to review who has registered and is able to assign the activity to one of the workers. </li>
+                                            <li class="crowdexchli"> - John and the workers should have the ability to communicate and see progress on the activity.</li> 
+                                            <li class="crowdexchli"> - John should be able to see a listing of his project or activities and the different stages of completion</li>
+                                            <li class="crowdexchli"> - After an activity is complete John is able to close the activity and mark it as resolved. </li>
+                                            <li class="crowdexchli"> - John is also able to provide feedback on the activity and the developers profile.</li>
+                                        </ol>
+                                            </p>
+
+                                         <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#CrowdExchange" id="closeExtension5"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                        </div> <!--crowdExchange extension-->
+
+                                </article><!--article: CrowdExchange-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+
+
+                <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="WatermarkingApp"> </a>
+                                        <h3>WatermarkingApp, wireframe challenge (2015)</h3>
+                                            <p>I participated in this project in terms of a wireframe challenge on the <a href="http://www.topcoder.com">topcoder website</a>.
+                                            </p>
+
+                                        <h4>Description:</h4>
+                                        <p>
+                                            The primary use case for this application is to provide the capability for the watermark authors to designate regions within a source image which upon scanning will link to online content.  "Scanning" part of the technology is not included. The focus is solely on watermarking and trigger definition.
+
+                                        </p>
+
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/landingpage.png">
+                                        </div>
+
+                                        <h4> My role:</h4>
+                                        <p><ol>
+                                            <li class="orderedli">design workflow based on the requirements given in the task 
+                                            </li>
+                                            <li class="orderedli">create interactive prototype in OmniGraffle</li>
+                                        </ol>
+                                        </p>
+
+                                        <h4>Tools used:</h4>
+                                        <p>OmniGraffle
+                                        </p>
+
+
+                                          <div class="linktoslide6">
+                                            <h7>
+                                                <a href="#portfolioslide6" id="showExtension6"><span>More about this project</span></a></h7> 
+                                            </div>
+
+                                        <div class="extensiontoslide6"> <!-- extension part-->
+
+                                        <h4>Main result:</h4>
+                                        <p>Interactive prototype</p>
+
+                                        <h4>Some screens with requirements from authors:</h4>
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- Landing page should showcase what the application can do.</li>
+                                            <li class="crowdexchli">- There should be a way for the Users to authenticate with the Link Creation Studio service before they will be allowed to create a project.</li>
+                                        </ol>
+                                        </p>
+
+                                            <h9>Landing Page:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/landingpageddlopened.png">
+                                            </div>
+                                             
+
+                                            <h9>Sign up and Authentication available from the landing page:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/landingpageauthenticate.png">
+                                            </div>
+
+                                            <h9>Upload images:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/preuploadselectednotregistered.png">
+                                            </div>
+                                            
+                                            <p>In case user have decided to skip authentication, he can still upload images and register/authenticate later.
+                                            </p>
+
+                                            <h9>Recent Uploads:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/recentuploads2notregistered2.png">
+                                            </div>
+
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- Authors or users will need to create a project.</li>
+                                            <li class="crowdexchli">- Authors are allowed to "brand" a project with some kind of image or logo.</li>
+                                            <li class="crowdexchli">- Authors should have the capability of uploading a source image into a project.</li>
+                                            <li class="crowdexchli">- The application should list all the projects that the user has created.</li>
+                                            <li class="crowdexchli">- The user should be able to open an existing project and update it.</li>
+
+                                        </ol>
+                                        </p>   
+
+                                        <h9>Project List:</h9>
+                                            <div id="images">
+                                            <img class="singleimage" src="images/watermarkingapp/projectslist.png">
+                                            </div>
+
+                                        
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- User can name a project, add description to it, upload photos and support a library of payoffs used in this project.</li>
+
+                                        </ol>
+                                        </p>  
+                                    
+                                        <h9>Project Page, Project Setting:</h9>
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/projectpageimageseditopenddl.png">
+                                        </div> 
+                                        
+                                        <p>
+                                            <ol >
+                                            <li class="crowdexchli">- Authors should have the capability of uploading a source image into a project.</li>
+                                            <li class="crowdexchli">- Authors should have the ability to designate rectangular regions of the image to watermark. A single project can have multiple source images.  And each source image can have multiple watermarked regions.</li>
+                                            <li class="crowdexchli">- Authors should be able to enter a destination (URL of the site to hyperlink to for each watermarked region - known in the Link Technology API as a Payoff).</li>
+                                            <li class="crowdexchli">- After the user designates the regions to be highlighted and the destinations, the system will create the watermarked image which will include one or more watermarked regions.  This processing will happen before the validation step.</li>
+                                            <li class="crowdexchli">- After users have designated the regions to be watermarked and the associated destinations, the application should provide access to view the watermarked image on the screen so that users can validate that the watermarked regions scan properly.</li>
+                                            <li class="crowdexchli">- Users will need the ability to print each watermarked image.</li>
+                                            <li class="crowdexchli">- Users should be able to download each watermarked image.
+                                            </li>
+
+                                        </ol>
+                                        </p>  
+
+                                        <h9>Image Details Screen:</h9>
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/imagedetailresizableelement.png">
+                                        </div> 
+
+                                        <h9>Image Details Screen, Selecting Payoff:</h9>
+                                        <div id="images">
+                                        <img class="singleimage" src="images/watermarkingapp/imagedetailaddpayoff.png">
+                                        </div> 
+
+                                        <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#WatermarkingApp" id="closeExtension6"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                        </div> <!--WatermarkingApp extension-->
+                                </article><!--article: WatermarkingApp-->
                      </div> <!--overflow -->
                  </div> <!--slides -->
                             
@@ -361,7 +722,7 @@
                                         
                                     <h4>Tools Used:</h4>
 
-                                    <p>Morae Manager</p><!--article: MAT-->
+                                    <p>Morae Manager, Microsoft Excel</p><!--article: MAT-->
 
 
                                     <div class="linktoslide2">

@@ -49,11 +49,23 @@
 		letter-spacing: .01rem;
 	}
 
-	@media screen and (max-width:520px) {
-   p  {
+	@media screen and (max-width:480px) {
+   p {
    	padding-left:0em;
-   	padding-right: 0em;
+   	padding-right: 1em;
    }
+
+	a {
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+	}
+
 
    h4 {padding-left: 0em;}
 }
@@ -124,10 +136,18 @@
 	h8 {
 		font-size: 16px;
 		padding-top: 1em;
-		padding-bottom: 1em;
+		margin-bottom: 1em;
 		text-align: left;
 		font-weight: 400;
-		padding-bottom: 0.3em;
+	}
+
+	h9 {
+		font-size: 14px;
+		padding-top: 1em;
+		padding-bottom: 2em;
+		text-align: left;
+		font-weight: 500;
+		padding-bottom: 2em;
 	}
 
 	h7 + h8 
@@ -139,63 +159,12 @@
 		text-decoration: none !important;
 		border-bottom: hidden !important;
 	}
-	/*h1,h2,h3,h4,h5,h6
-	{
-		font-weight: 300;
-		color: #666;
-		line-height: 1.5em;
-	}*/
-	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
 			color: inherit;
 			text-decoration: none;
 		}
 
-/*		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
-		{
-			color: #333;
-		}*/
-		
-		/*h2
-		{
-			font-size: 2em;
-			letter-spacing: -1px;
-		}*/
-		
-			/*h2.alt
-			{
-				color: #888;
-			}*/
-			/*
-			h2.alt strong
-			{
-				color: #666;
-			}
-*/
-		/*h3
-		{
-			font-size: 1.5em;
-		}*/
-
-	/*h3 {
-	text-decoration: none;
-	text-align: left;
-	font-size: 1.4em;
-	font-weight: 200;
-	margin-left: 4em;
-	list-style-type: decimal;
-
-	}
-	h5 {
-		text-decoration: none;
-		text-align: left;
-		font-weight: 200;
-		margin-left: 4em;
-		
-
-	}*/
-	.
 
 	header
 	{
@@ -336,6 +305,12 @@ table, td {
     padding: 0.5em;
 }
 
+@media screen and (max-width:480px) {
+   table{
+   	margin-left: 0em;
+    margin-right: 0em;
+   }
+}
 #resumeskills table, td{
 	font-size: 16px !important;
 	margin-left: 5em;
@@ -434,6 +409,7 @@ table, td {
 
 #images {
 	text-align: center;
+	padding-top: 1em;
 }
 
 
@@ -444,7 +420,24 @@ table, td {
     height: 450px;
     width: auto; 
 }
+.singlebigimage {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 70%; 
+    height:auto;
+}
 
+.singlemiddleimage {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    width: 60%; 
+    height:auto;
+}
 .beforeafteroneimage {
 	display: inline-block;
     height: 450px;
@@ -459,6 +452,16 @@ table, td {
 	display: inline-block;
     height: 450px;
     width: auto; 
+    margin-top: 0.5em;
+    overflow: hidden;
+    text-align: left;
+}
+.beforeaftertwobigimages {
+	display: inline-block;
+    height: auto;
+    width: 48%; 
+    vertical-align: text-top;
+    margin-right: 0.5em;
     margin-top: 0.5em;
     overflow: hidden;
     text-align: left;
@@ -522,6 +525,21 @@ article img {
 margin-left: 5.5em;
 margin-bottom: 0.5em;
 }
+
+#example p, ol {
+	    
+		font-size: 16px;
+		letter-spacing: .01rem;
+		margin-bottom: 0.5em!important;
+}
+
+#example h5 {
+	    
+		padding-top: 0.5em;
+		font-size:18px;
+}
+
+
 
 /* Slider Styling */
 #slides {
@@ -934,6 +952,7 @@ margin-bottom: 0.5em;
 		padding-left: 5.5em;
 		padding-right: 3em;
 		padding-bottom: 1em;
+		padding-top: 0.5em;
 		font-weight: 400;
 		line-height: 1.2em;
 		font-style: normal;
@@ -1006,9 +1025,48 @@ margin-bottom: 0.5em;
 	line-height: 1.5em;
 
 }
+.crowdexchli{
+	list-style-type: disc;
+	text-align: left;
+	font-weight: 400;
+	line-height: 1.2em;
+	font-style: normal;
+	margin-left: 5em;
+	list-style-type: none;
+	line-height: 1.5em;
+	font-size: 18px;
+
+}
+
+.portfolioexampleli {
+	text-indent: -1em;
+		list-style-type: decimal;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 16px;
+		margin-left: 1.5em;
+		margin-right: 3em;
+		margin-bottom: 1em;
+		padding-right: 4em;
+		padding-left: 5em;
+		font-weight: 400;
+		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
+}
+#uxskillsmain li{
+	font-size: 20px !important;
+	padding-left: 4.5em;
+	padding-right: 4em;
+	margin-left: 0em;
+	margin-right: 0em;
+	line-height: 1em;
+}
 
 @media screen and (max-width:520px) {
-   .orderedli,   .orderedliforimages, .nonorderedli, .nonorderedliforimages, .resumeorderedli{
+   .orderedli,   .orderedliforimages, .nonorderedli, .nonorderedliforimages, .resumeorderedli, #uxskillsmain li{
    	padding-left:1em;
    	padding-right: 0em;
    }
@@ -1422,46 +1480,14 @@ a i.icon {
     margin-left: -46.36363636363637%;
 }
 
-/*.content{
-    color: #4b4848;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    line-height: 22px;
-    padding: 60px 30px;
-    background: #fff;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.content p{
-    color: #4b4848;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-
-    line-height: 24px;
-    margin-bottom: 60px;
-}*/
-
-/*.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6{
-    color: #4b4848;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-
-    line-height: 28px;
-    margin-bottom: 30px;
-
-}*/
 
 /* Link to expand slide */
+.linktoslide0 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide0 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide0 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide0 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
 .linktoslide1 a {text-decoration: none; border-bottom: hidden !important;}
 .linktoslide1 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
 .linktoslide1 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
@@ -1481,6 +1507,16 @@ a i.icon {
 .linktoslide4 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
 .linktoslide4 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
 .linktoslide4 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide5 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide5 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide5 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide5 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
+
+.linktoslide6 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide6 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide6 a:link > span {text-decoration: none; border-bottom:groove 1px ; }
+.linktoslide6 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em;}
 
 
 .linktoslidetoclose a {text-decoration: none; border-bottom: hidden !important;}
