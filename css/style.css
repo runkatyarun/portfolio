@@ -139,6 +139,7 @@
 		margin-bottom: 1em;
 		text-align: left;
 		font-weight: 400;
+		padding-bottom: 0.5em;
 	}
 
 	h9 {
@@ -409,9 +410,13 @@ table, td {
 
 #images {
 	text-align: center;
-	padding-top: 1em;
+	padding-top: 0.5em;
 }
 
+#imageandtext h8{
+	float: left;
+	padding-left: 1em;
+}
 
 .singleimage {
 	display: inline-block;
@@ -425,10 +430,13 @@ table, td {
     margin-left: auto;
     margin-right: auto;
     
-    width: 70%; 
+    width:70%; 
     height:auto;
 }
 
+.hiddenInviteBig {
+	display:none;
+}
 .singlemiddleimage {
 	display: inline-block;
     margin-left: auto;
@@ -462,7 +470,6 @@ table, td {
     width: 48%; 
     vertical-align: text-top;
     margin-right: 0.5em;
-    margin-top: 0.5em;
     overflow: hidden;
     text-align: left;
 }

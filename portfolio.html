@@ -74,15 +74,12 @@
     
     function checkCookie() {
         
-      var cookie = Cookies.get('name'); 
-      if ('undefined' == typeof cookie) {
-          Cookies.set('name', 'value', { expires: 1, path: '' }); 
+      var cookie = Cookies.get('is_private'); 
+      if (cookie == 'true') {
           $(".hiddenInrixExtension").show();
           $(".hiddenMATExtension").show();
           $(".hiddenInviteBig").show();
       } 
-
-      
     }
 
     function extensionOnClick0() {
@@ -248,20 +245,16 @@
                                         
                                         </br>
 
-                                        
+                                        <h8>Landing page after redesign:</h8>
                                         <div id="images">
-
-                                        <img class="singlebigimage" src="images/iblandingpage.png">
-
+                                             <img class="singlebigimage" src="images/iblandingpage.png">
                                         </div>
-                                        <h8>Image above: Landing page redesign</h8>
-
+                                        
+                                       <h8>Landing page before:</h8>
                                        <div id="images">
-                                       <p>
+                                        <p>
                                         <img class="singlebigpicture" src="images/iblandingpagebefore.png">
                                         </p>
-                                        <h8>Image above: Landing page before</h8>
-                                        
                                         </div>
                                         
 
@@ -270,7 +263,9 @@
                                         <ol>
                                             <li class="orderedli">Redesigned the website to improve conversion rates</li>
 
-                                            <li class="orderedli">To better understand users who request or about to request a demo, created a survey and embedded it to the redesigned Request a demo page</li>
+                                            <li class="orderedli">Created low and high fidelity wireframes</li>
+
+                                            <li class="orderedli">Created a survey and embedded it to the redesigned Request a demo page, to better understand users who request or about to request a demo.</li>
 
                                             <li class="orderedli">Created a survey targeted to the venue members staff (event managers) to identify their needs and motivations</li>
 
@@ -290,46 +285,53 @@
                                         
                                         <div class="extensiontoslide0"> <!-- extension part-->
 
-                                        <h4>Other examples: </h4>
+                                        <h4>Other examples:</h4>
                                         
+                                        <h8>Features For Venues page after redesign:</h8>
 
                                         <div id="images">
-                                            
-                                            <img class="beforeaftertwobigimages" src="images/ibvenues.png">
-                                            
-                                            <img class="beforeaftertwobigimages" src="images/ibvenuesbefore.png">
-                                              <h8>Features for venues page redesigned (on left) and version before (on right)</h8>
-                                        </div>    
+                                            <div id="imageandtext">
+                                            <img class="singlebigimage" src="images/ibvenues.png">
 
-                                        <div id="images">
-                                            
-                                            <img class="beforeaftertwobigimages" src="images/ibrequest.png">
-                                            
-                                            <img class="beforeaftertwobigimages" src="images/ibrequestbefore.png">
+                                        </div>
+                                        <h8>Features For Venues page before:</h8>
+                                        </br>
+                                            <div id="imageandtext">
+
+                                            <img class="singlebigimage" src="images/ibvenuesbefore.png">
+                                           </div>
                                               
-                                              <h8>Request a demo page redesigned (on left) and version before (on right)</h8>
                                         </div>    
 
-
+                                        <h8>Pricing, new page:</h8>
                                         <div id="images">
                                             <img class="singlemiddleimage" src="images/ibpricing.png">
                                          </div>
-                                            <h8>New page: pricing</h8>
+                                        </br>
+                                        <h8>Request a Demo page after redesign:</h8>
+                                        <div id="images">
+                                            
+                                            <img class="beforeaftertwobigimages" src="images/ibrequest.png">
+                                         </div>
 
-                                        
-                                       
+                                        </br>
+                                        <h8>Request a Demo page before redesign:</h8>
+                                         <div>   
+                                            
+                                            <img class="beforeaftertwobigimages" src="images/ibrequestbefore.png">
+                                              
+                                             
+                                        </div>    
 
-
+                                           
                                         <h5>Results:</h5>
-
-                                        <p>
                                             <ol>
-                                                <li class="orderedli">Number of users requesting a demo has increased and addresses business goal</p>
+                                                <li class="orderedli">Number of users requests to schedule a demo has increased and addresses business goal
                                                 </li>
-                                                 <li class="orderedli">More info about those who are interested in the product are collected and helped in designing product functionality</p>
+                                                 <li class="orderedli">Collected more info about users interested in the project functionality
                                                 </li>
+                                        
                                             </ol>
-
                                         
                                         <div class="linktoslidetoclose">
                                             <h7>
@@ -781,7 +783,7 @@
                                     </ol>
                                     
                                     <div class="hiddenMATExtension">
-                                    <p><i>Since I gave you a special link, I can show you some screenshots for a limited amount of time. So that you better understand the context.</i>
+                                    <p><i>I can show you some screenshots for a limited amount of time. So that you better understand the context and findings.</i>
                                     </p>
                                     <div id="images">
                                     <img class="singleimage" src="images/MAT0.png">
