@@ -1490,46 +1490,51 @@ a i.icon {
 
 
 /* Link to expand slide */
-.linktoslide0 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide0 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide0 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide0 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important; }
-.linktoslide0 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide0 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide0 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide0 a:hover:before {color:#ff9966;}
 
-.linktoslide1 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide1 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide1 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide1 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important;  }
-.linktoslide1 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide1 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide1 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide1 a:hover:before {color:#ff9966;}
 
-.linktoslide2 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide2 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide2 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide2 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important;  }
-.linktoslide2 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide2 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide2 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide2 a:hover:before {color:#ff9966;}
 
-.linktoslide3 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide3 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide3 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide3 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important; }
-.linktoslide3 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide3 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide3 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide3 a:hover:before {color:#ff9966;}
 
-.linktoslide4 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide4 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide4 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide4 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important; }
-.linktoslide4 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide4 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide4 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide4 a:hover:before {color:#ff9966;}
 
-.linktoslide5 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide5 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide5 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide5 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important;  }
-.linktoslide5 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide5 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide5 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide5 a:hover:before {color:#ff9966;}
 
-.linktoslide6 a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslide6 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslide6 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslide6 a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important;  }
-.linktoslide6 a:before {content: "\f103"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
+.linktoslide6 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide6 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide6 a:hover:before {color:#ff9966;}
 
-
-.linktoslidetoclose a {text-decoration: none; border-bottom: hidden !important;}
+.linktoslidetoclose a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslidetoclose a:hover > span {color: #ff9966; border-bottom: hidden !important; }
-.linktoslidetoclose a:link > span {text-decoration: none; border-bottom:dotted 1.5px; border-color: #ef692e !important; }
-.linktoslidetoclose a:before {content: "\f102"; font-family: FontAwesome; padding-right: 0.5em; color:#ff9966; padding-left: 0.5em}
-
-
+.linktoslidetoclose a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslidetoclose a:before {content: "\f102"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslidetoclose a:hover:before {color:#ff9966;}
 
