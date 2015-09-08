@@ -735,6 +735,14 @@ margin-bottom: 0.5em;
 						border: 0;
 					}
 
+					ul.icons .goodreads {
+					    font-family: Arial, Sans-Serif;
+					    font-size: 1.25em;
+					    line-height: 2em;
+					    width:0.7em;
+
+					}
+
 		ol
 		{
 		}
