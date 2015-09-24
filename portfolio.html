@@ -48,6 +48,7 @@
         $(".extensiontoslide4").hide();
         $(".extensiontoslide5").hide();
         $(".extensiontoslide6").hide();
+        $(".extensiontoslide7").hide();
 
        $("#showExtension0").click(extensionOnClick0);
        $("#showExtension1").click(extensionOnClick1);
@@ -56,6 +57,7 @@
        $("#showExtension4").click(extensionOnClick4);
        $("#showExtension5").click(extensionOnClick5);
        $("#showExtension6").click(extensionOnClick6);
+       $("#showExtension7").click(extensionOnClick7);
 
        $("#closeExtension0").click(extensionOnClick0);
        $("#closeExtension1").click(extensionOnClick1);
@@ -64,10 +66,13 @@
        $("#closeExtension4").click(extensionOnClick4);
        $("#closeExtension5").click(extensionOnClick5);
        $("#closeExtension6").click(extensionOnClick6);
+       $("#closeExtension7").click(extensionCloseOnClick7);
 
        $(".hiddenInrixExtension").hide();
        $(".hiddenMATExtension").hide();
        $(".hiddenInviteBig").hide();
+       $(".goodreadshiddenimg").show();
+
        checkCookie();
 
     };
@@ -115,6 +120,14 @@
         $(".linktoslide6").toggle();
     }
 
+    function extensionOnClick7() {
+        $(".extensiontoslide7").toggle();
+        $(".linktoslide7").toggle();
+
+        $(".goodreadshiddenimg").hide();
+    }
+
+
     function extensionCloseOnClick1() {
         $("#closeExtension1");
     }
@@ -138,6 +151,12 @@
     function extensionCloseOnClick6() {
         $("#closeExtension6");
     }
+
+    function extensionCloseOnClick7() {
+        $(".extensiontoslide7").toggle();
+        $(".linktoslide7").toggle();
+        $(".goodreadshiddenimg").show();
+    }
     
     function hideAllExtension() {
         $(".extensiontoslide0").hide();
@@ -147,7 +166,7 @@
         $(".extensiontoslide4").hide();
         $(".extensiontoslide5").hide();
         $(".extensiontoslide6").hide();
-        
+        $(".extensiontoslide7").hide();
 
     }  
  
@@ -367,7 +386,7 @@
                                             
                                         
                                         <div id="images">
-                                            <img class="singleimage" src="images/route_error_30s_network.png">
+                                            <img class="singlemobileimage" src="images/route_error_30s_network.png">
                                         </div>
                                         
 
@@ -489,7 +508,294 @@
                      </div> <!--overflow -->
                  </div> <!--slides -->
                 
+                
                 <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <div id="slide2">
+                                    <a name="MAT"></a>
+                                    <h3>Microsoft Multilingual App
+                                    Toolkit (MAT) (2013)</h3>
+                                   
+                                    <p>I participated in this project in terms
+                                    of "HCDE 517: Usability Studies" course. It
+                                    was part of the HCDE certificate
+                                    program<br>
+                                    </p>
+
+                                    <h4>What is MAT?</h4>
+
+                                    <p>MAT is a software extension to the
+                                    Microsoft® Visual Studio® 2012 IDE that
+                                    enables developers of Windows 8 Phone Apps
+                                    and Windows 8 Store Apps to create
+                                    additional language versions of their
+                                    apps.</p>
+                                    
+                                    <div id="images">
+                                    <img class="singleimage" src="images/matplugin.png">
+                                    </div>
+                                    
+                                   <h4>My Role:</h4>
+
+                                    <ol>
+                                        <li class="orderedli">Together with two other team members, we designed a test strategy to verify scenario flow.</li>
+
+                                        <li class="orderedli">Designed part of the user testing test plan focused on collecting quantitative data.</li>
+
+                                        <li class="orderedli">And with the team, participated in user testing of the actual application 
+                                        </li>
+
+                                        <li class="orderedli">Processed testing
+                                        results and compiled the plan for
+                                        improvements.</li>
+
+                                        <li class="orderedli">Presented results
+                                        to MAT team members.</li>
+                                    </ol>
+                                        
+                                    <h4>Tools Used:</h4>
+
+                                    <p>Morae Manager, Microsoft Excel</p><!--article: MAT-->
+
+
+                                    <div class="linktoslide2">
+                                            <h7>
+                                                <a href="#portfolioslide2" id="showExtension2"><span>Read more about this project</span></a></h7> 
+                                    </div>
+
+                                    <div class="extensiontoslide2"> <!-- extension part-->
+                                    <p>
+                                    <i>Unfortunately, this project is under NDA. I can only
+                                                                        describe main steps made in a summary
+                                                                        form.</i></p>
+
+                                    <h4>MAT Study Question:</h4>
+
+                                    <p>Is the initial MAT user experience easy
+                                    enough that developers can accomplish a
+                                    series of tasks required for a complete
+                                    end-to-end localization scenario?</p>
+
+                                    <h4>User testing main steps:</h4>
+                                    <ol>
+                                         <li class="orderedli">
+                                                prepared a set of questions
+                                                that will drive scenario
+                                                testing</li>
+
+                                                <li class="orderedli">
+                                                invited 10 Microsoft MVPs (Most
+                                                Valued Professionals) as
+                                                users</li>
+
+                                                <li class="orderedli">
+                                                prepared questions for the
+                                                interview and post-test
+                                                survey</li>
+
+                                                <li class="orderedli">played
+                                                an Observer role using Morae
+                                                manager app during testing</li>
+                                    </ol>
+
+                                    <h4>Main Findings:</h4>
+
+                                    <ol>
+                                        <li class="orderedli">The initial step of “enabling the tool” blocked further scenario steps because 7 out of 10 users could not find a way to enable it.</li>
+
+                                        <li class="orderedli">Developers used
+                                        online help to resolve issues while
+                                        working with tool, but MSDN.com - main
+                                        help resourse, was obsolete.</li>
+
+                                        <li class="orderedli">Users did not
+                                        understand that the tool was embedded
+                                        into the Visual Studio.</li>
+                                    </ol>
+                                    
+                                    <div class="hiddenMATExtension">
+                                    <p><i>I can show you some screenshots for a limited amount of time. So that you better understand the context and findings.</i>
+                                    </p>
+                                    <div id="images">
+                                    <img class="singleimage" src="images/MAT0.png">
+                                    <img class="singleimage" src="images/MAT3.png">
+                                    <img class="singleimage" src="images/MAT1.png">
+                                    <img class="singleimage" src="images/MAT2.png">
+                                    </div>
+                                    </div>
+
+
+                                    <h4>Challenges:</h4>
+
+                                    <p>Developers did not feel comfortable consulting help while being observed.  Although the usage of online help is an integral part of their work day, I had to find a way to make them feel at ease. </p>
+
+                                    <h4>Result:</h4>
+
+                                    <p>New version of MAT was released and
+                                    included feedback of this study</p>
+
+                                        <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#MAT" id="closeExtension2"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                </div> <!--extension-->
+                                </article>
+                  </div> <!--overflow -->
+                 </div> <!--slides -->
+
+                <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="GoodReads"> </a>
+                                        <h3>GoodReads, redesign proposal (2015)</h3>
+                                            <p>I have been using <a href="https://www.goodreads.com/user/show/4798745-katechka" rel="external">GoodReads</a> web site for a couple of months. </br>
+                                                At some point I realized that I have to split activities like searching for new books, storing books lists and tracking books reading progress between different web sites and applications. 
+                                            </p>
+
+                                        <h4>Description:</h4>
+                                        <p>
+                                            GoodReads is a social networking website. Its mission is to allow members to explore the world of books, discuss literature with one another, make contact with authors, review read or currently reading books and plan to read in the future.
+
+                                        </p>
+                                        <div class="goodreadshiddenimg">
+                                            <div id="images">
+                                            <img class="singleimage" src="images/goodreads/grthemedlists.png">
+                                            </div>
+                                        </div>
+
+                                        <h4> My role:</h4>
+                                        <p>Created low fidelity wireframes with the goal to add support for a scenario when user wants to learn something new about a specific topic.
+                                        </p>
+
+                                        <h4>Tool used:</h4>
+                                        <p>Sketch
+                                        </p>
+
+
+                                         <div class="linktoslide7">
+                                            <h7>
+                                                <a href="#portfolioslide7" id="showExtension7"><span>Read more about this project</span></a></h7> 
+                                        </div>
+                                        <div class="extensiontoslide7"> <!-- extension part-->
+
+                                       
+                                        <h4>GoodReads redesign goal:</h4>
+                                        <p>The goal is to add support for a scenario when user wants to learn something new about a specific topic.
+                                       
+                                        </p>
+                                        <div id="example">
+                                        <h4>Thinking process:</h4>
+                                        <p>
+                                            GR has some support for finding books on a topic functionality across it's different features. 
+                                        </p>
+                                        <p> For example, user can find new books on a specific topic through:</p>
+                                                <ol>
+                                                    <li class="goodreadsexampleli">Groups </li>
+                                                    <li class="goodreadsexampleli">Recommendations </li>
+                                                    <li class="goodreadsexampleli">Listopia </li>
+                                                    <li class="goodreadsexampleli">Book view </li>
+                                            </ol>
+                                            </p>
+                                        </p>
+                                        <p> But overall all of the solutions have the following issues:
+                                        </p><ol>
+                                                    <li class="goodreadsexampleli">They do not help to pick one book out of the list of suggested books  </li>
+                                                    <li class="goodreadsexampleli">They do not give an idea on the structure of the topic </li>
+                                                     <li class="goodreadsexampleli">They do not motivate enough to read more books on a specific topic</li>
+                                            </ol>
+                                        </p>
+                                        <p>It's obvious that GR was not designed for the scenario "find books on a     specific topic and read continuously on it".</p>
+                                        <p>I suggest to introduce a new feature "Themed Lists" and add support for it in the existing functionality.
+                                        </p>
+
+                                        <h5> Themed List Home Page:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grthemedlists.png">
+                                                <span>On the mouse hover the subject element, the element switches to the short "shelves" view of the subject.</span>
+                                                <span>On subject element click "topic selection" page opens.</span>
+                                                <span>On "interests" link click, User Profile page opens. User Profile page is updated, see it below.</span>
+                                                <span>On the Themed List link click a  Themed List page opens.</span>
+
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Topics Selection Page:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grtopicselection.png">
+                                                <span>In case user is not aware of the topic but interested in it, he can pick the list which will help to understand the fundamentals.</span>
+                                                <span>Some topics have a label [rated] that means that user has already left the review on the topic. (read below on this).</span>
+                                                <span>Label [read 3 books] means that some books from the list were already read.</span>
+                                                <span>Click on the topic link opens the List View page.</span>
+
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Themed List View Page:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grthemedlistview.png">
+                                                <span>User can add the whole list to the list of themed lists or start reading one of the books from it.</span>
+                                                <span>Some lists are split into sections. E.g. Capacity Management, Supply Chain Design, etc.</span>
+                                                <span>"+Some words from Warren Buffet" element will show comments on the list content from the author.</span>
+                                                <span>Some books have a label "Must Read, Basics". It brings attention to a book from the recommended list that is very important for reading.</span>
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Bookshelf Page redesigned:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grbookshelf.png">
+                                                <span>Themed list section is added.</span>
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Current Bookshelf Page implementation:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grcurrentbookshelf.png">
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Bookshelf Page Feedback:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grbookshelfwithfeedback.png">
+                                                <span>Rating system now helps to get the detailed feedback on the book or on the topic. Based on this feedback books recommendation feature should be enhanced. Also new section "interests" located primary on the profile page will be populated based on this feedback.</span>
+                                                <span>
+                                                    New rating system should work as a motivation for reading books that interests a user.
+                                                </span>
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Profile page redesigned:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grprofile.png">
+                                                <span>"Warren is interested in" section is added to add/delete interests.</span>
+                                                <span>Themed lists section is added.</span>
+                                                <span>Now, in case the book is part of the themed list there is a text line saying about it. E.g. "Themed list: Production and operation"</span>
+                                                
+                                        <br  /> 
+                                        </div> 
+
+                                        <h5> Current Profile page implementation:</h5>
+                                        <div id="imagesandtext">
+                                                <img class="singleimage" src="images/goodreads/grcurrentprofile.png">
+                                                
+                                        <br  /> 
+                                        </div> 
+
+                                    
+                                        
+                                        </div> <!--example-->
+                                         <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#GoodReads" id="closeExtension7"><span>Less about this project</span></a></h7> 
+                                        </div>
+                                        </div> <!--crowdExchange extension-->
+
+                                </article><!--article: CrowdExchange-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+
+                            
+                 <div id="slides">
                         <div id="overflow">
                                 <article>
                                     <a name="CrowdExchange"> </a>
@@ -693,142 +999,6 @@
                                 </article><!--article: WatermarkingApp-->
                      </div> <!--overflow -->
                  </div> <!--slides -->
-                            
-
-                <div id="slides">
-                        <div id="overflow">
-                                <article>
-                                    <div id="slide2">
-                                    <a name="MAT"></a>
-                                    <h3>Microsoft Multilingual App
-                                    Toolkit (MAT) (2013)</h3>
-                                   
-                                    <p>I participated in this project in terms
-                                    of "HCDE 517: Usability Studies" course. It
-                                    was part of the HCDE certificate
-                                    program<br>
-                                    </p>
-
-                                    <h4>What is MAT?</h4>
-
-                                    <p>MAT is a software extension to the
-                                    Microsoft® Visual Studio® 2012 IDE that
-                                    enables developers of Windows 8 Phone Apps
-                                    and Windows 8 Store Apps to create
-                                    additional language versions of their
-                                    apps.</p>
-                                    
-                                    <div id="images">
-                                    <img class="singleimage" src="images/matplugin.png">
-                                    </div>
-                                    
-                                   <h4>My Role:</h4>
-
-                                    <ol>
-                                        <li class="orderedli">Together with two other team members, we designed a test strategy to verify scenario flow.</li>
-
-                                        <li class="orderedli">Designed part of the user testing test plan focused on collecting quantitative data.</li>
-
-                                        <li class="orderedli">And with the team, participated in user testing of the actual application 
-                                        </li>
-
-                                        <li class="orderedli">Processed testing
-                                        results and compiled the plan for
-                                        improvements.</li>
-
-                                        <li class="orderedli">Presented results
-                                        to MAT team members.</li>
-                                    </ol>
-                                        
-                                    <h4>Tools Used:</h4>
-
-                                    <p>Morae Manager, Microsoft Excel</p><!--article: MAT-->
-
-
-                                    <div class="linktoslide2">
-                                            <h7>
-                                                <a href="#portfolioslide2" id="showExtension2"><span>Read more about this project</span></a></h7> 
-                                    </div>
-
-                                    <div class="extensiontoslide2"> <!-- extension part-->
-                                    <p>
-                                    <i>Unfortunately, this project is under NDA. I can only
-                                                                        describe main steps made in a summary
-                                                                        form.</i></p>
-
-                                    <h4>MAT Study Question:</h4>
-
-                                    <p>Is the initial MAT user experience easy
-                                    enough that developers can accomplish a
-                                    series of tasks required for a complete
-                                    end-to-end localization scenario?</p>
-
-                                    <h4>User testing main steps:</h4>
-                                    <ol>
-                                         <li class="orderedli">
-                                                prepared a set of questions
-                                                that will drive scenario
-                                                testing</li>
-
-                                                <li class="orderedli">
-                                                invited 10 Microsoft MVPs (Most
-                                                Valued Professionals) as
-                                                users</li>
-
-                                                <li class="orderedli">
-                                                prepared questions for the
-                                                interview and post-test
-                                                survey</li>
-
-                                                <li class="orderedli">played
-                                                an Observer role using Morae
-                                                manager app during testing</li>
-                                    </ol>
-
-                                    <h4>Main Findings:</h4>
-
-                                    <ol>
-                                        <li class="orderedli">The initial step of “enabling the tool” blocked further scenario steps because 7 out of 10 users could not find a way to enable it.</li>
-
-                                        <li class="orderedli">Developers used
-                                        online help to resolve issues while
-                                        working with tool, but MSDN.com - main
-                                        help resourse, was obsolete.</li>
-
-                                        <li class="orderedli">Users did not
-                                        understand that the tool was embedded
-                                        into the Visual Studio.</li>
-                                    </ol>
-                                    
-                                    <div class="hiddenMATExtension">
-                                    <p><i>I can show you some screenshots for a limited amount of time. So that you better understand the context and findings.</i>
-                                    </p>
-                                    <div id="images">
-                                    <img class="singleimage" src="images/MAT0.png">
-                                    <img class="singleimage" src="images/MAT3.png">
-                                    <img class="singleimage" src="images/MAT1.png">
-                                    <img class="singleimage" src="images/MAT2.png">
-                                    </div>
-                                    </div>
-
-
-                                    <h4>Challenges:</h4>
-
-                                    <p>Developers did not feel comfortable consulting help while being observed.  Although the usage of online help is an integral part of their work day, I had to find a way to make them feel at ease. </p>
-
-                                    <h4>Result:</h4>
-
-                                    <p>New version of MAT was released and
-                                    included feedback of this study</p>
-
-                                        <div class="linktoslidetoclose">
-                                            <h7>
-                                                <a href="#MAT" id="closeExtension2"><span>Less about this project</span></a></h7> 
-                                        </div>
-                                </div> <!--extension-->
-                                </article>
-                  </div> <!--overflow -->
-                 </div> <!--slides -->
 
                 <div id="slides">
                     <div id="overflow">
@@ -851,8 +1021,8 @@
 
                                    <div id="images">
                                     
-                                    <img class="singleimage" src="images/charityhomeafter.png">
-                                    <img class="singleimage" src="images/charitytrackingafter.png">
+                                    <img class="singlemobileimage" src="images/charityhomeafter.png">
+                                    <img class="singlemobileimage" src="images/charitytrackingafter.png">
 
                                     </div>
                                     

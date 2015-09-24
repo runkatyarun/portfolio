@@ -151,6 +151,8 @@
 		padding-bottom: 2em;
 	}
 
+
+
 	h7 + h8 
 	{
 		
@@ -412,17 +414,57 @@ table, td {
 	text-align: center;
 	padding-top: 0.5em;
 }
+ #imagesandtext {
+ 	text-align: left;
+	padding-top: 0.5em;
+	padding-left: 2em;
+	
+ }
+#imagesandtext br{clear:both;}
+
+#imagesandtext img {
+	float:left;
+	vertical-align: text-top;
+	padding-bottom: 1em;
+	margin:  0 0.5em 1em 0;
+}
+
+#imagesandtext span {
+	font-size:14px ;
+	margin-right: 1em !important;
+	display:block;
+	margin-bottom: 6em;
+}
+#imagesandtext p{
+ 	text-align: left;
+	padding-top: 0.5em;
+	display: inline-block;
+	padding-left: 0.5em !important;
+	padding-bottom: 3em;
+	/*float: right; */
+	width: 5em;/*
+	margin-right: 1em !important;*/
+ }
 
 #imageandtext h8{
 	float: left;
 	padding-left: 1em;
+	padding-top: 2em;
 }
 
 .singleimage {
 	display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    height: 450px;
+    height: auto;
+    width: 500px; 
+}
+
+.singlemobileimage {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
     width: auto; 
 }
 .singlebigimage {
@@ -1064,9 +1106,28 @@ margin-bottom: 0.5em;
 		margin-right: 3em;
 		margin-bottom: 1em;
 		padding-right: 4em;
-		padding-left: 5em;
+		padding-left: 6em;
 		font-weight: 400;
 		line-height: 1.2em;
+		font-style: normal;
+		color: rgba(0,0,0,0.8);
+		letter-spacing: .01rem;
+}
+
+.goodreadsexampleli {
+	text-indent: -1em;
+		list-style-type: decimal;
+		list-style-position:inside;
+		text-decoration: none;
+		text-align: left;
+		font-size: 16px;
+		margin-left: 1.5em;
+		margin-right: 3em;
+		margin-bottom: 1em;
+		padding-right: 4em;
+		padding-left: 6em;
+		font-weight: 400;
+		line-height: 0.5em;
 		font-style: normal;
 		color: rgba(0,0,0,0.8);
 		letter-spacing: .01rem;
@@ -1539,6 +1600,14 @@ a i.icon {
 .linktoslide6 a:link > span {text-decoration: none; border-bottom:groove 1px;}
 .linktoslide6 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
 .linktoslide6 a:hover:before {color:#ff9966;}
+
+
+.linktoslide7 a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
+.linktoslide7 a:hover > span {color: #ff9966; border-bottom: hidden !important; }
+.linktoslide7 a:link > span {text-decoration: none; border-bottom:groove 1px;}
+.linktoslide7 a:before {content: "\f103"; font-family: FontAwesome; padding-right:  0.5em; color:#bf5b2e; padding-left: 0.5em}
+.linktoslide7 a:hover:before {color:#ff9966;}
+
 
 .linktoslidetoclose a {text-decoration: none; color: #bf5b2e; letter-spacing:-0.5px; border-bottom: hidden !important; font-weight: 500}
 .linktoslidetoclose a:hover > span {color: #ff9966; border-bottom: hidden !important; }
