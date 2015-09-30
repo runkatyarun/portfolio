@@ -39,7 +39,7 @@
 	p {
 		text-decoration: none;
 		text-align: left;
-		font-size: 20px;
+		font-size: 16px;
 		padding-left: 4em;
 		padding-right: 4em;
 		font-weight: 400;
@@ -48,6 +48,7 @@
 		color: rgba(0,0,0,0.8);
 		letter-spacing: .01rem;
 	}
+
 
 	@media screen and (max-width:480px) {
    p {
@@ -87,9 +88,8 @@
 	}
 
 
-
 	h4 {
-		font-size: 22px;
+		font-size: 20px;
 		padding-top: 1em;
 		padding-bottom: 1em;
 		text-align: left;
@@ -191,7 +191,6 @@
 	}
 	i {
 		font-style: italic;
-		font-size: 16px;
 	}
 
 
@@ -314,15 +313,7 @@ table, td {
     margin-right: 0em;
    }
 }
-#resumeskills table, td{
-	font-size: 16px !important;
-	margin-left: 5em;
-    margin-right: 5em;
-}
-#resumeskills li {
-	font-size: 16px !important;
-	padding-left: 3em;
-}
+
 
 	/* Images */
 
@@ -430,7 +421,7 @@ table, td {
 }
 
 #imagesandtext span {
-	font-size:14px ;
+	font-size:12px ;
 	margin-right: 1em !important;
 	display:block;
 	margin-bottom: 6em;
@@ -558,26 +549,56 @@ article img {
 }
 
 #slides p {
-	font-size: 18px;
+	font-size: 16px;
 	margin-left: 1.5em;
 	margin-right: 3.5em;
 	margin-bottom: 0.5em;
 }
 
+#about p {
+	font-size: 18px;
+}
+
 #resume p {
-	font-size: 16px;
+	font-size: 14px;
 	margin-left: 1.5em;
 	margin-right: 3.5em;
 }
- 
+
+#resume strong {
+	color: #424242;
+	font-weight: 600;
+
+} 
+
 #resume ul p {
 margin-left: 5.5em;
 margin-bottom: 0.5em;
 }
 
+
+#resumeskills table {
+	font-size: 12px ;
+	padding-left: 4em;
+    margin-right: 5em;
+}
+
+#resumeskills td {
+	font-size: 12px ;
+	padding-left: 4em;
+    margin-right: 5em;
+}
+
+
+#resumeskills li {
+	font-size: 12px !important;
+	padding-left: 5em;
+    padding-right: 5em;
+}
+
 #example p, ol {
 	    
-		font-size: 16px;
+		font-size: 14px;
 		letter-spacing: .01rem;
 		margin-bottom: 0.5em!important;
 }
@@ -586,6 +607,35 @@ margin-bottom: 0.5em;
 	    
 		padding-top: 0.5em;
 		font-size:18px;
+}
+
+
+#resumedescription p {
+	font-size: 14px;
+	letter-spacing: .01rem;
+	margin-bottom: 0.5em!important;
+	padding-left: 5em;
+	padding-right: 1em;
+	padding-top: 1.5em;
+}
+
+#resumedescription span {
+	font-size: 12px;
+	font-color:#666666;
+	letter-spacing: .01rem;
+	margin-bottom: 0.5em!important;
+	padding-left: 5em;
+	padding-right: 1em;
+}
+
+#resumedescription h3 {
+
+			font-size: 16px;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			text-align: center;
+			display: block;
+		
 }
 
 
@@ -737,9 +787,6 @@ margin-bottom: 0.5em;
 	transition: all 0.5s ease-out;
 	margin-top: 1em;
 }
-
-
-
 	/* List */
 
 		ul
@@ -986,7 +1033,7 @@ margin-bottom: 0.5em;
 		list-style-position:inside;
 		text-decoration: none;
 		text-align: left;
-		font-size: 18px;
+		font-size: 16px;
 		margin-left: 1.5em;
 		margin-right: 3em;
 		margin-bottom: 1em;
@@ -1005,7 +1052,7 @@ margin-bottom: 0.5em;
 		list-style-position:inside;
 		text-decoration: none;
 		text-align: left;
-		font-size: 18px;
+		font-size: 15px;
 		padding-left: 5.5em;
 		padding-right: 3em;
 		padding-bottom: 1em;
@@ -1022,7 +1069,7 @@ margin-bottom: 0.5em;
 		list-style-position:inside;
 		text-decoration: none;
 		text-align: left;
-		font-size: 18px;
+		font-size: 16px;
 		margin-left: 1.5em;
 		margin-right: 3em;
 		margin-bottom: 1.5em;
@@ -1041,7 +1088,7 @@ margin-bottom: 0.5em;
 		list-style-position:inside;
 		text-decoration: none;
 		text-align: left;
-		font-size: 18px;
+		font-size: 16px;
 		margin: 0em 1.5em 0.5em 1.5em;
 		padding-right: 4em;
 		padding-left: 5em;
@@ -1059,7 +1106,7 @@ margin-bottom: 0.5em;
 		list-style-position:inside;
 		text-decoration: none;
 		text-align: left;
-		font-size: 18px;
+		font-size: 16px;
 		margin-left: 3.5em;
 		margin-right: 3em;
 		margin-bottom: 0.8em;
@@ -1084,6 +1131,7 @@ margin-bottom: 0.5em;
 }
 .crowdexchli{
 	list-style-type: disc;
+	padding-right: 2em;
 	text-align: left;
 	font-weight: 400;
 	line-height: 1.2em;
@@ -1091,7 +1139,7 @@ margin-bottom: 0.5em;
 	margin-left: 5em;
 	list-style-type: none;
 	line-height: 1.5em;
-	font-size: 18px;
+	font-size: 14px;
 
 }
 
@@ -1101,7 +1149,7 @@ margin-bottom: 0.5em;
 		list-style-position:inside;
 		text-decoration: none;
 		text-align: left;
-		font-size: 16px;
+		font-size: 14px;
 		margin-left: 1.5em;
 		margin-right: 3em;
 		margin-bottom: 1em;
@@ -1134,12 +1182,20 @@ margin-bottom: 0.5em;
 }
 #uxskillsmain li{
 	font-size: 16px !important;
-	padding-left: 6em;
+	padding-left: 5em;
 	padding-right: 4em;
 	margin-left: 0em;
 	margin-right: 0em;
 	line-height: 1em;
 }
+#uxskillsmain table, td{
+	padding-left: 1em;
+	padding-right: 4em;
+	font-size: 14px ;
+
+}
+
+
 
 @media screen and (max-width:520px) {
    .orderedli,   .orderedliforimages, .nonorderedli, .nonorderedliforimages, .resumeorderedli, #uxskillsmain li{
