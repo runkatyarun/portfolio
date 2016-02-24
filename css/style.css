@@ -1514,7 +1514,7 @@ a i.icon {
 		
 			#main > section.one
 			{
-				background-color: #FFF3E0;
+				background-color: RGB(255,243,224);
 
 
 				/*
@@ -1524,13 +1524,13 @@ a i.icon {
 			#main > section.two
 			{
 				padding: 3em 0;
-				background-color: #FFF3E0;
+				background-color: RGB(255,243,224);
 			}
 		
 			#main > section.three
 			{
 				padding: 3em 0;
-				background-color: #FFF3E0;
+				background-color: RGB(255,243,224);
 			}
 		
 
