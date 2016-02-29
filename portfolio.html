@@ -69,19 +69,47 @@
        $("#closeExtension7").click(extensionCloseOnClick7);
 
        $(".hiddenInrixExtension").hide();
+       $(".notneededtobehiddenInrixExtension").show();
        $(".hiddenMATExtension").hide();
        $(".hiddenInviteBig").hide();
        $(".goodreadshiddenimg").show();
 
        checkCookie();
+       startImageGallery();
 
     };
     
+    function startImageGallery() {
+         // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+
+        // Get all images and insert the clicked image inside the modal
+        // Get the content of the image description and insert it inside the modal image caption
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        
+        $(".galleryimg img")
+            .click(function() {
+               modal.style.display = "block";
+               modalImg.src = this.src;
+               modalImg.alt = this.alt; 
+               //captionText.innerHTML = this.nextElementSibling.innerHTML;
+            });
+    }
     function checkCookie() {
         
       var cookie = Cookies.get('is_private'); 
       if (cookie == 'true') {
           $(".hiddenInrixExtension").show();
+          $(".notneededtobehiddenInrixExtension").hide();
           $(".hiddenMATExtension").show();
           $(".hiddenInviteBig").show();
       } 
@@ -194,7 +222,7 @@
             <!-- Logo -->
 
             <div id="logo">
-                <span class="image avatar48"><a href="index.html"><img alt="" src=
+                <span class="image avatar48"><a href="#top"><img alt="" src=
                 "images/avatar.jpg"></a></span>
 
                 <h1 id="title">Kate Koroleva</h1>
@@ -204,7 +232,7 @@
                 <ul>
                     <li>
                         <a href="index.html" id=
-                        "top-link"><span class="navlink">About Me</span></a>
+                        "top-link"><span class="navlink">About me</span></a>
                     </li>
 
                     <li>
@@ -244,6 +272,13 @@
     </div><!-- Main -->
 
     <div id="main">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
         <!-- Intro -->
 
             
@@ -255,175 +290,118 @@
                
                 <article id="slider">
 
-                   <div class="hiddenInviteBig">
-                   <div id="slides">
+                    <div id="slides">
                         <div id="overflow">
                                 <article>
-                                    <a name="InviteBig"> </a>
-                                        <h3>InviteBig (2015-current)</h3>
-                                        <h4>Description:</h4>
+                                    <a name="SAM"> </a>
+                                        <h3>Microsoft Surface Area Management (2015-Current)</h3>
 
-                                        <p>InviteBig is a web application designed to help venues and event organizers to collaborate and book events in real-time. </p>
-                                        
-                                        </br>
+                                        <p><i>Unfortunately, this project is under NDA. Please, ask me for a password to this section.</i></p>
+                                            
+                                        <h4>My role: </h4>
+                                        <p>Interaction design, user research </p>
 
-                                        <h8>Landing page after redesign:</h8>
-                                        <div id="images">
-                                             <img class="singlebigimage" src="images/iblandingpage.png">
-                                        </div>
-                                        
-                                       <h8>Landing page before:</h8>
-                                       <div id="images">
-                                        <p>
-                                        <img class="singlebigpicture" src="images/iblandingpagebefore.png">
-                                        </p>
-                                        </div>
-                                        
-
-                                        <h4>My role:</h4>
-                                        
+                                        <h4>Main methods used:</h4>
                                         <ol>
-                                            <li class="orderedli">Redesigned the website landing page to improve conversion rates</li>
-                                            <li class="orderedli">Designed the on-boarding flow for just registered users</li>
-                                            <li class="orderedli">Interviewed venue managers and venue owners to help the team to identify the feature set based on the audience needs</li>
-
-                                            <li class="orderedli">Created a survey and embedded it to the redesigned Request a demo page, to better understand users who request or about to request a demo.</li>
-                                            <li class="orderedli">Created a survey targeted to the venue members staff (event managers) to identify their needs and motivations</li>
-
-                                            <li class="orderedli">Created low and high fidelity wireframes</li>
-                                            <li class="orderedli">Participated in various prototyping sessions</li>
+                                            <li class="orderedli">
+                                            Started with initial users interviewing.</li>
+                                            <li class="orderedli">
+                                            Individually tested first version of the prototype.</li>
+                                            <li class="orderedli">
+                                            Organized and managed a focus group (pluralistic walkthrough approach) to figure out major prototype issues.</li>
+                                            <li class="orderedli">
+                                            1-1 User tests to compare two prototypes.</li>
+                                            <li class="orderedli">
+                                            Reiterated in the prototype and produced the wireframes.</li>
                                         </ol>
 
-                                        <h4>Tools Used:</h4>
-
-                                        <p>Sketch, Balsamiq, TypeForm</p>
                                         
-                                        <div class="linktoslide0">
-                                            <h7>
-                                                <a href="#portfolioslide0" id="showExtension0"><span>Read more about this project</span></a></h7> 
-                                        </div>
                                         
-                                        <div class="extensiontoslide0"> <!-- extension part-->
-                                        <h4>Landing page redesign goals: </h4>
-                                            <ol>
-
-                                                <li class="orderedli">Bring more users to the website who will schedule a demo on their own</li>
-                                                <li class="orderedli">Get preliminary info about users with the aim to be prepared for the demo. Make demo more productive</li>
-                                                <li class="orderedli">Get info about users needs and use this info in the further project strategy</li>
-                                            </ol>
-
-
-
-                                        <h4>Other examples:</h4>
-                                        
-                                        <h8>Features For Venues page after redesign:</h8>
-
-                                        <div id="images">
-                                            <div id="imageandtext">
-                                            <img class="singlebigimage" src="images/ibvenues.png">
-
-                                        </div>
-                                        <h8>Features For Venues page before:</h8>
-                                        </br>
-                                            <div id="imageandtext">
-
-                                            <img class="singlebigimage" src="images/ibvenuesbefore.png">
-                                           </div>
-                                              
-                                        </div>    
-
-                                        <h8>Pricing, new page:</h8>
-                                        <div id="images">
-                                            <img class="singlemiddleimage" src="images/ibpricing.png">
-                                         </div>
-                                        </br>
-                                        <h8>Request a Demo page after redesign:</h8>
-                                        <div id="images">
-                                            
-                                            <img class="beforeaftertwobigimages" src="images/ibrequest.png">
-                                         </div>
-
-                                        </br>
-                                        <h8>Request a Demo page before redesign:</h8>
-                                         <div>   
-                                            
-                                            <img class="beforeaftertwobigimages" src="images/ibrequestbefore.png">
-                                              
-                                             
-                                        </div>    
-
-                                           
-                                        <h5>Results:</h5>
-                                            <ol>
-                                                <li class="orderedli">Number of users requests to schedule a demo has increased and addresses business goal
-                                                </li>
-                                                 <li class="orderedli">Collected info about users interested in the project functionality helped to reorganize the project roadmap and improve other website features.
-                                                </li>
-                                                
-                                        
-                                            </ol>
-                                        
-                                        <div class="linktoslidetoclose">
-                                            <h7>
-                                                <a href="#Inrix" id="closeExtension0"><span>Less about this project</span></a></h7> 
-                                        </div>
-                                        </div> <!--inrix extension-->
                                
                                 </article><!--article: INRIX-->
                      </div> <!--overflow -->
                  </div> <!--slides -->
-             </div> <!--hiddenInviteBig-->
 
                     <div id="slides">
                         <div id="overflow">
                                 <article>
                                     <a name="Inrix"> </a>
                                         <h3>INRIX (2014-2015)</h3>
-                                        <h4>Description:</h4>
+                                        <h4>Context:</h4>
 
-                                        <p>INRIX IS Android and iOS applications that provide traffic, routes and travel time info.  
+                                        <p>INRIX is Android and iOS applications that provide traffic, routes and travel time info.  
                                         </br>INRIX crowd sources data, and allows users to report inaccurate traffic colors and incidents along their itinerary.</p>
                                             
-                                        
-                                        <div id="images">
-                                            <img class="singlemobileimage" src="images/route_error_30s_network.png">
-                                        </div>
+                                        <h4>Research and redesign need:</h4> 
+                                        <ol>
+                                            <li class="orderedli">Help the team in weekly evaluations of the new designs they produce.</li>
+                                            <li class="orderedli">Research target users driving habits and suggest changes to the design based on findings.</li>
+                                            <li class="orderedli">Redesign the Error Handling workflow.</li>
+                                        </ol>
+                                         </br>   
+                                           <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                
+                                                <img src="images/inrix_withuser.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                
+                                                <img src="images/inrixtesting.png" >
+                                              </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+
+                                            </div>  
+                                        <h8>Example of user in the test environment</h8>
+                                           
                                         
 
-                                            
+                                        <h4>Impact:</h4>
+                                        <p>Many recomendations from the user tests were applied and incorporated into the real product.</p>
+                                        
                                         <h4>My role:</h4>
                                         
                                         <ol>
                                             <li class="orderedli">Designed and moderated
-                                            user research sessions to test
-                                            prototypes created by the design
-                                            team (including in-person and
-                                            online interviews)</li>
+                                            weekly user test sessions. Managed on-site and remote user tests. Produced recommendations after each test.</li>
+
+                                            <li class="orderedli">Participated in lab enhancing.</li>
 
                                             <li class="orderedli">Ran card
                                             sorting and pre-qualification
-                                            survey to identify user
-                                            persona</li>
-
-                                            <li class="orderedli">Created
-                                            recommendation reports for
-                                            different features designed by UI
-                                            designers</li>
+                                            surveys.</li>
 
                                             <li class="orderedli">Designed and
                                             tested error handling experience
                                             for Android application</li>
-
-                                            <li class="orderedli">Paper and digital prototyping</li>
                                         </ol>
 
-                                        <div id="images">
-                                        <img class="singleimage" src="images/inrixtesting.png">
 
-                                        </div>
-                                        <h8>This image shows user in the test environment</h8>
 
-                                         
+                                        </br>   
+                                           <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                
+                                                <img src="images/route_error_30s_network.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            
+                                            <div class="clearfix"></div>
+
+                                            </div>  
+                                          
+                            
+
                                         <h4>Tools Used:</h4>
 
                                         <p>Adobe Illustrator, UserTesting.com,
@@ -434,53 +412,54 @@
                                         
                                         <div class="linktoslide1">
                                             <h7>
-                                                <a href="#portfolioslide1" id="showExtension1" class="test"><span>Read more about this project</span></a></h7> 
+                                                <a href="#portfolioslide1" id="showExtension1" class="test"><span>Read details about the process</span></a></h7> 
                                         </div>
                                         
                                         <div class="extensiontoslide1"> <!-- extension part-->
 
+                                        <div class="notneededtobehiddenInrixExtension">
+                                        <p><i>Unfortunately, this project is under NDA. Please, ask me for a password to this section.</i></p>
+                                        </div>
+                                        <div class="hiddenInrixExtension">
+                                          
+                                        <h6>Some details about the Error handling feature</h6>
 
-                                        <h4>Here is an example:</h4>
+                                         
+                                    
+                                        </br>   
+                                           <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Example notification message</div>
+                                                <img src="images/INRIX_incident_reported.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Example of the error message</div>
+                                                <img src="images/map_locationError_white.png" >
+                                              </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+
+                                            </div>  
+                                        
+                                       
+                                        
+
                                         <div id="example">
 
-                                        <p>My most recent exercise involved the Error Handling Experience feature. 
-                                        </p>
-                                        <p>
-                                        <i>Unfortunately, this project is under a Non Disclosure Agreement (NDA), so I can only describe the main steps in summary format.</i></p>
+                                        
+                                        
 
-                                        <div class="hiddenInrixExtension">
-                                            <p><i> I will show you only some screenshots.</i></p>
+                                        <h4> Study Goal:</h4>
 
-                                       <!--  <div id="images">
-                                            <img class="beforeaftertwoimages" src="images/INRIX_incident_reported.png">
-                                            
-                                        </div> -->
-                                        <div id="images">
-                                           <img class="beforeaftertwoimages" src="images/INRIX_incident_reported.png">
-                                            <img class="beforeaftertwoimages" src="images/map_locationError_white.png">
-                                            
-                                        </div>
-                                       
-                                        </div>
-
-
-                                        <h5>What errors to handle?</h5>
-
-                                        <p>For example: The user cannot use app if the Location Services are turned off in the phone settings. Sometimes a user experiences network connection issues, or rarely, errors returned by the server</p>
-
-                                        <h5>Error Handling Study Goal:</h5>
-
-                                        <p>To design error handling in such a way that errors are noticed only when they are important, or may block further user interaction with the app.<br>
+                                        <p>To design error handling in such a way that errors related to Location Services or network connectivity isssues are noticed only when they are important, or may block further user interaction with the app.<br>
                                         For some of the screens, errors should
                                         be drive-safe.</p>
-
-                                        <h5>Activities performed:</h5>
-
-                                        <ol>
-                                            <li class="portfolioexampleli">I ran two series of tests on UserTesting.com to determine if users understood the reasons for errors, and if error placements work.</li>
-
-                                            <li class="portfolioexampleli">Designed different versions of error bars for the drive experience cases, and tested it with users on drive simulator</li>
-                                        </ol>
 
                                         <h5>Challenge:</h5>
 
@@ -488,20 +467,148 @@
                                         was to decide how to mock real drive
                                         experience and achieve a similar-to-real, driving mental load</p>
 
+                                        <h5>Activities performed:</h5>
+
+                                        <ol>
+                                            <li class="portfolioexampleli">I ran two series of tests on UserTesting.com to determine if users understood the reasons for errors, and if error placements work.</li>
+
+                                            <li class="portfolioexampleli">Designed different versions of error bars for the drive experience cases, and tested it with users on drive simulator.</li>
+                                        </ol>
+
+                                        
+
                                         <h5>Main Finding:</h5>
 
                                         <p>Persona driving habits need
-                                        improvement: Users from the same user
-                                        group, with the same goals and
-                                        motivators may use the phone in
+                                        improvement. Users from the same user
+                                        group are using the phone in
                                         different ways in the car and have
                                         different distractors.</p>
                                         </div> <!--id="example"-->
-
+                                        </div>
                                         <div class="linktoslidetoclose">
                                             <h7>
                                                 <a href="#Inrix" id="closeExtension1"><span>Less about this project</span></a></h7> 
                                         </div>
+                                        </div> <!--inrix extension-->
+                               
+                                </article><!--article: INRIX-->
+                     </div> <!--overflow -->
+                 </div> <!--slides -->
+
+                 
+                   <div id="slides">
+                        <div id="overflow">
+                                <article>
+                                    <a name="InviteBig"> </a>
+                                        <h3>InviteBig (2015)</h3>
+                                        <h4>Context:</h4>
+
+                                        <p>InviteBig is a web application designed to help venues and event organizers to collaborate and book events in real-time. </p>
+                                        
+
+                                          <div class="hiddenInviteBig">
+                                        <h4>Redesign and research need:</h4>
+                                        <ol>
+                                            <li class="orderedli">Help the team to understand the audience and build the feature set based on this understanding.</li>
+                                            <li class="orderedli">Guide new users towards scheduling a demo flow.</li>
+                                            <li class="orderedli">Help the business to get more details about the potential users before the demo.</li>
+                                        </ol>
+                                        
+                                        </br>   
+                                           <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Landing page before</div>
+                                                <img src="images/iblandingpagebefore.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Landing page after</div>
+                                                <img src="images/iblandingpage.png" >
+                                              </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+
+                                            </div>  
+                                            
+                                        <h4>Impact:</h4>
+                                            <ol>
+                                                <li class="orderedli">Number of users requests to schedule a demo has increased and addressed a business goal
+                                                </li>
+                                                 <li class="orderedli">Collected info about users interested in the project functionality helped to reorganize the project roadmap and improve other website features.
+                                                </li>
+                                                
+                                        
+                                            </ol>
+                                        </div>
+                                        <h4>My role:</h4>
+                                        
+                                        <ol>
+                                            <li class="orderedli">Managed multiple interviews and surveys targeted for venue managers and venue owners.</li>
+                                            <li class="orderedli">Created low and high fidelity wireframes for different features. </li>
+                                            <li class="orderedli">Participated in team discussions and rapid prototyping sessions.</li>
+                                        </ol>
+
+                                        <h4>Tools Used:</h4>
+
+                                        <p>Sketch, Balsamiq, TypeForm</p>
+                                        
+                                        
+                                        <div class="notneededtobehiddenInrixExtension">
+                                        <p><i>Unfortunately, this project is under NDA. Please, ask me for a password to this section.</i></p>
+                                    </div>
+                                        <div class="linktoslide0">
+                                            <h7>
+                                                <a href="#portfolioslide0" id="showExtension0"><span>See more examples</span></a></h7> 
+                                        </div>
+                                        
+                                        <div class="extensiontoslide0"> <!-- extension part-->
+
+                                           <div class="hiddenInviteBig">
+
+                                                <div class="gallery-wrapper">
+                                                    <div class="responsivefor3img">
+                                                      <div class="galleryimg">
+                                                        <div class="desc">Features For Venues page before</div>
+                                                        <img src="images/ibvenuesbefore.png" >
+                                                        
+                                                      </div>
+                                                    </div>
+
+
+                                                    <div class="responsivefor3img">
+                                                      <div class="galleryimg">
+                                                        <div class="desc">Features For Venues page after </div>
+                                                        <img src="images/ibvenues.png" >
+                                                      </div>
+                                                    </div>
+
+                                                    
+                                                    <div class="responsivefor3img">
+                                                      <div class="galleryimg">
+                                                        <div class="desc">Pricing, new page:</div>
+                                                        <img src="images/ibpricing.png" >
+                                                        
+                                                      </div>
+                                                    </div>
+
+
+                                                    <div class="clearfix"></div>
+
+
+                                                   </div>
+
+                                        </div>
+                                        <div class="linktoslidetoclose">
+                                            <h7>
+                                                <a href="#Inrix" id="closeExtension0"><span>Less about this project</span></a></h7> 
+                                        </div>
+
                                         </div> <!--inrix extension-->
                                
                                 </article><!--article: INRIX-->
@@ -517,13 +624,9 @@
                                     <h3>Microsoft Multilingual App
                                     Toolkit (MAT) (2013)</h3>
                                    
-                                    <p>I participated in this project in terms
-                                    of "HCDE 517: Usability Studies" course. It
-                                    was part of the HCDE certificate
-                                    program<br>
-                                    </p>
+                                   
 
-                                    <h4>What is MAT?</h4>
+                                    <h4>Context:</h4>
 
                                     <p>MAT is a software extension to the
                                     Microsoft® Visual Studio® 2012 IDE that
@@ -532,11 +635,26 @@
                                     additional language versions of their
                                     apps.</p>
                                     
+                                    <h4>Research Need:</h4>
+                                   <p>
+                                    Is the initial MAT user experience easy
+                                    enough that developers can accomplish a
+                                    series of tasks required for a complete
+                                    end-to-end localization scenario?
+                                    </p>
+
                                     <div id="images">
                                     <img class="singleimage" src="images/matplugin.png">
                                     </div>
                                     
-                                   <h4>My Role:</h4>
+                                   
+
+                                   <h4>Impact:</h4>
+
+                                    <p>New version of MAT was released and
+                                    included feedback of this study</p>
+
+                                   <h4>The process:</h4>
 
                                     <ol>
                                         <li class="orderedli">Together with two other team members, we designed a test strategy to verify scenario flow.</li>
@@ -553,29 +671,55 @@
                                         <li class="orderedli">Presented results
                                         to MAT team members.</li>
                                     </ol>
+
+                                    
                                         
                                     <h4>Tools Used:</h4>
 
                                     <p>Morae Manager, Microsoft Excel</p><!--article: MAT-->
-
+                                    
+                                     <p>I participated in this project in terms
+                                    of "HCDE 517: Usability Studies" course. It
+                                    was part of the HCDE certificate
+                                    program<br>
+                                    </p>
 
                                     <div class="linktoslide2">
                                             <h7>
-                                                <a href="#portfolioslide2" id="showExtension2"><span>Read more about this project</span></a></h7> 
+                                                <a href="#portfolioslide2" id="showExtension2"><span>Read details about the process</span></a></h7> 
                                     </div>
 
                                     <div class="extensiontoslide2"> <!-- extension part-->
                                     <p>
-                                    <i>Unfortunately, this project is under NDA. I can only
-                                                                        describe main steps made in a summary
-                                                                        form.</i></p>
+                                    <div class="notneededtobehiddenInrixExtension">
+                                        <p><i>Unfortunately, this project is under NDA. Please, ask me for a password to this section.</i></p>
+                                    </div>
 
-                                    <h4>MAT Study Question:</h4>
+                                    <div class="hiddenMATExtension">
+                                    <h4>Challenges:</h4>
 
-                                    <p>Is the initial MAT user experience easy
-                                    enough that developers can accomplish a
-                                    series of tasks required for a complete
-                                    end-to-end localization scenario?</p>
+                                    <p>Developers did not feel comfortable consulting help while being observed.  Although the usage of online help is an integral part of their work day, I had to find a way to make them feel at ease. </p>
+                                        <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <img src="images/MAT0.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <img src="images/MAT1.png" >
+                                              </div>
+                                            </div>
+
+                                            
+                                            
+                                            <div class="clearfix"></div>
+
+
+                                            </div>  
 
                                     <h4>User testing main steps:</h4>
                                     <ol>
@@ -599,6 +743,30 @@
                                                 manager app during testing</li>
                                     </ol>
 
+                                   
+
+                                             <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <img src="images/MAT2.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <img src="images/MAT3.png" >
+                                              </div>
+                                            </div>
+
+                                            
+                                            
+                                            <div class="clearfix"></div>
+
+
+                                            </div>  
+
                                     <h4>Main Findings:</h4>
 
                                     <ol>
@@ -614,26 +782,12 @@
                                         into the Visual Studio.</li>
                                     </ol>
                                     
-                                    <div class="hiddenMATExtension">
-                                    <p><i>I can show you some screenshots for a limited amount of time. So that you better understand the context and findings.</i>
-                                    </p>
-                                    <div id="images">
-                                    <img class="singleimage" src="images/MAT0.png">
-                                    <img class="singleimage" src="images/MAT3.png">
-                                    <img class="singleimage" src="images/MAT1.png">
-                                    <img class="singleimage" src="images/MAT2.png">
-                                    </div>
+                                    
                                     </div>
 
+                                    
 
-                                    <h4>Challenges:</h4>
-
-                                    <p>Developers did not feel comfortable consulting help while being observed.  Although the usage of online help is an integral part of their work day, I had to find a way to make them feel at ease. </p>
-
-                                    <h4>Result:</h4>
-
-                                    <p>New version of MAT was released and
-                                    included feedback of this study</p>
+                                    
 
                                         <div class="linktoslidetoclose">
                                             <h7>
@@ -650,14 +804,18 @@
                                     <a name="GoodReads"> </a>
                                         <h3>GoodReads, redesign proposal (2015)</h3>
                                             <p>I have been using <a href="https://www.goodreads.com/user/show/4798745-katechka" rel="external">GoodReads</a> web site for a couple of months. </br>
-                                                At some point I realized that I have to split activities like searching for new books, storing books lists and tracking books reading progress between different web sites and applications. 
+                                                At some point I realized that I have to split activities like searching for new books, storing books lists and tracking books reading progress between different web sites and applications. I decided to tackle this problem. 
                                             </p>
 
-                                        <h4>Description:</h4>
+                                        <h4>Context:</h4>
                                         <p>
                                             GoodReads is a social networking website. Its mission is to allow members to explore the world of books, discuss literature with one another, make contact with authors, review read or currently reading books and plan to read in the future.
 
                                         </p>
+
+                                        <h4>Redesign need:</h4>
+                                        <p>The goal is to add support for a scenario when user wants to learn something new about a specific topic.
+
                                         <div id="images">
                                             <img class="singleimage" src="images/goodreads/goodreads.png">
                                             </div>
@@ -673,126 +831,171 @@
 
                                          <div class="linktoslide7">
                                             <h7>
-                                                <a href="#portfolioslide7" id="showExtension7"><span>Read more about this project</span></a></h7> 
+                                                <a href="#portfolioslide7" id="showExtension7"><span>Read more about the thinking process</span></a></h7> 
                                         </div>
                                         <div class="extensiontoslide7"> <!-- extension part-->
 
                                        
-                                        <h4>GoodReads redesign goal:</h4>
-                                        <p>The goal is to add support for a scenario when user wants to learn something new about a specific topic.
-                                       
                                         </p>
                                         <div id="example">
                                         <h4>Thinking process:</h4>
-                                        <p>
-                                            User Story example: Kate wants to learn different aspects of User Experience so that she can apply her knowledge in her work projects.
+
+
+                                         <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <img src="images/goodreads/grthemedlists.png" >
+                                                
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <img src="images/goodreads/goodreadssubjects.png" >
+                                              </div>
+                                            </div>
+
+                                            
+                                            
+                                            <div class="clearfix"></div>
+
+
+                                            </div>  
+
+                                            <h8>Themed List Home Page</h8>
                                         </br>
-                                            GR has some support for finding books on a topic functionality across it's different features. 
+                                    </br>
+                                        <p>
+                                            <strong>User Story example: </strong> Kate wants to learn different aspects of User Experience so that she can apply her knowledge in her work projects.
                                         </p>
-                                        <p> For example, user can find new books on a specific topic through:</p>
-                                                <ol>
-                                                    <li class="goodreadsexampleli">Groups </li>
-                                                    <li class="goodreadsexampleli">Recommendations </li>
-                                                    <li class="goodreadsexampleli">Listopia </li>
-                                                    <li class="goodreadsexampleli">Book view </li>
-                                            </ol>
-                                            </p>
+                                        <p>
+                                            GR has some support for finding books on a topic functionality across it's different functional areas. 
                                         </p>
+                                            
+                                        
                                         <p> But overall all of the solutions have the following issues:
                                         </p><ol>
-                                                    <li class="goodreadsexampleli">They do not help to pick one book out of the list of suggested books  </li>
-                                                    <li class="goodreadsexampleli">They do not give an idea on the structure of the topic </li>
-                                                     <li class="goodreadsexampleli">They do not motivate enough to read more on a specific topic</li>
+                                                    <li class="orderedli">They do not help to pick one book out of the list of suggested books  </li>
+                                                    <li class="orderedli">They do not give an idea on the structure of the topic </li>
+                                                     <li class="orderedli">They do not motivate enough to read more on a specific topic</li>
                                             </ol>
                                         </p>
                                         <p>It's obvious that GR was not designed for the scenario "find books on a     specific topic and read continuously on it".</p>
                                         <p>I suggest to introduce a new feature "Themed Lists" and add support for it in the existing functionality.
                                         </p>
 
-                                        <h5> Themed List Home Page:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grthemedlists.png">
-                                                <span>On the mouse hover the subject element, the element switches to the short "shelves" view of the subject.</span>
-                                                <span>On subject element click "topic selection" page opens.</span>
-                                                <span>On "interests" link click, User Profile page opens. User Profile page is updated, see it below.</span>
-                                                <span>On the Themed List link click a  Themed List page opens.</span>
-
-                                        <br  /> 
-                                        </div> 
-
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/goodreadssubjects.png">
+                                        <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Topics Selection Page</div>
+                                                <img src="images/goodreads/grtopicselection.png" >
                                                 
+                                              </div>
+                                            </div>
 
-                                        <br  /> 
-                                        </div> 
 
-                                        <h5> Topics Selection Page:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grtopicselection.png">
-                                                <span>In case user is not aware of the topic but interested in it, he can pick the list which will help to understand the fundamentals.</span>
-                                                <span>Some topics have a label [rated] that means that user has already left the review on the topic. (read below on this).</span>
-                                                <span>Label [read 3 books] means that some books from the list were already read.</span>
-                                                <span>Click on the topic link opens the List View page.</span>
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Themed List View Page</div>
+                                                <img src="images/goodreads/grthemedlistview.png" >
+                                              </div>
+                                            </div>
 
-                                        <br  /> 
-                                        </div> 
+                                            
+                                            
+                                            <div class="clearfix"></div>
 
-                                        <h5> Themed List View Page:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grthemedlistview.png">
-                                                <span>User can add the whole list to the list of themed lists or start reading one of the books from it.</span>
-                                                <span>Some lists are split into sections. E.g. Capacity Management, Supply Chain Design, etc.</span>
-                                                <span>"+Some words from Warren Buffet" element will show comments on the list content from the author.</span>
-                                                <span>Some books have a label "Must Read, Basics". It brings attention to a book from the recommended list that is very important for reading.</span>
-                                        <br  /> 
-                                        </div> 
 
-                                        <h5> Bookshelf Page redesigned:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grbookshelf.png">
-                                                <span>Themed list section is added.</span>
-                                        <br  /> 
-                                        </div> 
+                                            </div>  
 
-                                        <h5> Current Bookshelf Page implementation:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grcurrentbookshelf.png">
-                                        <br  /> 
-                                        </div> 
-
-                                        <h5> Bookshelf Page Feedback:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grbookshelfwithfeedback.png">
-                                                <span>Rating system now helps to get the detailed feedback on the book or on the topic. Based on this feedback books recommendation feature should be enhanced. Also new section "interests" located primary on the profile page will be populated based on this feedback.</span>
-                                                <span>
-                                                    New rating system should work as a motivation for reading books that interests a user.
-                                                </span>
-                                        <br  /> 
-                                        </div> 
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/goodreads.png">
+                                        <p>In case user is not aware of the topic but interested in it, he can pick the list which will help to understand the fundamentals. Some topics have a label [rated] that means that user has already left the review on the topic. (read below on this).
+                                        </br>Label [read 3 books] means that some books from the list were already read.
+                                        </br>Click on the topic link opens the List View page.
+                                        </p>
+                                       
+                                        
+                                        <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Bookshelf Page redesigned</div>
+                                                <img src="images/goodreads/grbookshelf.png" >
                                                 
-                                        <br  /> 
-                                        </div> 
+                                              </div>
+                                            </div>
 
-                                        <h5> Profile page redesigned:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grprofile.png">
-                                                <span>"Warren is interested in" section is added to add/delete interests.</span>
-                                                <span>Themed lists section is added.</span>
-                                                <span>Now, in case the book is part of the themed list there is a text line saying about it. E.g. "Themed list: Production and operation"</span>
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Current Bookshelf Page implementation</div>
+                                                <img src="images/goodreads/grcurrentbookshelf.png" >
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="clearfix"></div>
+
+
+                                            </div>  
+
+                                        <p>
+                                        User can add the whole list to the list of themed lists or start reading one of the books from it.
+                                        Some lists are split into sections. E.g. Capacity Management, Supply Chain Design, etc.
+                                                </br>Some books have a label "Must Read, Basics". It brings attention to a book from the recommended list that is very important for reading.
+                                        </p>
+                                              <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Bookshelf Page Feedback</div>
+                                                <img src="images/goodreads/grbookshelfwithfeedback.png" >
                                                 
-                                        <br  /> 
-                                        </div> 
+                                              </div>
+                                            </div>
 
 
-                                        <h5> Current Profile page implementation:</h5>
-                                        <div id="imagesandtext">
-                                                <img class="singleimage" src="images/goodreads/grcurrentprofile.png">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Bookshelf Page Сurrent Implementation</div>
+                                                <img src="images/goodreads/goodreads.png" >
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="clearfix"></div>
+
+
+                                            </div>  
+
+                                        <p>Rating system now helps to get the detailed feedback on the book or on the topic. Based on this feedback books recommendation feature should be enhanced. Also new section "interests" located primary on the profile page will be populated based on this feedback.New rating system should work as a motivation for reading books that interests a user.
+                                        
+                                        <div class="gallery-wrapper">
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Profile page redesigned</div>
+                                                <img src="images/goodreads/grprofile.png" >
                                                 
-                                        <br  /> 
-                                        </div> 
+                                              </div>
+                                            </div>
+
+
+                                            <div class="responsive">
+                                              <div class="galleryimg">
+                                                <div class="desc">Current Profile page implementation</div>
+                                                <img src="images/goodreads/grcurrentprofile.png" >
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="clearfix"></div>
+
+
+                                            </div>  
+                                            <p>
+                                                Warren is interested in" section is added to add/delete interests.
+                                                Themed lists section is added.
+                                                Now, in case the book is part of the themed list there is a text line saying about it. E.g. "Themed list: Production and operation"
+                                            </p>
+
+
+
+                                        
 
                                     
                                         
