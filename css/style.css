@@ -127,9 +127,8 @@
 	}
 
 	h7 {
-		font-size: 20px;
-		padding-top: 1em;
-		padding-bottom: 1em;
+		font-size: 16px;
+		padding-top: 2em;
 		text-align: left;
 		font-weight: 500;
 		padding-bottom: 0.5em;
@@ -179,10 +178,9 @@
 
 		header > p
 		{
-			margin: 1em 0 0 0;
-			padding-left: 6.5em;
-			padding-right: 5
-			.5em;
+			margin: 1em auto 0 auto;/*
+			margin-left: auto;
+    		margin-right: auto;*/
 		}
 
 	footer
@@ -570,6 +568,16 @@ article img {
 	padding-right: 4.5em;
 }
 
+
+#about  {
+	font-size: 16px;
+	line-height: 1.4;
+	margin-left: auto;
+    margin-right: auto;
+	/*padding-left: 6.5em;
+	padding-right: 4.5em;*/
+}
+
 #resume p {
 	font-size: 14px;
 	margin-left: 1.5em;
@@ -622,7 +630,7 @@ margin-bottom: 0.5em;
 
 
 #resumedescription p {
-	font-size: 14px;
+	font-size: 12px;
 	letter-spacing: .01rem;
 	margin-bottom: 0.5em!important;
 	padding-left: 5em;
@@ -1532,7 +1540,7 @@ a i.icon {
 		
 			#main > section.one
 			{
-				background-color: RGB(255,243,224);
+				background-color: RGB(255,248,225);
 
 
 				/*
@@ -1542,13 +1550,13 @@ a i.icon {
 			#main > section.two
 			{
 				padding: 3em 0;
-				background-color: RGB(255,243,224);
+				background-color: RGB(255,248,225);
 			}
 		
 			#main > section.three
 			{
 				padding: 3em 0;
-				background-color: RGB(255,243,224);
+				background-color: RGB(255,248,225);
 			}
 		
 
@@ -1746,6 +1754,11 @@ border: 1px solid #777;
 	padding: 0 6px;
     float: left;
     width: 30%;
+}
+.responsivefor4img {
+	padding: 0 6px;
+    float: left;
+    width: 24.99%;
 }
 
 /* The Modal (background) */
