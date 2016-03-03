@@ -563,9 +563,9 @@ article img {
 
 #about p {
 	font-size: 16px;
-	line-height: 1.4;
+	line-height: 1.4;/*
 	padding-left: 6.5em;
-	padding-right: 4.5em;
+	padding-right: 4.5em;*/
 }
 
 
@@ -574,6 +574,7 @@ article img {
 	line-height: 1.4;
 	margin-left: auto;
     margin-right: auto;
+    width:800px;
 	/*padding-left: 6.5em;
 	padding-right: 4.5em;*/
 }
