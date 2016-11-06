@@ -6,416 +6,263 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="css/ie/html5shiv.js"></script><![endif]-->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/jquery.scrollzer.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script><noscript>
-    <script type="text/javascript" src="iosLabelFix.js"></script>
-    <link href="css/skel.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-wide.css" rel="stylesheet"></noscript>
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-    
+    <script src="js/init.js"></script>
+    <noscript>
+        <script type="text/javascript" src="iosLabelFix.js"></script>
+        <link href="css/skel.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-wide.css" rel="stylesheet">
+    </noscript>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie/v9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
+
     <script>
-    $.fn.scrollTo = function( target, options, callback ){
-  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
-  var settings = $.extend({
-    scrollTarget  : target,
-    offsetTop     : 50,
-    duration      : 500,
-    easing        : 'swing'
-  }, options);
-  return this.each(function(){
-    var scrollPane = $(this);
-    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
-    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
-    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
-      if (typeof callback == 'function') { callback.call(this); }
-    });
-  });
-}
-    
-    
-    window.onload = function() {
- 
-       $("#showExtension3").click(extensionOnClick3);
-       $("#showExtension4").click(extensionOnClick4);
- 	   $("#slide1").change(hideAllExtension);
- 	   $("#slide2").change(hideAllExtension);
- 	   $("#slide3").change(hideAllExtension);
- 	   $("#slide4").change(hideAllExtension);
-    };
-    
-    function extensionOnClick3() {
-    	$(".extensiontoslide3").toggle();
-    }
-    function extensionOnClick4() {
-        $(".extensiontoslide4").toggle();
-    }
-    
-    function hideAllExtension() {
-        $(".extensiontoslide3").hide();
-        $(".extensiontoslide4").hide();
-        //$('body').scrollTo('#portfolio'); 
-        
-        $('html, body').animate({
-                        scrollTop: $("#portfolio").offset().top
-                    }, 1000);
-        
-    }
-    
+        $.fn.scrollTo = function (target, options, callback) {
+            if (typeof options == 'function' && arguments.length == 2) {
+                callback = options;
+                options = target;
+            }
+            var settings = $.extend({
+                scrollTarget: target,
+                offsetTop: 50,
+                duration: 500,
+                easing: 'swing'
+            }, options);
+            return this.each(function () {
+                var scrollPane = $(this);
+                var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+                var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+                scrollPane.animate({scrollTop: scrollY}, parseInt(settings.duration), settings.easing, function () {
+                    if (typeof callback == 'function') {
+                        callback.call(this);
+                    }
+                });
+            });
+        }
+
+
+        window.onload = function () {
+
+            $("#showExtension3").click(extensionOnClick3);
+            $("#showExtension4").click(extensionOnClick4);
+            $("#slide1").change(hideAllExtension);
+            $("#slide2").change(hideAllExtension);
+            $("#slide3").change(hideAllExtension);
+            $("#slide4").change(hideAllExtension);
+        };
+
+        function extensionOnClick3() {
+            $(".extensiontoslide3").toggle();
+        }
+        function extensionOnClick4() {
+            $(".extensiontoslide4").toggle();
+        }
+
+        function hideAllExtension() {
+            $(".extensiontoslide3").hide();
+            $(".extensiontoslide4").hide();
+            //$('body').scrollTo('#portfolio');
+
+            $('html, body').animate({
+                scrollTop: $("#portfolio").offset().top
+            }, 1000);
+
+        }
+
     </script>
 
     <!--GA analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-62516632-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-62516632-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 </head>
 
 <body>
-    <!-- Header -->
+<!-- Header -->
 
-    <div class="skel-layers-fixed" id="header">
-        <div class="top">
-            <!-- Logo -->
+<div class="skel-layers-fixed" id="header">
+    <div class="top">
+        <!-- Logo -->
 
-            <div id="logo">
+        <div id="logo">
                 <span class="image avatar48"><a href="index.html"><img alt="" src=
-                "images/avatar.jpg"></a></span>
+                        "images/avatar.jpg"></a></span>
 
-                <h1 id="title">Kate Koroleva</h1>
-            </div><!-- Nav -->
+            <h1 id="title">Kate Koroleva</h1>
+        </div><!-- Nav -->
 
-            <nav id="nav">
-                <ul>
-                    <li>
-                        <a href="index.html" id=
-                        "top-link"><span class="navlink">About me</span></a>
-                    </li>
-
-                    <li>
-                        <a href="portfolio.html" id="portfolio-link"><span class="navlink">Portfolio</span></a>
-                    </li>
-
-                    <li>
-                        <a href="#resume" id=
-                        "resume-link"><span class="navlink">Resume</span></a>
-                    </li>
-
- 
-                    <!-- <li>
-                        <a href="art.html" id=
-                        "art-link"><span class="navlink">Art Pieces</span></a>
-                    </li> -->
-                
-                </ul>
-            </nav>
-        </div>
-
-        <div class="bottom">
-            <!-- Social Icons -->
-
-            <ul class="icons">
+        <nav id="nav">
+            <ul>
                 <li>
-                    <a class="icon fa-envelope" href="mailto:kativv@gmail.com"><span class=
-                    "label">Email</span></a>
+                    <a href="index.html" id=
+                            "top-link"><span class="navlink">About me</span></a>
                 </li>
 
                 <li>
-                    <a class="icon fa-linkedin" href="https://www.linkedin.com/in/katekoroleva" rel="external"><span class=
-                    "label">LinkedIn</span></a>
+                    <a href="portfolio.html" id="portfolio-link"><span class="navlink">Portfolio</span></a>
                 </li>
+
                 <li>
-                    <a class="icon-goodreads goodreads" href="https://www.goodreads.com/review/list/4798745-katechka?shelf=ux" rel="external">g</a>
+                    <a href="#resume" id=
+                            "resume-link"><span class="navlink">Resume</span></a>
                 </li>
+                <!-- <li>
+                    <a href="art.html" id=
+                    "art-link"><span class="navlink">Art Pieces</span></a>
+                </li> -->
             </ul>
-        </div>
-    </div><!-- Main -->
-
-    <div id="main">
-        <!-- Intro -->
-
-        
-            <section class="three" id="resume">
-                <div class="container">
-
-                   <h8>This section is currently under construction (since 08/21/2016)</h8>
-
-                     <article id="slider">
-                        <div id="slides">
-                         <div id="overflow">
-                    <div id="resumedescription">
-                    <h3>UX Design| Interaction Design | User Research </h3>
-                     <p> Kirkland, WA 
-                     </p>
-
-                    
-                    <p>I’m an Interaction designer and researcher with a technical background. 
-                    My background in software testing helps me to approach UX methodically and makes me confident to drive UX solutions. 
-                    </br>I was working and actively collaborating in the multifaceted, high pace consulting environment for years; and can speak to both developers and non-techies to advocate for the end user.
-                    </p>
-
-                    
-                </div>
-                         
-                   <!--  <h4> UX skills </h4>
-                    <div id="resumeskills"
-
-                    <ul>
-                         <li class="nonorderedli">Design interactions</li>
-                        <li class="nonorderedli">Create prototypes, participate in rapid prototyping, design wireframes, user flows </li>
-                        <li class="nonorderedli">Design various user research test strategies (test plans), </li>
-                        <li class="nonorderedli">Moderate and run real users on-site tests and online tests, </li>
-                        <li class="nonorderedli">Compile testing results and present them to team and stakeholders,</li>
-                        <li class="nonorderedli">Perform User/Task analysis, A/B testing, </li>
-                        <li class="nonorderedli">Create prototypes using HTML/CSS, </li>
-                        <li class="nonorderedli">Make design decisions based on knowledge of design principles and patterns, </li>
-                        
-                    </ul>
-                    </p>
-                    <h4>Technical skills</h4>
-                    <table>
-                        <tr>
-                            <td> UX tools:
-                            </td>  
-                              <td> Sketch, Axure, OmniGraffle, Balsamiq, InVision, Morae Manager, SurveyMonkey, MS Visio, Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Google Analytics
-                            </td>  
-                        </tr>
-                        <tr>
-                            <td> Languages and Technologies:
-                            </td>  
-                              <td> HTML/CSS, Javascript, XML/JSON, Android Java, Mockito, jUnit, Robolectric, С#, SQL(TSQL),  Windows Batch Files, OpenMP, MPI.Net; 
-                            </td>  
-                        </tr>
-                         <tr>
-                            <td> Other tools:
-                            </td>  
-                              <td> MS Visio, TypeForm, Survey Monkey, Git, Virtual PC, Virtual PC Server, VMWare, Hyper-V, JMeter, Fiddler, Process Explorer, JIRA, TRAC, WTT, MSBuild, Microsoft Test Manager, SVN/CVS
-                            </td>  
-                        </tr>
-                        <tr>
-                            <td> Other technologies:
-                            </td>  
-                              <td> Microsoft Dynamics CRM, Microsoft SharePoint, Microsoft Azure
-                            </td>  
-                        </tr>
-                        <tr>
-                            <td> OS:
-                            </td>  
-                              <td> Android, iOS, Windows, Windows Mobile 5/6, Symbian, Blackberry.
-                            </td>  
-                        </tr>
-                        <tr>
-                            <td> IDE:
-                            </td>  
-                              <td> Eclipse, Android Studio, MS Visual Studio.
-                            </td>  
-                        </tr>
-                        <tr>
-                            <td> Development methodology
-                            </td>  
-                              <td> Agile, waterfall
-                            </td>  
-                        </tr>
-                    </table>
-                </div><!--id resumeskills--> 
-           </div> <!--slider-->
-            </div> <!--overflow--> 
-                     </article>
-
-                           
-
-                   <!--  <article id="slider">
-                    <div id="slides">
-                         <div id="overflow">
-                        <div id="resume">        
-                     <p>
-                         <h3>Experience as a UX </h3>
-                         
-                            <ol>
-                               <li class="resumeorderedli">Microsoft (v-) (Interaction designer, UX researcher)  (2015-current)</li><p><i>Description:</i> enterprise web site solution</p>
-                                <p><i>Responsibilities:</i> Led user centered design on the project, redesigned the existing web site, addressing the needs of the target users, researched user types, user stories, interviewed users, ran focus groups, managed user test sessions, worked closely with PMs, business people and development team
-                                </p>
-                                <p><i>Tools and technologies: </i>Sketch, InVision, various Microsoft tools.</p>
-
-                               </li>
-                               <li class="resumeorderedli">InviteBig (UX designer) (2015 - now)</li>
-                                   <p><i>Description:</i> web application designed to help venues and event organizers to collaborate and book events in real-time
-                                   </p>
-                                   <p><i>Responsibilities (UX design, UX testing, Interaction Design):</i>led the design direction of the user interaction and usability with InviteBig web service: wireframed, prototyped, interviewed users, designed surveys, redesigned the website and the on-boarding flow resulted in the improved conversion rates. 
-                                   </p>
-                                   <p><i>Tools and technologies:</i>Balsamiq, Sketch for wireframing; Adobe Illustrator for visual design, TypeForm, Adobe Acrobat, HTML/CSS.</p>
-                               
-                               <li class="resumeorderedli">INRIX (UX designer and researcher) (2013-2015)</li>
-                                    <p>
-                                     <i>Description:</i>  Android and iOS applications. Key functionality is to provide traffic, routes, travel times info along the itinerary. 
-                                    </p>
-                                    <p>
-                                     <i>Responsibilities (UX research, Interaction Design, UX design): </i>  moderated user research sessions, run cart sorting, pre-qualification surveys, created recommendation reports, designed and tested Error Handling experience.
-                                    </p>
-                                    
-                                    <p>
-                                     <i>Tools and Languages:</i>  Adobe Illustrator for wireframing and visual design, InVision, Excel, Adobe Acrobat, Android.
-                                    </p>
-                                
-                                <li class="resumeorderedli">Freelance, UX designer (2015)</li>
-                                    
-                                    <p>
-                                     <i>Responsibilities (Interaction Design, UX design): </i>  designed a workflow based on the given user stories and requirements, created interactive prototypes; prototyping, wireframing.
-
-                                    </p>
-                                    
-                                    <p>
-                                     <i>Tools and Languages:</i> Sketch, Adobe Illustrator. Axure, OmniGraffle. 
-
-                                    </p>
-                                
-                            </ol>
-                            </p>
-                                    </div> <!--container-->
-                                    <!-- </div>
-                            </article>  -->
-
-                   <!--  <article id="slider">
-                    <div id="slides">
-                        <div id="overflow">
-                            <div id="resume">       
-                        
-                        <h3>Academic experience as a UX (2013-2014)</h3>
-
-                        <p>during the Human-Centered Design Certificate course at the University of Washington, Seattle </p>
-                        <h4>Selected  Projects:</h4>
-                            
-                                    <ol>
-
-                                    <li class="resumeorderedli">Microsoft Multilingual App Toolkit (MAT) (2013)
-                                    </li>
-                                   
-                                        <p>
-                                     <i>Description:</i>  MAT is a software extension to the Microsoft® Visual Studio®  2012 IDE that enables developers of Windows 8 Phone Apps and Windows 8 Store Apps to create additional language versions of their apps.
-                                    </p>
-                                    <p>
-                                     <i>Responsibilities: </i> designed user test plan, moderated and organized user testing, prepared result report for the MAT team and class.
-                                    </p>
-                                    <p>
-                                     <i>Tools: </i> Morae Manager, Microsoft Office Suite, Adobe Acrobat, Axure.
-                                    </p>
-
-                                    <li class="resumeorderedli">“Comprehensive revenue solutions” web site Redesign, "Charity Miles Mobile" mobile app redesign (2014)  (Interaction design, UX design, User Testing) </li>
-                                    
-                                    <p><i> Responsibilities:</i>  redesigned existing web and mobile solutions, made competitive analysis, card sorting, usability testing, paper and digital prototyping (HTML/CSS), wireframed.</p>
-                                    <p><i> Tools and technologies:</i>  Html/CSS, Microsoft Suite, Adobe Acrobat, Axure.</p></li>
-
-                                   
-                                </ol>
-
-                        <h4>Earlier projects</h4>
-                        <ol>
-
-                                    <li class="resumeorderedli">Movie studio “Cuba”  (UI motion designer) (2007-2008)
-                                    </li>
-                                    <p><i>Description:</i>  as a member of a 3D graphics & animation studio, specialized on creating visual effects on various movie scenes, created visual scenes and effects for real movies. 
-                                    </p>
-                                    
-                                    <p>
-                                     <i>Tools: </i> Adobe After Effects, Adobe Photoshop.
-                                    </p>
-
-                                    <li class="resumeorderedli">Freelance (UX designer and UI prototyper) (2007-2010)
-                                    </li>
-                                    <p><i>Description:</i>  designed and developed multiple one-two pagers websites. Also, Created technical specifications for different clients. 
-                                    </p>
-                                    
-                                    <p>
-                                     <i>Tools: </i> Adobe Photoshop, Adobe Acrobat, MS Office Suite, .Net, HTML/CSS.
-                                    </p>
-
-                        </ol>
-                        
-                                
-                                    
-
-                                    </div> <!--container-->
-                                   <!--  </div><!--resume-->
-                                    <!--     </article> -->
-                                   
-
-    <!-- <article id="slider">
-                    <div id="slides">
-                         <div id="overflow">
-                                 -->
-<!-- <h3>Work experience as SDET/SDET lead (2008-2015)</h3>
-                         <h4>Selected projects:</h4>
-
-                                <li class="resumeorderedli"> INRIX (SDET Lead) (2012-2015)</li>
-                                    <p>
-                                     <i>Description:</i>  Android and iOS applications. Key functionality is to provide traffic, routes, travel times info along the itinerary. 
-                                    </p>
-                                     <p>
-                                     <i>Responsibilities (SDET lead):</i>  led testing efforts, tested the project on different development stages, developed unit and integration tests, designed and run functional, as well as not functional tests.</p>
-                                     <p>
-                                     <i>Tools and Technologies:</i> Java, JUnit, Mockito, Robolectric, Android Studio, Eclipse, Android.</p>
-                               </li>
-
-                               <li class="resumeorderedli"> Microsoft Bing News (SDET) (2011-2012)</li>
-                                    <p>
-                                     <i>Description:</i>  mobile news application designed for Android tablet devices. 
-                                    </p>
-                                     <p>
-                                     <i>Responsibilities (SDET):</i> software testing of the full project life-cycle, developed UI and unit tests.</p>
-                                     <p>
-                                     <i>Tools and Technologies:</i>  Java, JUnit, .Net, NUnit, Eclipse, Visual Studio, Android, Microsoft Suite, Adobe Acrobat</p>
-                               </li>
-                                </ol> -->
-
-                               
-<!-- 
-
-<h3>Education</h3>
-<p>
-<h7>Ivanovo State Power  University, Russia</h7>
-<h8>Master, Parallel Programming (2004-2010)</h8>
-</br>
-<h8>Translator in Professional Communication, Russian to English  (2006-2010)</h8>
-
-<h7>University of Washington (HCDE), Seattle</h7>
-<h8>User-Centered Design Certificate at UW  (2013-2014)</h8>
-
-
-<h7>School of Visual Concepts, Seattle</h7>
-<h8>UX Level 1, UX Level 2 courses (2013)</h8>
-
-<h7>Art School, Ivanovo, Russia </h7>
-<h8>Design Basics (2000-2002)</h8>
-
-<h7>Art classes and workshops on oil painting, Seattle</h7>
-<h8>Took classes and workshops on color theory, composition and various design and oil painting techniques (2013-2015) </h8>
-</br>
-<h8><a href="https://picasaweb.google.com/107548218240867568383/May192015">Some examples</a></h8>
-
-  
-</p>
-</p>
-</p>
-
-        
-        </section>
-        </div> <!--container-->
-                <!-- </div>
-        </article> --> 
+        </nav>
     </div>
+    <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li>
+                <a class="icon fa-envelope" href="mailto:kativv@gmail.com"><span class=
+                                                                                         "label">Email</span></a>
+            </li>
 
+            <li>
+                <a class="icon fa-linkedin" href="https://www.linkedin.com/in/katekoroleva" rel="external"><span class=
+                                                                                                                         "label">LinkedIn</span></a>
+            </li>
+            <li>
+                <a class="icon-goodreads goodreads"
+                   href="https://www.goodreads.com/review/list/4798745-katechka?shelf=ux" rel="external">g</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Main -->
+<div id="main">
+
+    <!-- Intro -->
+    <section class="three" id="resume">
+        <div class="container">
+            <header>
+                <h1>Resume</h1>
+            </header>
+            <article id="slider">
+                <div id="slides">
+                    <div id="overflow">
+                        <div id="resumedescription">
+                            <h3>UX Design| Interaction Design | User Research </h3>
+                            <p> Kirkland, WA
+                            </p>
+                            <p>I’m an Interaction designer and researcher with a technical background.
+                                My background in software testing helps me to approach UX methodically and makes me
+                                confident to drive UX solutions.
+                                </br>I was working and actively collaborating in the multifaceted, high pace consulting
+                                environment for years; and can speak to both developers and non-techies to advocate for
+                                the end user.
+                            </p>
+                        </div>
+                        <div id="resumeskills">
+
+                            <h4>Technical skills</h4>
+                            <table>
+                                <tr>
+                                    <td> Leadership strategy
+                                    </td>
+                                    <td> Drive design solutions independently and as part of the team
+                                        </br>Provide user-centered design and UX solutions
+                                        </br>Continuously iterate and provide visibility with teams and stakeholders
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> User Experience Design and Research
+
+                                    </td>
+                                    <td> Development of Personas, scenarios, user stories, user flows
+                                        </br>Design user research test strategies (test plans)
+                                        </br>Moderate and conduct real user on-site tests and online tests, focus groups, Usability Inspections (heuristic evaluation, cognitive walkthrough)
+                                        </br>Perform User/Task analysis, A/B testing
+                                        </br>Compile testing results, present and iterate
+                                        </br>Design Surveys and Card Sorting
+                                        </br>Study detailed analytics
+                                        </br>Design Interactions
+                                        </br>Participate in rapid prototyping
+                                        </br>Morae Manager, Google Analytics, Heap, Typeform, SurveyMonkey
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Wireframe ideation and iteration
+                                    </td>
+                                    <td> Axure, Sketch, OmniGraffle, Balsamiq, InVision, FlairBuilder,
+                                        PowerPoint
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Adobe Creative Suite
+                                    </td>
+                                    <td> Illustrator, After Effects, Dreamweaver
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Design principles
+                                    </td>
+                                    <td> Understand and use design patterns and best practices
+                                       </div> Use artistic background on color theory and composition
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Daily tools
+                                    </td>
+                                    <td> JIRA, Trac, Asana, Microsoft Office apps
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Technical Skills
+                                    </td>
+                                    <td> SQL (TSQL), Java, Android Java, XML, JSON, jUnit, Mockito, Robolectric, jMeter, Robotium; Eclipse, Android Studio,Visual Studio; GIT, SVN, CVS; Virtual PC, VMWare, Hyper-V
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Development Methodology
+                                    </td>
+                                    <td> Agile, Waterfall
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Platforms and technologies
+                                    </td>
+                                    <td> OS X, Windows, Android, iOS, Windows Phone
+                                        </br>Microsoft SharePoint, Microsoft Dynamics CRM, Microsoft Azure
+                                    </td>
+                                </tr>
+
+                        </table>
+                        </div><!--id resumeskills-->
+                    </div> <!--slides-->
+                </div> <!--slider-->
+            </article>
+        </div> <!--overflow-->
+    </section>
+
+</div>
 </body>
 </html>

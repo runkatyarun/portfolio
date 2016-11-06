@@ -308,7 +308,6 @@ table, td {
     font-size: 18px ;
     padding-bottom: 1em;
     border-collapse: collapse;
-    padding: 0.5em;
 }
 
 @media screen and (max-width:480px) {
@@ -599,14 +598,13 @@ margin-bottom: 0.5em;
 
 #resumeskills table {
 	font-size: 12px ;
-	padding-left: 4em;
     margin-right: 5em;
 }
 
 #resumeskills td {
 	font-size: 12px ;
-	padding-left: 4em;
-    margin-right: 5em;
+	padding-left: 2.5em;
+	margin-right:8em;
 }
 
 
